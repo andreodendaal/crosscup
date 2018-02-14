@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CSSRelatedInfo>
+  <ScopeCounters>
+    <Counter Name="ResourcesDownloading" Value="0" Unit="second" Intervals="0" />
+    <Counter Name="Overall" Value="5.6485683" Unit="second" Intervals="0" />
+    <Counter Name="FrontEndRun" Value="5.6264972" Unit="second" Intervals="0" />
+    <Counter Name="AstBuilder" Value="1.8740572" Unit="second" Intervals="1" />
+    <Counter Name="SyntaxVerifier" Value="0.2653636" Unit="second" Intervals="1" />
+    <Counter Name="DdlResolver" Value="1.3651861" Unit="second" Intervals="1" />
+    <Counter Name="RoslynStartup" Value="0.9164436" Unit="second" Intervals="3" />
+    <Counter Name="SMS" Value="0.1123959" Unit="second" Intervals="2" />
+    <Counter Name="ResourceReferencePass" Value="0.0064819" Unit="second" Intervals="1" />
+    <Counter Name="InputOutputPass" Value="0.1331054" Unit="second" Intervals="1" />
+    <Counter Name="SStreamMetadataWait" Value="3.96E-05" Unit="second" Intervals="1" />
+    <Counter Name="SStreamMetadataAsync" Value="0" Unit="second" Intervals="0" />
+    <Counter Name="BinderPass" Value="3.4384756" Unit="second" Intervals="0" />
+    <Counter Name="ExpressionBinding" Value="3.1024768" Unit="second" Intervals="4" />
+    <Counter Name="OneColumnBinding" Value="0.0128819" Unit="second" Intervals="1" />
+    <Counter Name="QualifiedColumnBinding" Value="0.0057981" Unit="second" Intervals="1" />
+    <Counter Name="SimpleAggregateBinding" Value="0" Unit="second" Intervals="0" />
+    <Counter Name="RoslynFirstCall" Value="2.4412788" Unit="second" Intervals="1" />
+    <Counter Name="RoslynBinding" Value="0.577039" Unit="second" Intervals="2" />
+    <Counter Name="RoslynParsing" Value="0.0243796" Unit="second" Intervals="4" />
+    <Counter Name="RoslynPreSemantic" Value="0.0158123" Unit="second" Intervals="4" />
+    <Counter Name="RoslynSemantic" Value="0.2934001" Unit="second" Intervals="2" />
+    <Counter Name="RoslynPostSemantic" Value="0.2454791" Unit="second" Intervals="2" />
+    <Counter Name="Table Files Read" Value="0" Unit="count" />
+  </ScopeCounters>
+</CSSRelatedInfo>

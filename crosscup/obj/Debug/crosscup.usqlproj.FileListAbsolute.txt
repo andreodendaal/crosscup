@@ -1,0 +1,3 @@
+C:\Users\aodendaa\Source\Repos\crosscup\crosscup\obj\Debug\crosscup.usqlproj.CoreCompileInputs.cache
+C:\Users\aodendaa\Source\Repos\crosscup\crosscup\bin\Debug\Algebra.xml
+C:\Users\aodendaa\Source\Repos\crosscup\crosscup\obj\Debug\Algebra.xml

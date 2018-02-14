@@ -1,0 +1,23 @@
+﻿{
+"CompilerPlanStart":"2\/14\/2018 9:03:15 AM"
+},
+{
+"Settings":"-c++ -mp -pdb Partial -OUTPUT_PATH C:\\Users\\aodendaa\\AppData\\Local\\USQLDataRoot\\crosscup -cosmosCluster localhost -apEnvironment Default -apCluster localhost -Off ForceShadowCopy -On ADL -Off Sirius -On SQLIP -Off SQLIPSQLProxy -Off SQLIPSQLProxyNative -buckets 1 -SplitPartitionThreshold 52428800 -ClientVersion 10.2.2.0"
+}{
+"    EXTRACT Category string,            Place string,            Bib string,            Last":
+{
+"NodeName":"QueryStatement"
+}},
+{
+"    SELECT r.Category,           r.Place AS raceplacing,           r.Bib AS bibid,          ":
+{
+"NodeName":"QueryStatement"
+}},
+{
+"     OUTPUT @mergestagingresultsTO \"\/output\/testplacing.csv\"USING Outputters.Csv(outputHea":
+{
+"NodeName":"OutputStatement"
+}},
+{
+"CompilerPlanEnd":"2\/14\/2018 9:03:15 AM"
+}

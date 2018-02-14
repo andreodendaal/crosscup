@@ -1,0 +1,65 @@
+﻿{
+"CompilerPlanStart":"2\/14\/2018 10:11:17 AM"
+},
+{
+"Settings":"-c++ -mp -pdb Partial -OUTPUT_PATH C:\\Users\\aodendaa\\AppData\\Local\\USQLDataRoot\\crosscup -cosmosCluster localhost -apEnvironment Default -apCluster localhost -Off ForceShadowCopy -On ADL -Off Sirius -On SQLIP -Off SQLIPSQLProxy -Off SQLIPSQLProxyNative -buckets 1 -SplitPartitionThreshold 52428800 -ClientVersion 10.2.2.0"
+}{
+"    EXTRACT Category string,            Place string,            Bib string,            Last":
+{
+"NodeName":"QueryStatement"
+}},
+{
+"    EXTRACT [STAGE #] string,            [BIB #] string,            [FIRST NAME] string,    ":
+{
+"NodeName":"QueryStatement"
+}},
+{
+"    SELECT [BIB #] AS stagebib,           [LICENSE] AS usaclicence,           [STAGE #] AS rac":
+{
+"NodeName":"QueryStatement"
+}},
+{
+"    SELECT r.Category,           r.Place AS raceplacing,           s.racestaging,           ":
+{
+"NodeName":"QueryStatement"
+}},
+{
+"OUTPUT @mergestagingresultsTO \"\/output\/stagingplacing.csv\"USING Outputters.Csv(outputHeader ":
+{
+"NodeName":"OutputStatement"
+}},
+{
+"CompilerPlanEnd":"2\/14\/2018 10:11:17 AM"
+}{
+"CompilerPlanStart":"2\/14\/2018 10:15:44 AM"
+},
+{
+"Settings":"-c++ -mp -pdb Partial -OUTPUT_PATH C:\\Users\\aodendaa\\AppData\\Local\\USQLDataRoot\\crosscup -cosmosCluster localhost -apEnvironment Default -apCluster localhost -Off ForceShadowCopy -On ADL -On SQLIP -Off SQLIPSQLProxy -Off SQLIPSQLProxyNative -SplitPartitionThreshold 52428800 -ClientVersion 10.2.2.0"
+}{
+"    EXTRACT Category string,            Place string,            Bib string,            Last":
+{
+"NodeName":"QueryStatement"
+}},
+{
+"    EXTRACT [STAGE #] string,            [BIB #] string,            [FIRST NAME] string,    ":
+{
+"NodeName":"QueryStatement"
+}},
+{
+"    SELECT [BIB #] AS stagebib,           [LICENSE] AS usaclicence,           [STAGE #] AS rac":
+{
+"NodeName":"QueryStatement"
+}},
+{
+"    SELECT r.Category,           r.Place AS raceplacing,           s.racestaging,           ":
+{
+"NodeName":"QueryStatement"
+}},
+{
+"OUTPUT @mergestagingresultsTO \"\/output\/stagingplacing.csv\"USING Outputters.Csv(outputHeader ":
+{
+"NodeName":"OutputStatement"
+}},
+{
+"CompilerPlanEnd":"2\/14\/2018 10:15:44 AM"
+}

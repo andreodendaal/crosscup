@@ -1,0 +1,73 @@
+﻿@resultrows =
+    EXTRACT Category string,
+            Place string,
+            Bib string,
+            Last string,
+            First string,
+            Time string,
+            Gap string,
+            [Lap 1] string,
+            [Lap 2] string,
+            [Lap 3] string,
+            [Lap 4] string,
+            [Lap 5] string,
+            [Lap 6] string,
+            [Lap 7] string,
+            [Lap 8] string
+            
+    FROM "/input/2017 CCC Lap Times - Caldwell .csv"
+    USING Extractors.Csv(skipFirstNRows : 3);
+
+@stagingrows =
+    EXTRACT [STAGE #] string,
+            [BIB #] string,
+            [FIRST NAME] string,
+            [LAST NAME] string,
+            [TEAM] string,
+            [CITY] string,
+            [STATE] string,
+            [AGE] string,
+            [CAT] string,
+            [LICENSE] string,
+            [CXR Points] string,
+            [CCC Points] string,
+            [Category Entered] string,
+            [CCC Points Most Recent Date Placing] string,
+            [CCC Points Most Recent Date] string,
+            [Time Entered] string
+            
+    FROM "/input/2017 Caldwell Woods Schedule - Staging.csv"
+    USING Extractors.Csv(skipFirstNRows : 1, silent: true);
+
+@stageset =
+    SELECT [BIB #] AS stagebib,
+           [LICENSE] AS usaclicence,
+           [STAGE #] AS racestaging
+    FROM @stagingrows;         
+
+@mergestagingresults =
+    SELECT r.Category,
+           r.Place AS raceplacing,
+           s.racestaging,
+           r.Bib AS bibid,
+           s.stagebib,
+           r.Last AS lastname,
+           r.First AS firstname,
+           s.usaclicence,
+           r.Time AS time,
+           r.Gap AS gap,
+           r.[Lap 1] AS lap1,
+           r.[Lap 2] AS lap2,
+           r.[Lap 3] AS lap3,
+           r.[Lap 4] AS lap4,
+           r.[Lap 5] AS lap5,
+           r.[Lap 6] AS lap6,
+           r.[Lap 7] AS lap7,
+           r.[Lap 8] AS lap8          
+    FROM @resultrows AS r
+         INNER JOIN @stageset AS s             
+         ON r.Bib == s.stagebib;
+
+OUTPUT @mergestagingresults
+TO "/output/stagingplacing.csv"
+USING Outputters.Csv(outputHeader : true);
