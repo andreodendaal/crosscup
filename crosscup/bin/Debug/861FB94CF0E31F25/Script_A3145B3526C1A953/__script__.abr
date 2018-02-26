@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScriptAndGraph GraphType="VertexCommands">
+  <Vertices count="3">
+    <Vertex index="1" command="-scopeVertex SV1_Extract  -i &quot;C:\repo\crosscup\USQLDataRoot\input\2017 Caldwell Woods Schedule - Staging.csv&quot;  -o C:\repo\crosscup\crosscup\bin\Debug\861FB94CF0E31F25\_Temp\Script_A3145B3526C1A953\scopetmpfile._SV1_Extract_out0" />
+    <Vertex index="2" command="-scopeVertex SV2_Extract  -i &quot;C:\repo\crosscup\USQLDataRoot\input\2017 CCC Lap Times - Caldwell .csv&quot;  -o C:\repo\crosscup\crosscup\bin\Debug\861FB94CF0E31F25\_Temp\Script_A3145B3526C1A953\scopetmpfile._SV2_Extract_out0" />
+    <Vertex index="3" command="-scopeVertex SV3_Combine  -i C:\repo\crosscup\crosscup\bin\Debug\861FB94CF0E31F25\_Temp\Script_A3145B3526C1A953\scopetmpfile._SV1_Extract_out0 -ichannel SV1_Extract_out0 -i C:\repo\crosscup\crosscup\bin\Debug\861FB94CF0E31F25\_Temp\Script_A3145B3526C1A953\scopetmpfile._SV2_Extract_out0 -ichannel SV2_Extract_out0  -o C:\repo\crosscup\crosscup\bin\Debug\861FB94CF0E31F25\_Temp\Script_A3145B3526C1A953\scopetmpfile._SV3_Combine_out0(WITH_HEADER)" />
+    <Vertex command="-concatenate -i C:\repo\crosscup\crosscup\bin\Debug\861FB94CF0E31F25\_Temp\Script_A3145B3526C1A953\scopetmpfile._SV3_Combine_out0 -o C:\repo\crosscup\USQLDataRoot\output\stagingplacing.csv" />
+  </Vertices>
+  <Outputs>
+    <Output path="C:\repo\crosscup\USQLDataRoot\output\stagingplacing.csv" isBinary="False" schema="Category:string,raceplacing:string,racestaging:string,bibid:string,stagebib:string,lastname:string,firstname:string,usaclicence:string,time:string,gap:string,lap1:string,lap2:string,lap3:string,lap4:string,lap5:string,lap6:string,lap7:string,lap8:string" />
+  </Outputs>
+  <graph serveForThirdParty="True" JsonErrors="True" JobType="BatchSqlIp" MaxPercentInputUnavailability="0" vertexExecutable="scopehost.exe" BroadcastCopyThroughCommandLine="ScopeEngine.dll -scopeVertex SV_CopyThrough">
+    <process id="SV1_Extract" command="ScopeEngine.dll -scopeVertex SV1_Extract" nativeOnly="true" managedMemorySize="0" nativeIOMemorySize="125829121" nativeExecutionMemorySize="285212672" DummyVertexOptimization="AllInputsEmptyImpliesOutputsEmpty|RunAtLeastOneVertex" trustedVertex="True">
+      <input id="Extract_0[ALL]" streamSize="86731">
+        <cosmosStream cosmosPath="C:\repo\crosscup\USQLDataRoot\input\2017 Caldwell Woods Schedule - Staging.csv" streamSize="86731" />
+      </input>
+      <output id="SV1_Extract_out0" />
+    </process>
+    <process id="SV2_Extract" command="ScopeEngine.dll -scopeVertex SV2_Extract" nativeOnly="true" managedMemorySize="0" nativeIOMemorySize="125829121" nativeExecutionMemorySize="268435456" DummyVertexOptimization="AllInputsEmptyImpliesOutputsEmpty|RunAtLeastOneVertex" trustedVertex="True">
+      <input id="Extract_2[ALL]" streamSize="52820">
+        <cosmosStream cosmosPath="C:\repo\crosscup\USQLDataRoot\input\2017 CCC Lap Times - Caldwell .csv" streamSize="52820" />
+      </input>
+      <output id="SV2_Extract_out0" />
+    </process>
+    <process id="SV3_Combine" command="ScopeEngine.dll -scopeVertex SV3_Combine" nativeOnly="true" managedMemorySize="0" nativeIOMemorySize="41943043" nativeExecutionMemorySize="5876219901" DummyVertexOptimization="AllInputsEmptyImpliesOutputsEmpty|RunAtLeastOneVertex" trustedVertex="True">
+      <input id="SV1_Extract_out0" />
+      <input id="SV2_Extract_out0" />
+      <output id="SV3_Combine_out0" cosmosStream="C:\repo\crosscup\USQLDataRoot\output\stagingplacing.csv" />
+    </process>
+  </graph>
+  <Scopescript>// Auto-generated header code
+
+// Auto-generated header code ended
+
+// User script
+@resultrows =
+    EXTRACT Category string,
+            Place string,
+            Bib string,
+            Last string,
+            First string,
+            Time string,
+            Gap string,
+            [Lap 1] string,
+            [Lap 2] string,
+            [Lap 3] string,
+            [Lap 4] string,
+            [Lap 5] string,
+            [Lap 6] string,
+            [Lap 7] string,
+            [Lap 8] string
+            
+    FROM "/input/2017 CCC Lap Times - Caldwell .csv"
+    USING Extractors.Csv(skipFirstNRows : 3);
+
+@stagingrows =
+    EXTRACT [STAGE #] string,
+            [BIB #] string,
+            [FIRST NAME] string,
+            [LAST NAME] string,
+            [TEAM] string,
+            [CITY] string,
+            [STATE] string,
+            [AGE] string,
+            [CAT] string,
+            [LICENSE] string,
+            [CXR Points] string,
+            [CCC Points] string,
+            [Category Entered] string,
+            [CCC Points Most Recent Date Placing] string,
+            [CCC Points Most Recent Date] string,
+            [Time Entered] string
+            
+    FROM "/input/2017 Caldwell Woods Schedule - Staging.csv"
+    USING Extractors.Csv(skipFirstNRows : 1, silent: true);
+
+@stageset =
+    SELECT [BIB #] AS stagebib,
+           [LICENSE] AS usaclicence,
+           [STAGE #] AS racestaging
+    FROM @stagingrows;         
+
+@mergestagingresults =
+    SELECT r.Category,
+           r.Place AS raceplacing,
+           s.racestaging,
+           r.Bib AS bibid,
+           s.stagebib,
+           r.Last AS lastname,
+           r.First AS firstname,
+           s.usaclicence,
+           r.Time AS time,
+           r.Gap AS gap,
+           r.[Lap 1] AS lap1,
+           r.[Lap 2] AS lap2,
+           r.[Lap 3] AS lap3,
+           r.[Lap 4] AS lap4,
+           r.[Lap 5] AS lap5,
+           r.[Lap 6] AS lap6,
+           r.[Lap 7] AS lap7,
+           r.[Lap 8] AS lap8          
+    FROM @resultrows AS r
+         INNER JOIN @stageset AS s             
+         ON r.Bib == s.stagebib;
+
+OUTPUT @mergestagingresults
+TO "/output/stagingplacing.csv"
+USING Outputters.Csv(outputHeader : true);
+// User script ended
+// Auto-generated footer code
+
+// Auto-generated footer code ended
+
+</Scopescript>
+  <Optimization succeeded="true" time="00:00:00.4933355" latency="-1" totalCost="-1" />
+  <ScopeVertexAnnotations>
+    <ScopeVertex name="SV1_Extract">
+      <Operation annotation="EXTRACT USING IExtractor" />
+    </ScopeVertex>
+    <ScopeVertex name="SV2_Extract">
+      <Operation annotation="EXTRACT USING IExtractor" />
+    </ScopeVertex>
+    <ScopeVertex name="SV3_Combine">
+      <Operation annotation="OUTPUT USING IOutputter" />
+    </ScopeVertex>
+  </ScopeVertexAnnotations>
+</ScriptAndGraph>

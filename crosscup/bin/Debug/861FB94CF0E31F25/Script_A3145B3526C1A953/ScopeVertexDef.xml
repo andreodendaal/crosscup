@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScopeVertices helperAssembly="__ScopeCodeGen__.dll" signatureVersion="1">
+  <ScopeVertex id="SV1_Extract" cppReady="true" nativeOnly="true">
+    <operator id="Extract_0" uid="1" assemblyName="Microsoft.Analytics.Interfaces.dll" className="Microsoft.Analytics.Interfaces.IExtractor">
+      <input id="Extract_0" uid="1" schema="STAGE #:string,BIB #:string,FIRST NAME:string,LAST NAME:string,TEAM:string,CITY:string,STATE:string,AGE:string,CAT:string,LICENSE:string,CXR Points:string,CCC Points:string,Category Entered:string,CCC Points Most Recent Date Placing:string,CCC Points Most Recent Date:string,Time Entered:string" inputIndex="0" numberOfInputs="ALL" />
+      <output id="Extract_0_Data0" uid="2" schema="STAGE #:string,BIB #:string,FIRST NAME:string,LAST NAME:string,TEAM:string,CITY:string,STATE:string,AGE:string,CAT:string,LICENSE:string,CXR Points:string,CCC Points:string,Category Entered:string,CCC Points Most Recent Date Placing:string,CCC Points Most Recent Date:string,Time Entered:string" />
+    </operator>
+    <operator id="Process_1" uid="3" assemblyName="__ScopeCodeGen__.dll" className="SqlFilterTransformer_5">
+      <input id="Extract_0_Data0" uid="2" schema="STAGE #:string,BIB #:string,FIRST NAME:string,LAST NAME:string,TEAM:string,CITY:string,STATE:string,AGE:string,CAT:string,LICENSE:string,CXR Points:string,CCC Points:string,Category Entered:string,CCC Points Most Recent Date Placing:string,CCC Points Most Recent Date:string,Time Entered:string" />
+      <output id="SV1_Extract_out0" uid="4" schema="stagebib:string,usaclicence:string,racestaging:string" outputIndex="0" numberOfOutputs="1" />
+    </operator>
+  </ScopeVertex>
+  <ScopeVertex id="SV2_Extract" cppReady="true" nativeOnly="true">
+    <operator id="Extract_2" uid="5" assemblyName="Microsoft.Analytics.Interfaces.dll" className="Microsoft.Analytics.Interfaces.IExtractor">
+      <input id="Extract_2" uid="5" schema="Category:string,Place:string,Bib:string,Last:string,First:string,Time:string,Gap:string,Lap 1:string,Lap 2:string,Lap 3:string,Lap 4:string,Lap 5:string,Lap 6:string,Lap 7:string,Lap 8:string" inputIndex="0" numberOfInputs="ALL" />
+      <output id="SV2_Extract_out0" uid="6" schema="Category:string,Place:string,Bib:string,Last:string,First:string,Time:string,Gap:string,Lap 1:string,Lap 2:string,Lap 3:string,Lap 4:string,Lap 5:string,Lap 6:string,Lap 7:string,Lap 8:string" outputIndex="0" numberOfOutputs="1" />
+    </operator>
+  </ScopeVertex>
+  <ScopeVertex id="SV3_Combine" cppReady="true" nativeOnly="true">
+    <operator id="HashJoin_3" uid="7" assemblyName="__ScopeCodeGen__.dll" className="HashCombine" args="-key Bib|stagebib">
+      <input id="SV2_Extract_out0" uid="6" schema="Category:string,Place:string,Bib:string,Last:string,First:string,Time:string,Gap:string,Lap 1:string,Lap 2:string,Lap 3:string,Lap 4:string,Lap 5:string,Lap 6:string,Lap 7:string,Lap 8:string" inputIndex="1" numberOfInputs="1" />
+      <input id="SV1_Extract_out0" uid="4" schema="stagebib:string,usaclicence:string,racestaging:string" inputIndex="0" numberOfInputs="1" />
+      <output id="HashJoin_3_Data0" uid="8" schema="Category:string,Place:string,Bib:string,Last:string,First:string,Time:string,Gap:string,Lap 1:string,Lap 2:string,Lap 3:string,Lap 4:string,Lap 5:string,Lap 6:string,Lap 7:string,Lap 8:string,stagebib:string,usaclicence:string,racestaging:string" />
+    </operator>
+    <operator id="Process_4" uid="9" assemblyName="__ScopeCodeGen__.dll" className="SqlFilterTransformer_6">
+      <input id="HashJoin_3_Data0" uid="8" schema="Category:string,Place:string,Bib:string,Last:string,First:string,Time:string,Gap:string,Lap 1:string,Lap 2:string,Lap 3:string,Lap 4:string,Lap 5:string,Lap 6:string,Lap 7:string,Lap 8:string,stagebib:string,usaclicence:string,racestaging:string" />
+      <output id="Process_4_Data0" uid="10" schema="Category:string,raceplacing:string,racestaging:string,bibid:string,stagebib:string,lastname:string,firstname:string,usaclicence:string,time:string,gap:string,lap1:string,lap2:string,lap3:string,lap4:string,lap5:string,lap6:string,lap7:string,lap8:string" />
+    </operator>
+    <operator id="Output_5" uid="11" assemblyName="Microsoft.Analytics.Interfaces.dll" className="Microsoft.Analytics.Interfaces.IOutputter">
+      <input id="Process_4_Data0" uid="10" schema="Category:string,raceplacing:string,racestaging:string,bibid:string,stagebib:string,lastname:string,firstname:string,usaclicence:string,time:string,gap:string,lap1:string,lap2:string,lap3:string,lap4:string,lap5:string,lap6:string,lap7:string,lap8:string" />
+      <output id="SV3_Combine_out0" uid="11" schema="Category:string,raceplacing:string,racestaging:string,bibid:string,stagebib:string,lastname:string,firstname:string,usaclicence:string,time:string,gap:string,lap1:string,lap2:string,lap3:string,lap4:string,lap5:string,lap6:string,lap7:string,lap8:string" outputIndex="0" numberOfOutputs="1" finalOutput="true" />
+    </operator>
+  </ScopeVertex>
+</ScopeVertices>

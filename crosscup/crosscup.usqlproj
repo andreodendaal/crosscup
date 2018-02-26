@@ -20,11 +20,23 @@
     <OutputPath>bin\Release\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <Script Include="Script.usql" />
+    <Script Include="010 buld environment.usql" />
+    <Script Include="testdatetime.usql" />
+    <Script Include="testinsert.usql" />
+    <Script Include="testjoin.usql" />
     <Script Include="testResults.usql" />
     <Script Include="testStaging.usql" />
-    <ScriptCode Include="Script.usql.cs">
-      <DependentUpon>Script.usql</DependentUpon>
+    <ScriptCode Include="010 buld environment.usql.cs">
+      <DependentUpon>010 buld environment.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="testdatetime.usql.cs">
+      <DependentUpon>testdatetime.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="testinsert.usql.cs">
+      <DependentUpon>testinsert.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="testjoin.usql.cs">
+      <DependentUpon>testjoin.usql</DependentUpon>
     </ScriptCode>
     <ScriptCode Include="testResults.usql.cs">
       <DependentUpon>testResults.usql</DependentUpon>

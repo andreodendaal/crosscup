@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CSSRelatedInfo>
+  <OptimizerPlanInfo signatureVersion="1">
+    <TableScan present="True" occurrence="2" />
+    <PartitionSeek present="False" occurrence="0" />
+    <PartitionRange present="False" occurrence="0" />
+    <IndexSeek present="False" occurrence="0" />
+    <IndexRange present="False" occurrence="0" />
+    <Join present="True" occurrence="1" />
+    <GroupByAgg present="False" occurrence="0" />
+    <UDProcessor present="False" occurrence="0" />
+    <UDReducer present="False" occurrence="0" />
+    <UDCombiner present="False" occurrence="0" />
+    <UDMultiProcessor present="False" occurrence="0" />
+    <Top present="False" occurrence="0" />
+    <Costs>
+      <ExtractCardinality>986.527180527383</ExtractCardinality>
+      <InputSize>139551</InputSize>
+      <OutputCardinality>478.515862068966</OutputCardinality>
+      <NumTable>2</NumTable>
+      <DataTransferVolume>0</DataTransferVolume>
+      <Latency>-1</Latency>
+      <TotalCost>-1</TotalCost>
+      <EstimatedNumEdges>0</EstimatedNumEdges>
+    </Costs>
+    <OptimizerTrees>
+<InputTree>
+    <LogOp Id="LogOp_Output" Table="C:\repo\crosscup\USQLDataRoot\output/stagingplacing.csv" XMode="All" Out="Category,raceplacing,racestaging,bibid,stagebib,lastname,firstname,usaclicence,time,gap,..." Udf="IOutputter">
+      <OpInfo><TableGroupProperties Grp="Unknown" Remotable="False" Card="478.516" AvgRowLength="144"/></OpInfo>
+      <LogOp Id="LogOp_RestrRemap" Remove="Place,Bib,Last,First,Time,Gap,Lap 1,Lap 2,Lap 3,Lap 4..." Remap="bibid#Bib,firstname#First,gap#Gap,lap1#Lap 1,lap2#Lap 2,lap3#Lap 3,lap4#Lap 4,lap5#Lap 5,lap6#Lap 6,lap7#Lap 7,lap8#Lap 8,lastname#Last,raceplacing#Place,time#Time">
+        <OpInfo><TableGroupProperties Grp="Unknown" Remotable="False" Card="478.516" AvgRowLength="144"/></OpInfo>
+        <LogOp Id="LogOp_Join">
+          <OpInfo><TableGroupProperties Grp="Unknown" Remotable="False" Card="478.516" AvgRowLength="144"/></OpInfo>
+          <LogOp Id="LogOp_Extract" Table="C:\repo\crosscup\USQLDataRoot\input/2017 CCC Lap Times - Caldwell .csv" XMode="Serial" Udf="IExtractor">
+            <OpInfo><TableGroupProperties Grp="2.0" Remotable="False" Card="388.382" AvgRowLength="120"/></OpInfo>
+          </LogOp>
+          <LogOp Id="LogOp_RestrRemap" Remove="STAGE #,BIB #,FIRST NAME,LAST NAME,TEAM,CITY,STATE,AGE,CAT,LICENSE..." Remap="racestaging#STAGE #,stagebib#BIB #,usaclicence#LICENSE">
+            <OpInfo><TableGroupProperties Grp="1.0" Remotable="False" Card="598.145" AvgRowLength="24"/></OpInfo>
+            <LogOp Id="LogOp_Extract" Table="C:\repo\crosscup\USQLDataRoot\input/2017 Caldwell Woods Schedule - Staging.csv" XMode="Serial" Udf="IExtractor">
+              <OpInfo><TableGroupProperties Grp="0.0" Remotable="False" Card="598.145" AvgRowLength="128"/></OpInfo>
+            </LogOp>
+          </LogOp>
+          <ScaOp Id="ScaOp_Comp" CompOp="x_cmpEq"><OpInfo><ScalarGroupProperties Grp="Unknown"/></OpInfo>
+            <ScaOp Id="ScaOp_Identifier" Column="Bib"><OpInfo><ScalarGroupProperties Grp="Unknown"/></OpInfo>
+            </ScaOp>
+            <ScaOp Id="ScaOp_Identifier" Column="stagebib"><OpInfo><ScalarGroupProperties Grp="Unknown"/></OpInfo>
+            </ScaOp>
+          </ScaOp>
+        </LogOp>
+      </LogOp>
+    </LogOp>
+</InputTree>
+<OutputTree>
+    <PhyOp Id="PhyOp_Output" Table="C:\repo\crosscup\USQLDataRoot\output/stagingplacing.csv" XMode="Serial" Out="Category,raceplacing,racestaging,bibid,stagebib,lastname,firstname,usaclicence,time,gap,..." Udf="IOutputter">
+      <OpInfo><TableGroupProperties Grp="8.1" Remotable="False" Card="478.516" AvgRowLength="144" PrtnSkewFactor="1" HT="11853925853642934427:228::4:4863878496381039613" HTS="14923213412833153924"/><Costs TotalCosts="5.60322" BubbleCost="5.60322" BubblePartitions="398"/></OpInfo>
+      <PhyOp Id="PhyOp_RestrRemap">
+        <OpInfo><TableGroupProperties Grp="7.1" Remotable="False" Card="478.516" AvgRowLength="144" PrtnSkewFactor="1" HT="4863878496381039613:120::3:14897492741778290797" HTS="2835369788415837101"/><Costs TotalCosts="5.0846" BubbleCost="5.0846" BubblePartitions="398"/></OpInfo>
+        <PhyOp Id="PhyOp_HashJoin" Build="Left" JoinType="x_jtInner" ParallelJoinType="Serial" LeftKey="stagebib" RightKey="Bib">
+          <OpInfo><TableGroupProperties Grp="6.2" Remotable="False" Card="478.516" AvgRowLength="144" PrtnSkewFactor="1" HT="14897492741778290797:30::2:11970550374085372914" HTS="9640622617198589923"/><Costs TotalCosts="5.0846" BubbleCost="5.0846" BubblePartitions="398"/></OpInfo>
+          <PhyOp Id="PhyOp_RestrRemap">
+            <OpInfo><TableGroupProperties Grp="1.3" Remotable="False" Card="598.145" AvgRowLength="24" PrtnSkewFactor="1" HT="3700639130930122895:120::1:4366771874442110079" HTS="4210182710306352992"/><Costs TotalCosts="5.07847" BubbleCost="5.07847" BubblePartitions="399"/></OpInfo>
+            <PhyOp Id="PhyOp_Extract" Table="C:\repo\crosscup\USQLDataRoot\input/2017 Caldwell Woods Schedule - Staging.csv" XMode="Serial" Udf="IExtractor">
+              <OpInfo><TableGroupProperties Grp="0.3" Remotable="False" Card="598.145" AvgRowLength="24" PrtnSkewFactor="1" HT="4366771874442110079:115::0:0" HTS="15236470966023287142"/><Costs TotalCosts="5.07847" BubbleCost="5.07847" BubblePartitions="399"/></OpInfo>
+            </PhyOp>
+          </PhyOp>
+          <PhyOp Id="PhyOp_Extract" Table="C:\repo\crosscup\USQLDataRoot\input/2017 CCC Lap Times - Caldwell .csv" XMode="Serial" Udf="IExtractor">
+            <OpInfo><TableGroupProperties Grp="2.3" Remotable="False" Card="388.382" AvgRowLength="120" PrtnSkewFactor="1" HT="16968978438305357579:115::0:0" HTS="7838909947384207840"/><Costs TotalCosts="5.05369" BubbleCost="5.05369" BubblePartitions="399"/></OpInfo>
+          </PhyOp>
+          <ScaOp Id="ScaOp_Comp" CompOp="x_cmpEq"><OpInfo><ScalarGroupProperties Grp="5.0"/></OpInfo>
+            <ScaOp Id="ScaOp_Identifier" Column="Bib"><OpInfo><ScalarGroupProperties Grp="3.0"/></OpInfo>
+            </ScaOp>
+            <ScaOp Id="ScaOp_Identifier" Column="stagebib"><OpInfo><ScalarGroupProperties Grp="4.0"/></OpInfo>
+            </ScaOp>
+          </ScaOp>
+        </PhyOp>
+      </PhyOp>
+    </PhyOp>
+</OutputTree>
+</OptimizerTrees>
+  </OptimizerPlanInfo>
+  <ScopeCounters>
+    <Counter Name="ResourcesDownloading" Value="0" Unit="second" Intervals="0" />
+    <Counter Name="Overall" Value="20.6874015" Unit="second" Intervals="1" />
+    <Counter Name="FrontEndRun" Value="4.0556028" Unit="second" Intervals="1" />
+    <Counter Name="AstBuilder" Value="1.227791" Unit="second" Intervals="1" />
+    <Counter Name="SyntaxVerifier" Value="0.1623573" Unit="second" Intervals="1" />
+    <Counter Name="DdlResolver" Value="0.8892548" Unit="second" Intervals="1" />
+    <Counter Name="RoslynStartup" Value="0.6291139" Unit="second" Intervals="4" />
+    <Counter Name="SMS" Value="0.0831369" Unit="second" Intervals="2" />
+    <Counter Name="ResourceReferencePass" Value="0.0051827" Unit="second" Intervals="1" />
+    <Counter Name="InputOutputPass" Value="0.1295895" Unit="second" Intervals="1" />
+    <Counter Name="SStreamMetadataWait" Value="4.74E-05" Unit="second" Intervals="2" />
+    <Counter Name="SStreamMetadataAsync" Value="0" Unit="second" Intervals="0" />
+    <Counter Name="BinderPass" Value="2.423374" Unit="second" Intervals="1" />
+    <Counter Name="ExpressionBinding" Value="2.1198122" Unit="second" Intervals="6" />
+    <Counter Name="OneColumnBinding" Value="0.0062433" Unit="second" Intervals="1" />
+    <Counter Name="QualifiedColumnBinding" Value="0.0063801" Unit="second" Intervals="1" />
+    <Counter Name="SimpleAggregateBinding" Value="0" Unit="second" Intervals="0" />
+    <Counter Name="RoslynFirstCall" Value="1.6546903" Unit="second" Intervals="1" />
+    <Counter Name="RoslynBinding" Value="0.4156514" Unit="second" Intervals="4" />
+    <Counter Name="RoslynParsing" Value="0.0082022" Unit="second" Intervals="4" />
+    <Counter Name="RoslynPreSemantic" Value="0.00939" Unit="second" Intervals="4" />
+    <Counter Name="RoslynSemantic" Value="0.1712971" Unit="second" Intervals="4" />
+    <Counter Name="RoslynPostSemantic" Value="0.2264413" Unit="second" Intervals="4" />
+    <Counter Name="SemanticAnalyzerPass" Value="0.0955559" Unit="second" Intervals="1" />
+    <Counter Name="ErrorReporterPass" Value="0.0345693" Unit="second" Intervals="1" />
+    <Counter Name="GenerateOptTreePass" Value="0.1546798" Unit="second" Intervals="1" />
+    <Counter Name="OptimizerWait" Value="1.51E-05" Unit="second" Intervals="1" />
+    <Counter Name="Optimizer" Value="0.4933355" Unit="second" Intervals="1" />
+    <Counter Name="CodeGeneration" Value="0.907422" Unit="second" Intervals="1" />
+    <Counter Name="AlgebraAndManagedCodeGen" Value="0.338592" Unit="second" Intervals="1" />
+    <Counter Name="ComputeSignature" Value="1.63E-05" Unit="second" Intervals="1" />
+    <Counter Name="PostProcessExecutionPlan" Value="0.0195728" Unit="second" Intervals="1" />
+    <Counter Name="CreateSplitersOrSpools" Value="0.0009693" Unit="second" Intervals="1" />
+    <Counter Name="ReplaceFusionPipelinesWithAdapters" Value="5.6E-06" Unit="second" Intervals="1" />
+    <Counter Name="CreateWhereSelectEnumerators" Value="0.0789923" Unit="second" Intervals="1" />
+    <Counter Name="ComputePayloadMetadata" Value="0.0004753" Unit="second" Intervals="1" />
+    <Counter Name="SStreamStageProcessing" Value="0.004284" Unit="second" Intervals="1" />
+    <Counter Name="ValidateStages" Value="0.0035217" Unit="second" Intervals="1" />
+    <Counter Name="CompileToAlgebra" Value="0.0786663" Unit="second" Intervals="1" />
+    <Counter Name="CreateCppReadyStage" Value="0.0575556" Unit="second" Intervals="1" />
+    <Counter Name="AdornAllWithMemoryModel" Value="0.0516106" Unit="second" Intervals="1" />
+    <Counter Name="SplitScopeVertices" Value="0.0375686" Unit="second" Intervals="1" />
+    <Counter Name="EstimateMemorySize" Value="0.0005753" Unit="second" Intervals="1" />
+    <Counter Name="CalculateBubbles" Value="0.0003465" Unit="second" Intervals="1" />
+    <Counter Name="ManagedCodeEmission" Value="0.00553" Unit="second" Intervals="1" />
+    <Counter Name="NativeCodeGeneration" Value="0.5607196" Unit="second" Intervals="1" />
+    <Counter Name="CodeCompiling" Value="14.2185051" Unit="second" Intervals="1" />
+    <Counter Name="EmitCompilationResult" Value="0.4133303" Unit="second" Intervals="1" />
+    <Counter Name="VcClient" Value="0" Unit="second" Intervals="0" />
+    <Counter Name="ReferenceLoading" Value="0" Unit="second" Intervals="0" />
+    <Counter Name="SStreamSerialization" Value="0" Unit="second" Intervals="0" />
+    <Counter Name="InteractiveScopeVerification" Value="0" Unit="second" Intervals="0" />
+    <Counter Name="UserCode" Value="0" Unit="second" Intervals="0" />
+    <Counter Name="Preprocessing" Value="0" Unit="second" Intervals="0" />
+    <Counter Name="ConstantFolding" Value="0" Unit="second" Intervals="0" />
+    <Counter Name="Table Files Read" Value="0" Unit="count" />
+    <Counter Name="CQO - Init" Value="0.0568203711113619" Unit="second" />
+    <Counter Name="CQO - CopyIn" Value="0.128363294091181" Unit="second" />
+    <Counter Name="CQO - Search - Init" Value="0.000168718073239604" Unit="second" />
+    <Counter Name="CQO - Search - NNF" Value="5.28193968024885E-05" Unit="second" />
+    <Counter Name="CQO - Search - PreOptimization" Value="0.000734531611648995" Unit="second" />
+    <Counter Name="CQO - Search - Simplification" Value="0.001808019352419" Unit="second" />
+    <Counter Name="CQO - Search - Join Reordering" Value="0.000279676806090874" Unit="second" />
+    <Counter Name="CQO - Search - Expression Sharing" Value="0.000226097417967487" Unit="second" />
+    <Counter Name="CQO - Search - Optimization" Value="0.0016301813833286" Unit="second" />
+    <Counter Name="CQO - Search - Subtotal" Value="0.0186049675312708" Unit="second" />
+    <Counter Name="CQO - Showplan" Value="0.00526825983647267" Unit="second" />
+    <Counter Name="CQO - Stage Generation" Value="0.175901131209082" Unit="second" />
+    <Counter Name="CQO - PostOptimization" Value="0.00619848921325318" Unit="second" />
+    <Counter Name="Working Set" Value="108724" Unit="KB" />
+    <Counter Name="Peak Working Set" Value="135876" Unit="KB" />
+    <Counter Name="Private Memory" Value="88660" Unit="KB" />
+    <Counter Name="Virtual Memory" Value="795100" Unit="KB" />
+    <Counter Name="Total CPU" Value="6.78125" Unit="second" />
+    <Counter Name="CQO - Total" Value="0.423117567997373" Unit="second" />
+  </ScopeCounters>
+</CSSRelatedInfo>

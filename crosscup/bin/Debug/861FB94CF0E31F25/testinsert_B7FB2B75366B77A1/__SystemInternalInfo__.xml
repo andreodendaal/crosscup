@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CSSRelatedInfo>
+  <OptimizerPlanInfo signatureVersion="1">
+    <TableScan present="False" occurrence="0" />
+    <PartitionSeek present="False" occurrence="0" />
+    <PartitionRange present="False" occurrence="0" />
+    <IndexSeek present="False" occurrence="0" />
+    <IndexRange present="False" occurrence="0" />
+    <Join present="False" occurrence="0" />
+    <GroupByAgg present="False" occurrence="0" />
+    <UDProcessor present="False" occurrence="0" />
+    <UDReducer present="False" occurrence="0" />
+    <UDCombiner present="False" occurrence="0" />
+    <UDMultiProcessor present="False" occurrence="0" />
+    <Top present="False" occurrence="0" />
+    <Costs>
+      <ExtractCardinality>1</ExtractCardinality>
+      <InputSize>0</InputSize>
+      <OutputCardinality>1</OutputCardinality>
+      <NumTable>0</NumTable>
+      <DataTransferVolume>26</DataTransferVolume>
+      <Latency>-1</Latency>
+      <TotalCost>-1</TotalCost>
+      <EstimatedNumEdges>2</EstimatedNumEdges>
+    </Costs>
+    <OptimizerTrees>
+<InputTree>
+    <LogOp Id="LogOp_Write" USqlTableName="RaceDataTest.dbo.RaceDetailsTest" Table="C:\repo\crosscup\USQLDataRoot\_catalog_\database\bd2e2139-7465-40a2-aced-3f4180c5b77c\schema\cf3585c8-5c03-43b6-b492-1796ece16d63\table\7f03f2c0-840f-4d3f-bbc5-77cdf7a16517\0f246a94-181c-4fbb-848c-5897bf0e11c4.ss" XMode="Parallel" PartitionType="Hash" Partitioning="RaceDate:[STRICT]" Partitions="0" SortColumn="RaceDate ASC,RaceName ASC" Out="RaceDate,RaceTime,RaceName">
+      <OpInfo><TableGroupProperties Grp="12.0" Remotable="False" Card="1" CardFromHint="True" AvgRowLength="24"/></OpInfo>
+      <LogOp Id="LogOp_Project" Remove="c0,c1,c2">
+        <OpInfo><TableGroupProperties Grp="11.0" Remotable="False" Card="1" CardFromHint="True" AvgRowLength="24"/></OpInfo>
+        <LogOp Id="LogOp_ConstTableGet" Columns="c0,c1,c2">
+          <OpInfo><TableGroupProperties Grp="3.0" Remotable="False" Card="1" CardFromHint="True" AvgRowLength="24"/></OpInfo>
+          <ScaOp Id="ScaOp_Const" TI="Date" Value="System.DateTime.FromBinary(636500160000000000L /* 2017-12-28T00:00:00.0000000 */)" Parameter="0"><OpInfo><ScalarGroupProperties Grp="0.0"/></OpInfo>
+          </ScaOp>
+          <ScaOp Id="ScaOp_Const" TI="Date" Value="System.DateTime.FromBinary(636500502000000000L /* 2017-12-28T09:30:00.0000000 */)" Parameter="0"><OpInfo><ScalarGroupProperties Grp="1.0"/></OpInfo>
+          </ScaOp>
+          <ScaOp Id="ScaOp_Const" TI="String,Nullable,Var" Value="&quot;2017 Caldwell woods&quot;" Parameter="0"><OpInfo><ScalarGroupProperties Grp="2.0"/></OpInfo>
+          </ScaOp>
+        </LogOp>
+        <AncOp Id="AncOp_PrjList"><OpInfo><ScalarGroupProperties Grp="10.0"/></OpInfo>
+          <AncOp Id="AncOp_PrjEl" Column="RaceDate"><OpInfo><ScalarGroupProperties Grp="5.0"/></OpInfo>
+            <ScaOp Id="ScaOp_Identifier" Column="c0"><OpInfo><ScalarGroupProperties Grp="4.0"/></OpInfo>
+            </ScaOp>
+          </AncOp>
+          <AncOp Id="AncOp_PrjEl" Column="RaceTime"><OpInfo><ScalarGroupProperties Grp="7.0"/></OpInfo>
+            <ScaOp Id="ScaOp_Identifier" Column="c1"><OpInfo><ScalarGroupProperties Grp="6.0"/></OpInfo>
+            </ScaOp>
+          </AncOp>
+          <AncOp Id="AncOp_PrjEl" Column="RaceName"><OpInfo><ScalarGroupProperties Grp="9.0"/></OpInfo>
+            <ScaOp Id="ScaOp_Identifier" Column="c2"><OpInfo><ScalarGroupProperties Grp="8.0"/></OpInfo>
+            </ScaOp>
+          </AncOp>
+        </AncOp>
+      </LogOp>
+    </LogOp>
+</InputTree>
+<OutputTree>
+    <PhyOp Id="PhyOp_Write" USqlTableName="RaceDataTest.dbo.RaceDetailsTest" Table="C:\repo\crosscup\USQLDataRoot\_catalog_\database\bd2e2139-7465-40a2-aced-3f4180c5b77c\schema\cf3585c8-5c03-43b6-b492-1796ece16d63\table\7f03f2c0-840f-4d3f-bbc5-77cdf7a16517\0f246a94-181c-4fbb-848c-5897bf0e11c4.ss" XMode="Parallel" PartitionType="Hash" Partitioning="RaceDate:[STRICT]" Partitions="2" SortColumn="RaceDate ASC,RaceName ASC" Column="RaceDate,RaceTime,RaceName">
+      <OpInfo><TableGroupProperties Grp="12.1" Remotable="False" Card="1" CardFromHint="True" AvgRowLength="24" PrtnSkewFactor="2" HT="12720228412411462671:218::4:16744138639929023639" HTS="2219074756020638215"/><Costs TotalCosts="10.0889" BubbleCost="10.0889" BubblePartitions="399"/></OpInfo>
+      <PhyOp Id="PhyOp_Exchange" ExchangeType="InitialSplit" XMode="Parallel" PartitionType="Hash" Partitioning="RaceDate" Partitions="2" MergeType="Nil" SortColumn="RaceDate ASC,RaceName ASC">
+        <OpInfo><TableGroupProperties Grp="11.3" Remotable="False" Card="1" CardFromHint="True" AvgRowLength="24" PrtnSkewFactor="2" HT="16744138639929023639:212::3:17425009598868080368" HTS="16381256387440216940"/><Costs TotalCosts="10.0788" BubbleCost="10.0788" BubblePartitions="399"/></OpInfo>
+        <PhyOp Id="PhyOp_ComputeScalar">
+          <OpInfo><TableGroupProperties Grp="11.4" Remotable="False" Card="1" CardFromHint="True" AvgRowLength="24" PrtnSkewFactor="1" HT="16744138639929023639:212::3:17425009598868080368" HTS="16381256387440216940"/><Costs TotalCosts="5.00016" BubbleCost="5.00016" BubblePartitions="399"/></OpInfo>
+          <PhyOp Id="PhyOp_NOP">
+            <OpInfo><TableGroupProperties Grp="3.1" Remotable="False" Card="1" CardFromHint="True" AvgRowLength="24" PrtnSkewFactor="1" HT="375215566722372859:0::1:16787901530367522531" HTS="1401601916452840065"/><Costs TotalCosts="5.00016" BubbleCost="5.00016" BubblePartitions="399"/></OpInfo>
+            <PhyOp Id="PhyOp_ComputeScalar">
+              <OpInfo><TableGroupProperties Grp="26.1" Remotable="False" Card="1" CardFromHint="True" AvgRowLength="24" PrtnSkewFactor="1" HT="2205877759367168400:212::4:15493831881537806172" HTS="15569901454859198835"/><Costs TotalCosts="5.00016" BubbleCost="5.00016" BubblePartitions="399"/></OpInfo>
+              <PhyOp Id="PhyOp_ComputeSequence" LgOption="Normal">
+                <OpInfo><TableGroupProperties Grp="17.2" Remotable="False" Card="1" CardFromHint="True" AvgRowLength="8" PrtnSkewFactor="1" HT="7849492385043090590:24:0:3:17998143487899207651" HTS="10120553745350299565"/><Costs TotalCosts="5.00016" BubbleCost="5.00016" BubblePartitions="399"/></OpInfo>
+                <PhyOp Id="PhyOp_ConstTableScan" Columns="">
+                  <OpInfo><TableGroupProperties Grp="13.1" Remotable="False" Card="1" CardFromHint="True" AvgRowLength="1" PrtnSkewFactor="1" HT="16638800293102961576:0::0:0" HTS="16638800293102961576"/><Costs TotalCosts="5.00016" BubbleCost="5.00016" BubblePartitions="399"/></OpInfo>
+                </PhyOp>
+                <AncOp Id="AncOp_PrjList"><OpInfo><ScalarGroupProperties Grp="16.0"/></OpInfo>
+                  <AncOp Id="AncOp_PrjEl" Column="RowNumber0__"><OpInfo><ScalarGroupProperties Grp="15.0"/></OpInfo>
+                    <ScaOp Id="ScaOp_SeqFunc" Name="row_number"><OpInfo><ScalarGroupProperties Grp="14.0"/></OpInfo>
+                    </ScaOp>
+                  </AncOp>
+                </AncOp>
+              </PhyOp>
+              <AncOp Id="AncOp_PrjList"><OpInfo><ScalarGroupProperties Grp="25.0"/></OpInfo>
+                <AncOp Id="AncOp_PrjEl" Column="c0"><OpInfo><ScalarGroupProperties Grp="20.0"/></OpInfo>
+                  <ScaOp Id="ScaOp_Arithmetic" ArithmeticType="x_aopSimpleSwitch"><OpInfo><ScalarGroupProperties Grp="19.0"/></OpInfo>
+                    <ScaOp Id="ScaOp_Identifier" Column="RowNumber0__"><OpInfo><ScalarGroupProperties Grp="18.0"/></OpInfo>
+                    </ScaOp>
+                    <ScaOp Id="ScaOp_Const" TI="Date" Value="System.DateTime.FromBinary(636500160000000000L /* 2017-12-28T00:00:00.0000000 */)" Parameter="0"><OpInfo><ScalarGroupProperties Grp="0.0"/></OpInfo>
+                    </ScaOp>
+                  </ScaOp>
+                </AncOp>
+                <AncOp Id="AncOp_PrjEl" Column="c1"><OpInfo><ScalarGroupProperties Grp="22.0"/></OpInfo>
+                  <ScaOp Id="ScaOp_Arithmetic" ArithmeticType="x_aopSimpleSwitch"><OpInfo><ScalarGroupProperties Grp="21.0"/></OpInfo>
+                    <ScaOp Id="ScaOp_Identifier" Column="RowNumber0__"><OpInfo><ScalarGroupProperties Grp="18.0"/></OpInfo>
+                    </ScaOp>
+                    <ScaOp Id="ScaOp_Const" TI="Date" Value="System.DateTime.FromBinary(636500502000000000L /* 2017-12-28T09:30:00.0000000 */)" Parameter="0"><OpInfo><ScalarGroupProperties Grp="1.0"/></OpInfo>
+                    </ScaOp>
+                  </ScaOp>
+                </AncOp>
+                <AncOp Id="AncOp_PrjEl" Column="c2"><OpInfo><ScalarGroupProperties Grp="24.0"/></OpInfo>
+                  <ScaOp Id="ScaOp_Arithmetic" ArithmeticType="x_aopSimpleSwitch"><OpInfo><ScalarGroupProperties Grp="23.0"/></OpInfo>
+                    <ScaOp Id="ScaOp_Identifier" Column="RowNumber0__"><OpInfo><ScalarGroupProperties Grp="18.0"/></OpInfo>
+                    </ScaOp>
+                    <ScaOp Id="ScaOp_Const" TI="String,Nullable,Var" Value="&quot;2017 Caldwell woods&quot;" Parameter="0"><OpInfo><ScalarGroupProperties Grp="2.0"/></OpInfo>
+                    </ScaOp>
+                  </ScaOp>
+                </AncOp>
+              </AncOp>
+            </PhyOp>
+          </PhyOp>
+          <AncOp Id="AncOp_PrjList"><OpInfo><ScalarGroupProperties Grp="10.0"/></OpInfo>
+            <AncOp Id="AncOp_PrjEl" Column="RaceDate"><OpInfo><ScalarGroupProperties Grp="5.0"/></OpInfo>
+              <ScaOp Id="ScaOp_Identifier" Column="c0"><OpInfo><ScalarGroupProperties Grp="4.0"/></OpInfo>
+              </ScaOp>
+            </AncOp>
+            <AncOp Id="AncOp_PrjEl" Column="RaceTime"><OpInfo><ScalarGroupProperties Grp="7.0"/></OpInfo>
+              <ScaOp Id="ScaOp_Identifier" Column="c1"><OpInfo><ScalarGroupProperties Grp="6.0"/></OpInfo>
+              </ScaOp>
+            </AncOp>
+            <AncOp Id="AncOp_PrjEl" Column="RaceName"><OpInfo><ScalarGroupProperties Grp="9.0"/></OpInfo>
+              <ScaOp Id="ScaOp_Identifier" Column="c2"><OpInfo><ScalarGroupProperties Grp="8.0"/></OpInfo>
+              </ScaOp>
+            </AncOp>
+          </AncOp>
+        </PhyOp>
+      </PhyOp>
+    </PhyOp>
+</OutputTree>
+</OptimizerTrees>
+  </OptimizerPlanInfo>
+  <ScopeCounters>
+    <Counter Name="ResourcesDownloading" Value="0" Unit="second" Intervals="0" />
+    <Counter Name="Overall" Value="12.305108" Unit="second" Intervals="1" />
+    <Counter Name="FrontEndRun" Value="2.8345719" Unit="second" Intervals="1" />
+    <Counter Name="AstBuilder" Value="0.9689995" Unit="second" Intervals="1" />
+    <Counter Name="SyntaxVerifier" Value="0.0804724" Unit="second" Intervals="1" />
+    <Counter Name="DdlResolver" Value="0.726829" Unit="second" Intervals="1" />
+    <Counter Name="RoslynStartup" Value="0.4999348" Unit="second" Intervals="4" />
+    <Counter Name="SMS" Value="0.090163" Unit="second" Intervals="2" />
+    <Counter Name="ResourceReferencePass" Value="0.0023301" Unit="second" Intervals="1" />
+    <Counter Name="InputOutputPass" Value="0.0289864" Unit="second" Intervals="1" />
+    <Counter Name="SStreamMetadataWait" Value="5.2E-05" Unit="second" Intervals="2" />
+    <Counter Name="SStreamMetadataAsync" Value="0" Unit="second" Intervals="0" />
+    <Counter Name="BinderPass" Value="1.6957617" Unit="second" Intervals="1" />
+    <Counter Name="ExpressionBinding" Value="1.6048919" Unit="second" Intervals="2" />
+    <Counter Name="OneColumnBinding" Value="0.0058747" Unit="second" Intervals="1" />
+    <Counter Name="QualifiedColumnBinding" Value="0" Unit="second" Intervals="0" />
+    <Counter Name="SimpleAggregateBinding" Value="0" Unit="second" Intervals="0" />
+    <Counter Name="RoslynFirstCall" Value="1.5716514" Unit="second" Intervals="1" />
+    <Counter Name="SemanticAnalyzerPass" Value="0.0166407" Unit="second" Intervals="1" />
+    <Counter Name="ErrorReporterPass" Value="0.0197426" Unit="second" Intervals="1" />
+    <Counter Name="GenerateOptTreePass" Value="0.0759873" Unit="second" Intervals="1" />
+    <Counter Name="OptimizerWait" Value="1.21E-05" Unit="second" Intervals="1" />
+    <Counter Name="Optimizer" Value="0.7914345" Unit="second" Intervals="1" />
+    <Counter Name="CodeGeneration" Value="0.8898365" Unit="second" Intervals="1" />
+    <Counter Name="AlgebraAndManagedCodeGen" Value="0.2759505" Unit="second" Intervals="1" />
+    <Counter Name="ComputeSignature" Value="1.48E-05" Unit="second" Intervals="1" />
+    <Counter Name="PostProcessExecutionPlan" Value="0.0066582" Unit="second" Intervals="1" />
+    <Counter Name="CreateSplitersOrSpools" Value="0.0027591" Unit="second" Intervals="1" />
+    <Counter Name="ReplaceFusionPipelinesWithAdapters" Value="5.6E-06" Unit="second" Intervals="1" />
+    <Counter Name="CreateWhereSelectEnumerators" Value="0.0870262" Unit="second" Intervals="1" />
+    <Counter Name="ComputePayloadMetadata" Value="0.0010503" Unit="second" Intervals="1" />
+    <Counter Name="SStreamStageProcessing" Value="0.0035392" Unit="second" Intervals="1" />
+    <Counter Name="ValidateStages" Value="0.0033223" Unit="second" Intervals="1" />
+    <Counter Name="CompileToAlgebra" Value="0.0731936" Unit="second" Intervals="1" />
+    <Counter Name="CreateCppReadyStage" Value="0.0136418" Unit="second" Intervals="1" />
+    <Counter Name="AdornAllWithMemoryModel" Value="0.0284487" Unit="second" Intervals="1" />
+    <Counter Name="SplitScopeVertices" Value="0.0514609" Unit="second" Intervals="1" />
+    <Counter Name="EstimateMemorySize" Value="0.0005943" Unit="second" Intervals="1" />
+    <Counter Name="CalculateBubbles" Value="0.0003286" Unit="second" Intervals="1" />
+    <Counter Name="ManagedCodeEmission" Value="0.0054308" Unit="second" Intervals="1" />
+    <Counter Name="NativeCodeGeneration" Value="0.6060288" Unit="second" Intervals="1" />
+    <Counter Name="CodeCompiling" Value="7.1110765" Unit="second" Intervals="1" />
+    <Counter Name="EmitCompilationResult" Value="0.4354769" Unit="second" Intervals="1" />
+    <Counter Name="RoslynBinding" Value="0" Unit="second" Intervals="0" />
+    <Counter Name="RoslynParsing" Value="0" Unit="second" Intervals="0" />
+    <Counter Name="RoslynPreSemantic" Value="0" Unit="second" Intervals="0" />
+    <Counter Name="RoslynSemantic" Value="0" Unit="second" Intervals="0" />
+    <Counter Name="RoslynPostSemantic" Value="0" Unit="second" Intervals="0" />
+    <Counter Name="VcClient" Value="0" Unit="second" Intervals="0" />
+    <Counter Name="ReferenceLoading" Value="0" Unit="second" Intervals="0" />
+    <Counter Name="SStreamSerialization" Value="0" Unit="second" Intervals="0" />
+    <Counter Name="InteractiveScopeVerification" Value="0" Unit="second" Intervals="0" />
+    <Counter Name="UserCode" Value="0" Unit="second" Intervals="0" />
+    <Counter Name="Preprocessing" Value="0" Unit="second" Intervals="0" />
+    <Counter Name="ConstantFolding" Value="0" Unit="second" Intervals="0" />
+    <Counter Name="Table Files Read" Value="0" Unit="count" />
+    <Counter Name="CQO - Init" Value="0.0150618879932391" Unit="second" />
+    <Counter Name="CQO - CopyIn" Value="0.1053541768553" Unit="second" />
+    <Counter Name="CQO - Search - Init" Value="0.000125398567948354" Unit="second" />
+    <Counter Name="CQO - Search - NNF" Value="9.68988934146372E-05" Unit="second" />
+    <Counter Name="CQO - Search - PreOptimization" Value="0.000724271728816857" Unit="second" />
+    <Counter Name="CQO - Search - Simplification" Value="0.00285072744469258" Unit="second" />
+    <Counter Name="CQO - Search - Join Reordering" Value="0.000168718073239604" Unit="second" />
+    <Counter Name="CQO - Search - Expression Sharing" Value="0.000334016185535161" Unit="second" />
+    <Counter Name="CQO - Search - Optimization" Value="0.183770461341331" Unit="second" />
+    <Counter Name="CQO - Search - Subtotal" Value="0.210675674083802" Unit="second" />
+    <Counter Name="CQO - Showplan" Value="0.00438476992592745" Unit="second" />
+    <Counter Name="CQO - Stage Generation" Value="0.405812945616161" Unit="second" />
+    <Counter Name="CQO - PostOptimization" Value="0.00624636866646983" Unit="second" />
+    <Counter Name="Working Set" Value="99544" Unit="KB" />
+    <Counter Name="Peak Working Set" Value="135876" Unit="KB" />
+    <Counter Name="Private Memory" Value="89668" Unit="KB" />
+    <Counter Name="Virtual Memory" Value="801060" Unit="KB" />
+    <Counter Name="Total CPU" Value="47.171875" Unit="second" />
+    <Counter Name="CQO - Total" Value="0.759618165160554" Unit="second" />
+  </ScopeCounters>
+</CSSRelatedInfo>

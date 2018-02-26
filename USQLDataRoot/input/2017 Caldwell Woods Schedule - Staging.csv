@@ -1,0 +1,768 @@
+STAGE #,BIB #,FIRST NAME,LAST NAME,TEAM,CITY,STATE,AGE,CAT,LICENSE,CXR Points,CCC Points,Category Entered,CCC Points Most Recent Date Placing,CCC Points Most Recent Date,Time Entered
+1,224,Timothy,Strelecki,,Naperville,IL,42,2,220881,216.64,0,Men Masters 35+,0,01/00/1900,8/31/2017 21:17:45
+2,218,Mike,Scalise,F3 Cycling p/b 7 Mile Cycles,Itasca,IL,50,1,300107,226.32,0,Men Masters 35+,0,01/00/1900,8/28/2017 14:02:18
+3,164,Peter,Chrapkowski,Comrade Cycles Racing,Chicago,IL,44,2,253503,241.44,0,Men Masters 35+,0,01/00/1900,8/30/2017 9:33:29
+4,152,Nick,Amlot,,Chicago,IL,44,3,317852,243.11,0,Men Masters 35+,0,01/00/1900,9/5/2017 10:12:14
+5,222,David,Schuda,F3 Cycling p/b 7 Mile Cycles,Wheaton,IL,44,4,41161,254.86,0,Men Masters 35+,0,01/00/1900,8/28/2017 14:43:15
+6,196,Ben,Lund,Hollander Benelux Racing,Delafield,WI,44,2,104579,259.82,0,Men Masters 35+,0,01/00/1900,9/6/2017 16:15:51
+7,167,Benjamin,Demong,ABD Cycling Club,Glen Ellyn,IL,40,3,230392,261.18,0,Men Masters 35+,0,01/00/1900,8/30/2017 0:46:33
+8,170,Tom,Driver,Burnham Racing,Chicago,IL,41,3,142034,265.49,0,Men Masters 35+,0,01/00/1900,9/4/2017 19:28:33
+9,171,Eric,Drummer,Velosmith Bicycle Studio,Skokie,IL,42,2,10047,268.68,0,Men Masters 35+,0,01/00/1900,9/5/2017 16:01:18
+10,151,Walid,Abu Ghazaleh,The Pony Shop,Chicago,IL,46,1,111453,272.36,0,Men Masters 35+,0,01/00/1900,8/28/2017 18:07:23
+11,207,Stephen,Parkes,Comrade Cycles Racing,Chicago,IL,42,2,392473,272.51,0,Men Masters 35+,0,01/00/1900,9/7/2017 20:45:20
+12,202,Zeno,Molteni,Plus One Cycling,Arlington Heights,IL,37,3,458003,273.23,0,Men Masters 35+,0,01/00/1900,9/5/2017 15:37:49
+13,230,Todd,Wendell,Burnham Racing,Chicago,IL,43,3,82335,289.77,0,Men Masters 35+,0,01/00/1900,8/30/2017 10:36:17
+14,190,Louis,Kuhn,The Pony Shop,Evanston,IL,44,1,19966,292.76,0,Men Masters 35+,0,01/00/1900,8/28/2017 10:34:34
+15,166,Troy,Crady,Mox Multisport,Chicago,IL,47,3,274912,308.9,0,Men Masters 35+,0,01/00/1900,8/28/2017 15:28:22
+16,226,Jonathan,Vota,INTENT,Plainfield,IL,37,3,443511,322.17,0,Men Masters 35+,0,01/00/1900,9/6/2017 13:57:41
+17,200,Bradley,Menna,The Weather Channel,Chicago,IL,46,2,69518,322.84,0,Men Masters 35+,0,01/00/1900,9/6/2017 18:03:59
+18,185,Michael,Kerr,The Pony Shop,Evanston,IL,55,3,371670,324.77,0,Men Masters 35+,0,01/00/1900,8/29/2017 12:15:04
+19,231,John,Whipple,Scarlet Fire,Chicago,IL,43,2,282898,327.02,0,Men Masters 35+,0,01/00/1900,9/8/2017 0:29:08
+20,216,Marc,Royster,Union Cycling Team,Chicago,IL,36,3,456497,327.22,0,Men Masters 35+,0,01/00/1900,9/7/2017 21:50:22
+21,201,Marc,Moeller,Team Bicycle Heaven,Elgin,IL,48,3,193376,333.3,0,Men Masters 35+,0,01/00/1900,9/5/2017 15:10:34
+22,219,Christopher,Schmidt,Lake Geneva Youth Camp Cycling,Lake Geneva,WI,44,3,293518,338.83,0,Men Masters 35+,0,01/00/1900,9/5/2017 11:55:20
+23,188,Jason,Kloptowsky,,Tinley Park,IL,41,5,503937,360.05,0,Men Masters 35+,0,01/00/1900,9/7/2017 15:50:32
+24,221,David,Schrauth,The Pony Shop,Winnetka,IL,54,1,298292,370.19,0,Men Masters 35+,0,01/00/1900,9/7/2017 12:01:42
+25,193,Richard,Lenski,PSIMET Racing,Arlington Heights,IL,43,3,275816,371.76,0,Men Masters 35+,0,01/00/1900,9/5/2017 21:46:28
+26,203,Gregory,Nash,INTENT,Barrington,IL,42,3,232258,371.92,0,Men Masters 35+,0,01/00/1900,9/5/2017 14:32:04
+27,214,Jess,Riefe,,Chicago,IL,40,3,379956,380.59,0,Men Masters 35+,0,01/00/1900,9/5/2017 15:03:38
+28,187,Nate,Kersten,Bonkers Cycling,Chicago,IL,37,3,197787,384.77,0,Men Masters 35+,0,01/00/1900,8/29/2017 16:12:38
+29,220,Blake,Schraft,Spin Doctor Cyclewerks CX Team,Aurora,IL,46,4,392566,386.77,0,Men Masters 35+,0,01/00/1900,8/30/2017 0:20:58
+30,179,David,Harriff,,Skokie,IL,40,4,484841,387.76,0,Men Masters 35+,0,01/00/1900,8/29/2017 22:39:06
+31,157,Steve,Biedron,Mox Multisport,Chicago,IL,45,3,301297,391.77,0,Men Masters 35+,0,01/00/1900,8/28/2017 15:28:05
+32,229,Thomas,Wallace,Union Cycling Team,Chicago,IL,47,3,200467,394.09,0,Men Masters 35+,0,01/00/1900,9/4/2017 21:25:43
+33,161,Craig,Bryant,Union Cycling Team,Chicago,IL,42,4,418260,394.77,0,Men Masters 35+,0,01/00/1900,9/4/2017 10:27:56
+34,156,Christopher,Berthold,,Chicago,IL,45,3,329174,396.06,0,Men Masters 35+,0,01/00/1900,8/29/2017 16:48:44
+35,162,Anthony,Bustamante,Velosmith Bicycle Studio,Wilmette,IL,46,3,252184,398.79,0,Men Masters 35+,0,01/00/1900,8/29/2017 17:49:14
+36,158,John,Boggs,PSIMET Racing,Libertyville,IL,41,2,240322,400.23,0,Men Masters 35+,0,01/00/1900,9/4/2017 21:32:06
+37,178,Matthew,Grosspietsch,xXx Racing,Chicago,IL,46,4,273077,401.41,0,Men Masters 35+,0,01/00/1900,9/4/2017 20:12:15
+38,228,Andrew,Waggoner,,Evanston,IL,36,4,375977,405.34,0,Men Masters 35+,0,01/00/1900,8/28/2017 10:08:10
+39,204,Patrick,Newman,,WESTERN SPRINGS,IL,46,3,192215,405.99,0,Men Masters 35+,0,01/00/1900,9/5/2017 19:46:24
+40,177,Robert,Gordon,,Glencoe,IL,37,4,516357,411.56,0,Men Masters 35+,0,01/00/1900,8/31/2017 21:57:56
+41,195,Philippe,Lunardelli,,Chicago,IL,46,3,331280,413.96,0,Men Masters 35+,0,01/00/1900,9/5/2017 23:33:26
+42,182,Matt,Holt,Vision Quest Coaching,Chicago,IL,36,4,426026,420.66,0,Men Masters 35+,0,01/00/1900,9/1/2017 13:59:41
+43,192,Ty,Kurth,EMC2 / Elmhurst Masters,McHenry,IL,40,4,235003,422.32,0,Men Masters 35+,0,01/00/1900,8/28/2017 12:26:38
+44,175,Seth,Gable,Tuxedo Thunder Cycling,Evanston,IL,39,3,416683,426.58,0,Men Masters 35+,0,01/00/1900,9/1/2017 12:34:42
+45,210,Brad,Rainko,,Chicago,IL,41,4,308498,434.64,0,Men Masters 35+,0,01/00/1900,8/29/2017 10:51:00
+46,199,Stephen,McComb,,Evanston,IL,43,5,520894,443.24,0,Men Masters 35+,0,01/00/1900,9/6/2017 12:34:11
+47,160,Alfred,Bryant,Union Cycling Team,Evanston,IL,46,3,367284,445.02,0,Men Masters 35+,0,01/00/1900,8/28/2017 10:07:49
+48,198,James,Maddox,Spin Doctor Cyclewerks CX Team,Bartlett,IL,42,4,413121,447.07,0,Men Masters 35+,0,01/00/1900,8/31/2017 9:17:39
+49,227,Daniel,Wachter,Half Acre Cycling,Chicago,IL,40,4,379091,449.29,0,Men Masters 35+,0,01/00/1900,8/30/2017 8:13:35
+50,223,Sean,Seamon,,Wheaton,IL,35,4,411873,457.19,0,Men Masters 35+,0,01/00/1900,9/4/2017 20:34:31
+51,169,Erik,Didriksen,xXx Racing,Chicago,IL,37,3,259186,460.82,0,Men Masters 35+,0,01/00/1900,9/7/2017 22:27:16
+52,213,Achim,Rees,xXx Racing,Chicago,IL,39,5,489293,460.88,0,Men Masters 35+,0,01/00/1900,8/30/2017 21:55:18
+53,191,Daniel,Kurowski,EMC2 / Elmhurst Masters,Lombard,IL,38,4,370943,465.35,0,Men Masters 35+,0,01/00/1900,8/28/2017 11:31:36
+54,206,Marc,O'Shea,,Plainfield,IL,44,3,154431,468.41,0,Men Masters 35+,0,01/00/1900,9/5/2017 13:24:49
+55,209,Nick,Praznowski,The Pony Shop,Chicago,IL,45,4,416702,471.16,0,Men Masters 35+,0,01/00/1900,8/28/2017 17:44:02
+56,173,Gene,Flanagan,,Batavia,IL,43,4,391101,476.49,0,Men Masters 35+,0,01/00/1900,9/6/2017 19:11:31
+57,232,Bartosz,Zurawski,,Chicago,IL,44,4,518289,481.75,0,Men Masters 35+,0,01/00/1900,9/4/2017 20:35:02
+58,189,Gabe,Kroll,LifeLine Racing Team,Skokie,IL,38,4,400032,489.86,0,Men Masters 35+,0,01/00/1900,9/1/2017 15:06:57
+59,153,Francesco,Barba,Lifeline racing,CHICAGO,IL,42,4,417917,495.68,0,Men Masters 35+,0,01/00/1900,9/7/2017 5:31:25
+60,208,Tom,Perotti,xXx Racing,Naperville,IL,35,4,418401,511.57,0,Men Masters 35+,0,01/00/1900,9/7/2017 17:23:52
+61,180,Michael,Hartmann,,Naperville,IL,43,5,541010,513.07,0,Men Masters 35+,0,01/00/1900,9/5/2017 17:47:46
+62,154,Barry,Batson Jr.,Mox Multisport,Chicago,IL,52,4,389397,518.3,0,Men Masters 35+,0,01/00/1900,8/29/2017 10:51:12
+63,212,Kevin,Reed,Union Cycling Team,Skokie,IL,42,5,470824,520.95,0,Men Masters 35+,0,01/00/1900,9/5/2017 22:11:41
+64,215,Andrew,Rizzo,The Weather Channel,Lisle,IL,44,1,41693,536.97,0,Men Masters 35+,0,01/00/1900,9/6/2017 22:19:16
+65,205,Kevin,Oneill,xXx Racing,Chicago,IL,43,4,213060,538.94,0,Men Masters 35+,0,01/00/1900,9/8/2017 0:29:23
+66,155,Kurt,Bentsen,PSIMET Racing,Crystal Lake,IL,45,3,375978,540.01,0,Men Masters 35+,0,01/00/1900,8/28/2017 18:31:01
+67,186,Kyle,Kershasky,Spidermonkey Cycling,Chicago,IL,44,4,387970,540.72,0,Men Masters 35+,0,01/00/1900,9/4/2017 22:35:12
+68,165,Bryan,Connelly,UPB Cycling Club,La Grange,IL,44,4,361272,559.52,0,Men Masters 35+,0,01/00/1900,8/29/2017 15:42:34
+69,211,Michael,Rasmussen,Team Higher Gear,MUNDELEIN,IL,38,4,391948,567.98,0,Men Masters 35+,0,01/00/1900,9/6/2017 10:11:19
+70,168,Brad,Dexter,Spin Doctor Cyclewerks CX Team,Hanover Park,IL,38,5,488245,568.56,0,Men Masters 35+,0,01/00/1900,9/2/2017 21:45:28
+71,181,Duane,Higgs,F3 Cycling p/b 7 Mile Cycles,Itasca,IL,54,4,16137,608.54,0,Men Masters 35+,0,01/00/1900,9/5/2017 14:20:18
+72,183,William,Jackson,,Chicago,IL,48,3,253945,608.81,0,Men Masters 35+,0,01/00/1900,8/30/2017 16:09:46
+73,194,Mike,Long,,Naperville,IL,42,5,515555,671.7,0,Men Masters 35+,0,01/00/1900,9/3/2017 18:41:13
+74,174,Robin,Forrest,Velosmith Bicycle Studio,Park Ridge,IL,44,4,391225,9999,0,Men Masters 35+,0,01/00/1900,8/28/2017 13:05:27
+75,184,Michael,Keach,,Chicago,IL,40,5,325880,9999,0,Men Masters 35+,0,01/00/1900,8/29/2017 15:40:56
+76,163,Ian,Chown,Union Cycling Team,Evanston,IL,38,5,534206,9999,0,Men Masters 35+,0,01/00/1900,8/31/2017 17:11:18
+77,172,Ryan,Durrie,PSIMET Racing,Chicago,IL,39,5,481947,9999,0,Men Masters 35+,0,01/00/1900,9/2/2017 19:50:56
+78,225,Jason,Trock,Mox Multisport,Chicago,IL,45,5,330028,9999,0,Men Masters 35+,0,01/00/1900,9/2/2017 23:57:19
+79,176,Larry,Gelwix,Velosmith Bicycle Studio,Wilmette,IL,40,5,539372,9999,0,Men Masters 35+,0,01/00/1900,9/5/2017 12:04:50
+80,217,Robert,Saunders,UPB Cycling,HINSDALE,IL,41,5,139978,9999,0,Men Masters 35+,0,01/00/1900,9/5/2017 18:49:56
+81,197,Isaac,Lund,Velosmith Bicycle Studio,Evanston,IL,41,4,275981,9999,0,Men Masters 35+,0,01/00/1900,9/6/2017 11:55:07
+82,159,Carson,Boneck,Velosmith Bicycle Studio,Wilmette,IL,43,5,541387,9999,0,Men Masters 35+,0,01/00/1900,9/7/2017 13:10:20
+1,528,Jw,Miller,,Madison,WI,53,2,233978,234.26,0,Men Masters 45+,0,01/00/1900,9/3/2017 9:00:12
+2,513,Roger,Knight,Total Travel,GLENVIEW,IL,47,5,ONE DAY,250,0,Men Masters 45+,0,01/00/1900,9/7/2017 12:11:49
+3,558,Danny,Warner,F3 Cycling p/b 7 Mile Cycles,Trout Valley,IL,57,2,131585,251.14,0,Men Masters 45+,0,01/00/1900,8/28/2017 18:15:48
+4,509,Jarrod,Kerkhoff,MSN Pro Coaching,Rockford,IL,48,2,296158,251.57,0,Men Masters 45+,0,01/00/1900,8/28/2017 13:05:08
+5,480,Martin,Bell,PSIMET Racing,Highland Park,IL,54,3,287168,265.4,0,Men Masters 45+,0,01/00/1900,9/4/2017 12:16:18
+6,515,Ken,Krebs,ABD Cycling Club,Saint Charles,IL,51,1,193353,272.63,0,Men Masters 45+,0,01/00/1900,8/28/2017 12:14:38
+7,489,Dominic,Casey,The Pony Shop,Chicago,IL,52,3,325306,280.58,0,Men Masters 45+,0,01/00/1900,8/28/2017 13:00:40
+8,487,Gregory,Campbell,The Pony Shop,Chicago,IL,50,3,485266,281.6,0,Men Masters 45+,0,01/00/1900,9/3/2017 21:36:13
+9,483,Tim,Boundy,F3 Cycling p/b 7 Mile Cycles,Deer Park,IL,52,1,97379,282.96,0,Men Masters 45+,0,01/00/1900,8/31/2017 20:50:57
+10,503,Jim,Groenhof,F3 Cycling p/b 7 Mile Cycles,Elkgrovevillage,IL,48,3,307857,303.45,0,Men Masters 45+,0,01/00/1900,8/28/2017 19:32:07
+11,521,Andrew,Lowe,Lake Geneva Youth Camp Cycling,Walworth,WI,45,3,386730,303.84,0,Men Masters 45+,0,01/00/1900,8/30/2017 23:14:24
+12,495,Troy,Crady,Mox Multisport,Chicago,IL,47,3,274912,308.9,0,Men Masters 45+,0,01/00/1900,8/28/2017 15:28:22
+13,511,Mark,Kitral,F3 Cycling p/b 7 Mile Cycles,Lake Zurich,IL,53,5,510885,314.92,0,Men Masters 45+,0,01/00/1900,9/5/2017 15:34:56
+14,559,Christopher,Zigmont,SRAM Factory,Evanston,IL,53,3,54410,317.86,0,Men Masters 45+,0,01/00/1900,9/6/2017 16:14:30
+15,546,Peter,Rolewicz,The Weather Channel,Evanston,IL,51,3,60220,323.01,0,Men Masters 45+,0,01/00/1900,8/28/2017 12:36:21
+16,539,Omar,Patalinghug,Higher Gear,Mundelein,IL,48,3,315432,324.91,0,Men Masters 45+,0,01/00/1900,9/7/2017 21:34:57
+17,505,Bernd,Hosey,UPB Cycling,Western Springs,IL,47,3,394017,327.95,0,Men Masters 45+,0,01/00/1900,8/28/2017 14:11:42
+18,530,Marc,Moeller,Team Bicycle Heaven,Elgin,IL,48,3,193376,333.3,0,Men Masters 45+,0,01/00/1900,9/5/2017 15:10:34
+19,536,James,Nowak,ABD Cycling Club,Bartlett,IL,51,3,66038,354.51,0,Men Masters 45+,0,01/00/1900,8/28/2017 12:14:48
+20,523,Dan,Mallek,F3 Cycling p/b 7 Mile Cycles,Elk Grove Village,IL,48,3,302899,361.08,0,Men Masters 45+,0,01/00/1900,9/6/2017 22:51:34
+21,534,John,Neal,,Chicago,IL,52,3,326892,364.4,0,Men Masters 45+,0,01/00/1900,8/28/2017 10:09:26
+22,508,Thomas,Kabacinski,,Calidonia,IL,49,3,191741,367.6,0,Men Masters 45+,0,01/00/1900,8/28/2017 12:20:43
+23,482,Steel,Bokhof,The Pony Shop,Wilmette,IL,55,3,229380,368.68,0,Men Masters 45+,0,01/00/1900,8/28/2017 10:18:38
+24,537,Andre,Odendaal,The Pony Shop,Wilmette,IL,54,3,267109,377.24,0,Men Masters 45+,0,01/00/1900,8/28/2017 13:04:17
+25,555,Carl,Valentin,Half Acre Cycling,Chicago,IL,49,3,91812,384.94,0,Men Masters 45+,0,01/00/1900,9/5/2017 22:27:42
+26,492,Martin,Coffey,,Buffalo Grove,IL,49,3,392074,385.91,0,Men Masters 45+,0,01/00/1900,9/4/2017 17:05:53
+27,556,Jan,Vanmieghem,Union Cycling Team,Evanston,IL,52,3,288310,387.04,0,Men Masters 45+,0,01/00/1900,8/28/2017 12:45:43
+28,490,Michael,Chiang,Union Cycling Team,Glencoe,IL,52,3,290341,392.83,0,Men Masters 45+,0,01/00/1900,9/1/2017 18:50:36
+29,532,Andrew,Moore,RAPHA CYCLING CLUB,Chicago,IL,45,5,541043,406.01,0,Men Masters 45+,0,01/00/1900,9/3/2017 22:35:46
+30,535,Stuart,Nelsen,UPB Cycling,Oak Park,IL,48,3,389076,410.99,0,Men Masters 45+,0,01/00/1900,9/1/2017 13:51:44
+31,484,James,Brady,The Pony Shop,Chicago,IL,52,3,208029,414.3,0,Men Masters 45+,0,01/00/1900,8/28/2017 13:20:07
+32,525,Terry,McIntyre,The Pony Shop,Evanston,IL,50,4,359157,416.12,0,Men Masters 45+,0,01/00/1900,9/3/2017 23:57:13
+33,494,Sean,Costin,The Pony Shop,Arlington Heights,IL,53,4,68909,420.65,0,Men Masters 45+,0,01/00/1900,9/2/2017 9:22:03
+34,488,Josh,Carter,,Libertyville,IL,46,3,152410,424.39,0,Men Masters 45+,0,01/00/1900,8/28/2017 10:31:41
+35,545,Dwayne,Richmond,,Flossmoor,IL,47,4,347540,428.43,0,Men Masters 45+,0,01/00/1900,9/6/2017 12:09:25
+36,518,Shawn,Laplante,MSN Pro Coaching,Caledonia,IL,46,3,359775,429.69,0,Men Masters 45+,0,01/00/1900,9/5/2017 13:18:08
+37,540,Angel,Pavon,,EVANSTON,IL,46,5,ONE DAY,439.93,0,Men Masters 45+,0,01/00/1900,9/1/2017 18:09:14
+38,514,Randy,Koren,,Frankfort,IL,52,3,329804,441.63,0,Men Masters 45+,0,01/00/1900,8/28/2017 19:45:35
+39,481,Gary,Bentz,Team Bicycle Heaven,St Charles,IL,49,4,133142,444.94,0,Men Masters 45+,0,01/00/1900,9/7/2017 21:32:49
+40,557,Ernest,Wang,Velosmith Bicycle Studio,Chicago,IL,49,3,389374,445.27,0,Men Masters 45+,0,01/00/1900,8/28/2017 14:55:37
+41,549,Eric,Shivvers,PSIMET Racing,Chicago,IL,50,3,282025,449.49,0,Men Masters 45+,0,01/00/1900,9/3/2017 10:51:33
+42,516,Brian,Kwak,LifeLine Racing Team,Chicago,IL,47,3,401562,449.85,0,Men Masters 45+,0,01/00/1900,9/1/2017 14:23:01
+43,551,Greg,Spende,Tread Head Cycling,Walworth,WI,50,3,90741,463.19,0,Men Masters 45+,0,01/00/1900,9/3/2017 17:36:16
+44,497,Joseph,Doyle,UPB Cycling,Austin,TX,49,3,188914,470.68,0,Men Masters 45+,0,01/00/1900,9/6/2017 17:00:55
+45,552,Andrew,Stover,The Pony Shop,Evanstonevanston,IL,53,4,443874,482.4,0,Men Masters 45+,0,01/00/1900,9/1/2017 14:12:40
+46,498,Edward,Dutczak,,Crete,IL,53,4,80789,486.52,0,Men Masters 45+,0,01/00/1900,8/28/2017 22:02:39
+47,548,Chernoh,Sesay,,Chicago,IL,47,3,309204,489.25,0,Men Masters 45+,0,01/00/1900,8/28/2017 11:00:38
+48,519,Justice,Leppanen,The Pony Shop,Chicago,IL,49,3,326622,494.56,0,Men Masters 45+,0,01/00/1900,9/6/2017 11:42:09
+49,550,James,Siegele,Team Bicycle Heaven,Geneva,IL,53,4,193143,496.98,0,Men Masters 45+,0,01/00/1900,9/1/2017 18:35:46
+50,531,Reid,Montgomery,GSECC - Garner Semi Elite Cross Crew,Morton Grove,IL,54,4,416233,498.57,0,Men Masters 45+,0,01/00/1900,9/4/2017 21:24:55
+51,496,James,Depkon,Northbrook Bicycle Club Inc.,Niles,IL,46,3,313806,508.79,0,Men Masters 45+,0,01/00/1900,8/31/2017 22:20:42
+52,524,Chris,McAuliffe,xXx Racing,Chicago,IL,52,4,206800,518.96,0,Men Masters 45+,0,01/00/1900,9/7/2017 21:52:17
+53,499,Stephen,Farr,,Chicago,IL,51,5,517813,519.09,0,Men Masters 45+,0,01/00/1900,9/7/2017 14:27:05
+54,526,Jerry,Meister,ABD Cycling Club,Elburn,IL,50,4,303644,521.1,0,Men Masters 45+,0,01/00/1900,9/6/2017 12:12:14
+55,486,Anthony,Cambio,,Arlington Heights,IL,52,4,83509,523.55,0,Men Masters 45+,0,01/00/1900,9/5/2017 17:15:31
+56,502,Lindsay,Freeborn,,Elburn,IL,50,2,301944,524.18,0,Men Masters 45+,0,01/00/1900,9/4/2017 8:07:44
+57,512,Brian,Knetl,South Chicago Wheelmen,Homewood,IL,46,5,460364,530.15,0,Men Masters 45+,0,01/00/1900,9/4/2017 22:08:32
+58,506,Kendall,Hudson,xXx Racing,Skokie,IL,48,4,458249,539.14,0,Men Masters 45+,0,01/00/1900,8/31/2017 10:58:50
+59,529,Mark,Misicko,Tower Racing,Hinsdale,IL,53,4,244544,547.68,0,Men Masters 45+,0,01/00/1900,9/4/2017 20:08:31
+60,541,Mark,Payares,Velosmith Bicycle Studio,Evanston,IL,47,3,86568,548.73,0,Men Masters 45+,0,01/00/1900,9/6/2017 23:09:10
+61,493,Ben,Connor,,Naperville,IL,50,4,516195,552.88,0,Men Masters 45+,0,01/00/1900,8/28/2017 22:26:33
+62,501,Stephen,Feehery,South Chicago Wheelmen,Homewood,IL,53,4,11378,554.4,0,Men Masters 45+,0,01/00/1900,8/28/2017 12:15:39
+63,476,David,Adams,,Oak Park,IL,47,5,518001,555.11,0,Men Masters 45+,0,01/00/1900,8/29/2017 16:05:53
+64,543,Jeff,Provisor,Main Street Bicycles Sasquatch Squadron,East Dundee,IL,51,4,253528,558.02,0,Men Masters 45+,0,01/00/1900,8/28/2017 12:14:20
+65,507,Patrick,Jenkins,,Chicago,IL,51,4,412724,568.86,0,Men Masters 45+,0,01/00/1900,9/6/2017 7:27:18
+66,510,Brendan,Kevenides,Bike Law Cycling Club,Chicago,IL,49,4,488317,569.31,0,Men Masters 45+,0,01/00/1900,8/28/2017 15:34:13
+67,479,Timothy,Barrett,Team Bicycle Heaven,North Aurora,IL,47,4,360364,570.09,0,Men Masters 45+,0,01/00/1900,8/31/2017 1:08:20
+68,542,Steve,Prinner,ABD Cycling Club,South Elgin,IL,54,4,416778,585.13,0,Men Masters 45+,0,01/00/1900,8/28/2017 20:22:09
+69,485,Michael,Burns,Team Got Wind?,Marengo,IL,48,4,299317,587.95,0,Men Masters 45+,0,01/00/1900,9/5/2017 10:08:33
+70,491,Jay,Clark,,Chicago,IL,51,4,414538,595.16,0,Men Masters 45+,0,01/00/1900,8/28/2017 10:46:24
+71,477,Michael,Angus,Main Street Bicycles Sasquatch Squadron,Bartlett,IL,49,4,269011,605.35,0,Men Masters 45+,0,01/00/1900,9/3/2017 22:44:09
+72,478,Brandon,Antoniewicz,,Chicago,IL,48,3,118186,607.95,0,Men Masters 45+,0,01/00/1900,8/28/2017 17:48:10
+73,533,Eric,Myers,PSIMET Racing,Lake Forest,IL,49,4,320876,608,0,Men Masters 45+,0,01/00/1900,9/5/2017 18:25:29
+74,504,Duane,Higgs,F3 Cycling p/b 7 Mile Cycles,Itasca,IL,54,4,16137,608.54,0,Men Masters 45+,0,01/00/1900,9/5/2017 14:20:18
+75,554,Masayuki,Tsuchiya,Spidermonkey Cycling,Elk Grove Village,IL,47,4,308353,618.41,0,Men Masters 45+,0,01/00/1900,8/28/2017 21:50:21
+76,517,Carl,Lane,Velosmith Bicycle Studio,Winnetka,IL,54,5,541362,639.61,0,Men Masters 45+,0,01/00/1900,9/7/2017 17:32:18
+77,520,Evert Thomas,Lindberg,,WILMETTE,IL,53,5,417626,645.18,0,Men Masters 45+,0,01/00/1900,8/29/2017 12:47:03
+78,538,Tim,Oneil,,Chicago,IL,50,5,324212,647.93,0,Men Masters 45+,0,01/00/1900,9/6/2017 17:42:39
+79,527,Jon,Mejdrich,,Chicago,IL,49,4,388336,651.2,0,Men Masters 45+,0,01/00/1900,8/28/2017 10:27:44
+80,547,Tiber,Scheer,,Forest Park,IL,47,4,391042,655.72,0,Men Masters 45+,0,01/00/1900,9/1/2017 11:43:46
+81,544,Chris,Rechtsteiner,Cycling Republic Racing Team,Algonquin,IL,48,5,503262,9999,0,Men Masters 45+,0,01/00/1900,8/31/2017 16:25:00
+82,522,Michael,Macedon,Vision Quest,Chicago,IL,48,2,162384,9999,0,Men Masters 45+,0,01/00/1900,9/6/2017 11:12:22
+83,500,Darryn,Faulkner,,Wilmette,IL,49,5,510729,9999,0,Men Masters 45+,0,01/00/1900,9/7/2017 20:49:16
+84,553,Jim,Suterko,Main Street Sasquatch Squadron,TREVOR,WI,48,5,ONE DAY,9999,0,Men Masters 45+,0,01/00/1900,9/7/2017 21:53:14
+1,581,John Paul,McCarthy,SRAM Factory,Chicago,IL,55,3,234635,287.7,0,Men Masters 55+,0,01/00/1900,9/6/2017 16:15:00
+2,599,Gregory,Anderson,Spin Doctor Cyclewerks CX Team,South Elgin,IL,58,1,66520,308.66,0,Men Masters 55+,0,01/00/1900,8/31/2017 12:05:09
+3,561,Marc,Zionts,The Weather Channel,Highland Park,IL,56,2,184183,315.54,0,Men Masters 55+,0,01/00/1900,9/2/2017 15:26:29
+4,574,Scott,Ross,,Mc Henry,IL,58,3,218702,322.43,0,Men Masters 55+,0,01/00/1900,8/31/2017 8:15:11
+5,569,John,Shull,Pete's Garage Racing,Libertyville,IL,56,3,259398,323.79,0,Men Masters 55+,0,01/00/1900,9/3/2017 13:25:24
+6,576,Gaylord,Otte,xXx Racing,Evanston,IL,62,4,475165,353.44,0,Men Masters 55+,0,01/00/1900,9/7/2017 22:56:21
+7,583,James,Linn,Ten27 Cycling Club,Wadsworth,IL,56,3,21296,354.14,0,Men Masters 55+,0,01/00/1900,8/28/2017 14:23:27
+8,575,Alfonso,Reyes,The Weather Channel,Normal,IL,56,2,70519,368.17,0,Men Masters 55+,0,01/00/1900,9/7/2017 21:52:59
+9,564,Paul,Warloski,Ben's Cycle/Milwaukee Bicycle Co. Cycling Team,Greendale,WI,55,3,97808,371.26,0,Men Masters 55+,0,01/00/1900,9/7/2017 20:19:30
+10,563,William,Waters,South Chicago Wheelmen,New Lenox,IL,58,4,37346,390.27,0,Men Masters 55+,0,01/00/1900,9/7/2017 21:01:41
+11,600,Ross,Adams,Lake Geneva Youth Camp Cycling,Lake Geneva,WI,56,3,364980,400.33,0,Men Masters 55+,0,01/00/1900,9/1/2017 17:30:26
+12,566,Scott,Sugent,High Gear/Trek/WW,Chicago,IL,55,3,261242,402.58,0,Men Masters 55+,0,01/00/1900,9/1/2017 22:32:21
+13,597,Jeff,Biedka,F3 Cycling p/b 7 Mile Cycles,Elk Grove Vlg,IL,59,3,267166,403.89,0,Men Masters 55+,0,01/00/1900,8/28/2017 12:59:33
+14,587,Matt,Howley,PSIMET Racing,Glen Ellyn,IL,58,3,378145,408.49,0,Men Masters 55+,0,01/00/1900,9/5/2017 10:30:12
+15,577,Dean,Ott,Main Street Bicycles Sasquatch Squadron,West Dundee,IL,58,3,52270,410.38,0,Men Masters 55+,0,01/00/1900,8/28/2017 13:42:45
+16,590,Gary,Dicicco,PSIMET Racing,Hanover Park,IL,63,4,393292,416.32,0,Men Masters 55+,0,01/00/1900,9/5/2017 10:13:15
+17,586,Thomas,Kramer,F3 Cycling p/b 7 Mile Cycles,Buffalo Grove,IL,62,3,222539,428.69,0,Men Masters 55+,0,01/00/1900,8/28/2017 19:51:07
+18,596,Chris,Brown,,Chicago,IL,61,4,520287,446.79,0,Men Masters 55+,0,01/00/1900,9/2/2017 2:33:07
+19,573,Joel,Roth,The Pony Shop,Chicago,IL,64,3,234988,451.45,0,Men Masters 55+,0,01/00/1900,8/28/2017 19:49:27
+20,595,Fran,Connelly,Tower Racing,Western Springs,IL,61,4,276928,455.76,0,Men Masters 55+,0,01/00/1900,9/5/2017 13:19:01
+21,565,Kurt,Tromp,Plus One Cycling,Bolingbrook,IL,55,2,72909,480.67,0,Men Masters 55+,0,01/00/1900,9/2/2017 16:18:21
+22,582,Kevin,Mallory,xXx Racing,Chicago,IL,59,4,485808,496.39,0,Men Masters 55+,0,01/00/1900,8/28/2017 10:07:31
+23,593,John,Craychee,Team Bicycle Heaven,Stcharles,IL,67,3,282275,498.45,0,Men Masters 55+,0,01/00/1900,9/6/2017 20:38:10
+24,592,Wojciech,Czerkies,Plus Cycling Team,Palatine,IL,55,4,396957,499.41,0,Men Masters 55+,0,01/00/1900,9/1/2017 12:08:00
+25,585,George,Lambros,,Riverside,IL,59,4,295842,500.07,0,Men Masters 55+,0,01/00/1900,8/30/2017 9:09:25
+26,591,Alex,Derderian,Spin Doctor Cyclewerks,BARTLETT,IL,62,5,392489,505.77,0,Men Masters 55+,0,01/00/1900,8/28/2017 17:01:59
+27,568,John,Stainthorp,,Chicago,IL,68,4,306131,512.62,0,Men Masters 55+,0,01/00/1900,8/30/2017 17:34:50
+28,589,Charles,Goldman,xXx Racing,Chicago,IL,56,4,13541,542.67,0,Men Masters 55+,0,01/00/1900,8/30/2017 18:29:05
+29,562,Albert,Weigel,F3 Cycling p/b 7 Mile Cycles,Wheeling,IL,68,3,223747,549.71,0,Men Masters 55+,0,01/00/1900,8/29/2017 13:15:36
+30,570,Jeffrey,Shepard,,Chicago,IL,64,5,517720,574.74,0,Men Masters 55+,0,01/00/1900,8/28/2017 14:53:36
+31,580,John,Mitchell,xXx Racing,Chicago,IL,56,4,343594,590.79,0,Men Masters 55+,0,01/00/1900,9/1/2017 9:18:31
+32,579,Ludwig,Montfort,ABD Cycling Club,Bartlett,IL,59,4,56456,596.31,0,Men Masters 55+,0,01/00/1900,8/29/2017 19:54:17
+33,567,Walter,Stoops,ABD Cycling Club,Lombard,IL,67,3,34295,598.06,0,Men Masters 55+,0,01/00/1900,8/29/2017 14:48:33
+34,594,Julian,Coupland,F3 Cycling p/b 7 Mile Cycles,Chicago,IL,70,3,166704,598.74,0,Men Masters 55+,0,01/00/1900,8/28/2017 11:54:58
+35,598,Robert,Berg,Tower Racing,Western Sprgs,IL,64,3,101564,612.9,0,Men Masters 55+,0,01/00/1900,9/4/2017 16:07:07
+36,572,Charlie,Saxe,,Skokie,IL,58,4,485032,616.5,0,Men Masters 55+,0,01/00/1900,8/28/2017 15:50:02
+37,588,Russ,Hoefer,Higher Gear,Northbrook,IL,64,4,360839,625.26,0,Men Masters 55+,0,01/00/1900,9/7/2017 22:02:40
+38,578,James,O'Connell,GSECC - Garner Semi Elite Cross Crew,Northbrook,IL,59,4,219317,712.86,0,Men Masters 55+,0,01/00/1900,9/4/2017 21:21:40
+39,584,Michael,Lavery,,Dyer,IN,67,4,48692,759.49,0,Men Masters 55+,0,01/00/1900,8/28/2017 10:11:34
+40,571,James,Scheckel,,Chicago,IL,67,4,341274,9999,0,Men Masters 55+,0,01/00/1900,9/5/2017 13:54:22
+1,888,Peter,Chrapkowski,Comrade Cycles Racing,Chicago,IL,44,2,253503,241.44,0,Single Speed,0,01/00/1900,8/30/2017 9:33:29
+2,899,Karson,Glass,Heritage Cycling,Chicago,IL,32,1,361989,245.8,0,Single Speed,0,01/00/1900,8/29/2017 7:21:21
+3,905,Jacob,Huizenga,Chicago Cuttin Crew,Chicago,IL,32,1,408363,253.65,0,Single Speed,0,01/00/1900,8/31/2017 17:50:50
+4,893,Mike,Conroy,Mox Multisport,Chicago,IL,34,2,273192,255.64,0,Single Speed,0,01/00/1900,8/29/2017 21:03:42
+5,917,David,Lawler,Main Street Bicycles Sasquatch Squadron,Crystal Lake,IL,37,2,454656,272.13,0,Single Speed,0,01/00/1900,9/7/2017 8:30:28
+6,926,Zeno,Molteni,Plus One Cycling,Arlington Heights,IL,37,3,458003,273.23,0,Single Speed,0,01/00/1900,9/5/2017 15:37:49
+7,939,Kurt,Schauwecker,Mox Multisport,Chicago,IL,32,2,292999,275.08,0,Single Speed,0,01/00/1900,9/5/2017 8:19:04
+8,895,Nico,Cabrera,Chicago Cuttin Crew,Chicago,IL,34,2,282686,276.84,0,Single Speed,0,01/00/1900,8/31/2017 17:52:07
+9,928,Bailey,Newbrey,Chicago Cuttin Crew,Chicago,IL,32,2,378712,290.06,0,Single Speed,0,01/00/1900,9/6/2017 8:49:06
+10,908,Paul,Kardosh,Mox Multisport,Chicago,IL,39,3,268726,295.47,0,Single Speed,0,01/00/1900,9/6/2017 22:32:18
+11,879,Joe,Berlyoung,,Chicago,IL,33,2,358742,296.63,0,Single Speed,0,01/00/1900,9/4/2017 12:17:39
+12,930,Michael,Patton,Bonkers Cycling,Chicago,IL,30,3,388367,304.62,0,Single Speed,0,01/00/1900,8/28/2017 10:09:27
+13,937,Steve,Schafer,,Deer Park,IL,48,3,309583,318.21,0,Single Speed,0,01/00/1900,9/5/2017 23:45:35
+14,946,Jonathan,Vota,INTENT,Plainfield,IL,37,3,443511,322.17,0,Single Speed,0,01/00/1900,9/6/2017 13:57:41
+15,902,Robert,Higgins,George Garner Cyclery Track Team,Chicago,IL,48,3,301873,323.69,0,Single Speed,0,01/00/1900,9/7/2017 13:05:04
+16,936,Marc,Royster,Union Cycling Team,Chicago,IL,36,3,456497,327.22,0,Single Speed,0,01/00/1900,9/7/2017 21:50:22
+17,891,Willem,Conradie,,Chicago,IL,34,3,416904,337.7,0,Single Speed,0,01/00/1900,8/30/2017 9:47:55
+18,878,Brian,Bauer,,Chicago,IL,32,3,300221,351.58,0,Single Speed,0,01/00/1900,9/7/2017 21:03:14
+19,929,Ara,Oggoian,Team Bicycle Heaven,Geneva,IL,48,3,26581,359.87,0,Single Speed,0,01/00/1900,9/5/2017 18:51:25
+20,910,Jason,Kloptowsky,,Tinley Park,IL,41,5,503937,360.05,0,Single Speed,0,01/00/1900,9/7/2017 15:50:32
+21,912,Johan,Konter,Union Cycling Team,Chicago,IL,31,4,470365,362.29,0,Single Speed,0,01/00/1900,9/6/2017 13:17:59
+22,932,Drew,Priestgrochowski,,Chicago,IL,30,3,456396,370.76,0,Single Speed,0,01/00/1900,8/31/2017 17:59:04
+23,903,Kennen,Hootman,INTENT,Addison,IL,30,3,422237,378.36,0,Single Speed,0,01/00/1900,9/5/2017 18:41:07
+24,882,Jeremy,Bloyd-Peshkin,INTENT,Chicago,IL,23,4,518778,378.61,0,Single Speed,0,01/00/1900,8/28/2017 10:27:27
+25,884,Derek,Burge-Beckley,Bonkers Cycling,Chicago,IL,27,4,424947,388.97,0,Single Speed,0,01/00/1900,9/7/2017 16:24:28
+26,881,Steve,Biedron,Mox Multisport,Chicago,IL,45,3,301297,391.77,0,Single Speed,0,01/00/1900,8/28/2017 15:28:05
+27,880,Christopher,Berthold,,Chicago,IL,45,3,329174,396.06,0,Single Speed,0,01/00/1900,8/29/2017 16:48:44
+28,921,Juozas,Martynaitis,UPB Cycling,Darien,IL,34,2,169782,402.34,0,Single Speed,0,01/00/1900,8/31/2017 6:26:05
+29,948,Grant,Wiersum,,Chicago,IL,26,3,308596,407.84,0,Single Speed,0,01/00/1900,8/29/2017 12:17:37
+30,927,Stuart,Nelsen,UPB Cycling,Oak Park,IL,48,3,389076,410.99,0,Single Speed,0,01/00/1900,9/1/2017 13:51:44
+31,919,Philippe,Lunardelli,,Chicago,IL,46,3,331280,413.96,0,Single Speed,0,01/00/1900,9/5/2017 23:33:26
+32,916,Ty,Kurth,EMC2 / Elmhurst Masters,McHenry,IL,40,4,235003,422.32,0,Single Speed,0,01/00/1900,8/28/2017 12:26:38
+33,914,Thomas,Kramer,F3 Cycling p/b 7 Mile Cycles,Buffalo Grove,IL,62,3,222539,428.69,0,Single Speed,0,01/00/1900,8/28/2017 19:51:07
+34,940,Brandon,Scheiner,Tuxedo Thunder Cycling,CHICAGO,IL,36,5,ONE DAY,429.69,0,Single Speed,0,01/00/1900,9/1/2017 12:38:59
+35,896,Matt,Duer,,Evanston,IL,33,5,501677,430.15,0,Single Speed,0,01/00/1900,8/30/2017 21:04:06
+36,885,Aaron,Byrnes,PSIMET Racing,Chicago,IL,42,4,362040,430.44,0,Single Speed,0,01/00/1900,9/5/2017 11:41:25
+37,943,Aaron,Smith,,Chicago,IL,30,3,455065,432.58,0,Single Speed,0,01/00/1900,8/28/2017 10:56:28
+38,913,Randy,Koren,,Frankfort,IL,52,3,329804,441.63,0,Single Speed,0,01/00/1900,8/28/2017 19:45:35
+39,947,Jessica,Whiton,xXx Racing,Chicago,IL,44,2,298762,444.68,0,Single Speed,0,01/00/1900,9/3/2017 16:00:51
+40,904,Kristen,Hosey,UPB Cycling Club,Western Springs,IL,45,2,394608,447.78,0,Single Speed,0,01/00/1900,8/28/2017 11:41:13
+41,931,Blake,Picard,Main Street Bicycles Sasquatch Squadron,Crystal Lake,IL,33,4,493227,451.44,0,Single Speed,0,01/00/1900,9/4/2017 21:28:12
+42,935,Joel,Roth,The Pony Shop,Chicago,IL,64,3,234988,451.45,0,Single Speed,0,01/00/1900,8/28/2017 19:49:27
+43,890,Fran,Connelly,Tower Racing,Western Springs,IL,61,4,276928,455.76,0,Single Speed,0,01/00/1900,9/5/2017 13:19:01
+44,898,Arturo,Garza-Gongora,,Chicago,IL,30,4,466969,456.06,0,Single Speed,0,01/00/1900,9/5/2017 0:42:44
+45,924,Jonathan,Mendez,,Chicago,IL,26,4,454964,460.87,0,Single Speed,0,01/00/1900,9/5/2017 1:03:18
+46,938,Daniel,Schaumann,Comrade Cycles Racing,Chicago,IL,31,4,486279,461.93,0,Single Speed,0,01/00/1900,9/6/2017 17:29:07
+47,942,Joshua,Shough,,Chicago,IL,36,3,300665,468.51,0,Single Speed,0,01/00/1900,8/29/2017 20:49:38
+48,909,John,Kingry,Mox Multisport,Chicago,IL,33,4,431899,478.76,0,Single Speed,0,01/00/1900,9/6/2017 22:08:36
+49,920,Monte,Martin,,Chicago,IL,38,4,328840,482.8,0,Single Speed,0,01/00/1900,8/29/2017 18:03:40
+50,887,Dan,Charleston,,CHICAGO,IL,28,5,488371,486.58,0,Single Speed,0,01/00/1900,9/7/2017 23:07:43
+51,900,Jennifer,Groen,Half Acre Cycling,Chicago,IL,49,3,306517,488.34,0,Single Speed,0,01/00/1900,8/29/2017 13:16:15
+52,918,Justice,Leppanen,The Pony Shop,Chicago,IL,49,3,326622,494.56,0,Single Speed,0,01/00/1900,9/6/2017 11:42:09
+53,894,Duane,Crowe,Half Acre Cycling,Chicago,IL,31,4,456790,500.69,0,Single Speed,0,01/00/1900,9/4/2017 13:49:54
+54,933,Joseph,Proszowski,Bouledogue Tout Noir,Chicago,IL,29,4,376389,506.78,0,Single Speed,0,01/00/1900,9/4/2017 10:23:07
+55,892,Lauren,Conroy,Comrade Cycles Racing,Chicago,IL,32,4,443795,509.15,0,Single Speed,0,01/00/1900,8/28/2017 10:08:29
+56,877,Barry,Batson Jr.,Mox Multisport,Chicago,IL,52,4,389397,518.3,0,Single Speed,0,01/00/1900,8/29/2017 10:51:12
+57,901,Andrew,Guentner,,CHICAGO,IL,33,5,486536,534.18,0,Single Speed,0,01/00/1900,8/30/2017 18:03:06
+58,925,Kyle,Millns,INTENT,Chicago,IL,32,4,374976,534.6,0,Single Speed,0,01/00/1900,9/6/2017 23:03:32
+59,934,Monica,Rice,PSIMET Racing,Algonquin,IL,50,3,290164,536.87,0,Single Speed,0,01/00/1900,9/5/2017 22:58:07
+60,897,Matthew,Fox,Tehuan Management Group,Highland Park,IL,30,4,161688,539.13,0,Single Speed,0,01/00/1900,9/7/2017 12:02:53
+61,944,Kayci,Sterzer,Comrade Cycles Racing,Chicago,IL,29,4,477872,539.51,0,Single Speed,0,01/00/1900,9/8/2017 0:39:03
+62,941,Zach,Schneider,The Chainlink,Chicago,IL,36,4,508055,545.62,0,Single Speed,0,01/00/1900,8/31/2017 8:06:54
+63,907,Thomas,Kaiser,Main Street Bicycles Sasquatch Squadron,Oakwood Hills,IL,41,5,413920,546.4,0,Single Speed,0,01/00/1900,8/28/2017 10:24:21
+64,889,Bryan,Connelly,UPB Cycling Club,La Grange,IL,44,4,361272,559.52,0,Single Speed,0,01/00/1900,8/29/2017 15:42:34
+65,922,Timothy,McGovern,,CHICAGO,IL,41,5,285357,565.22,0,Single Speed,0,01/00/1900,9/4/2017 18:51:48
+66,883,Elizabeth,Bosch,,Chicago,IL,48,4,419302,578.67,0,Single Speed,0,01/00/1900,9/7/2017 10:53:37
+67,923,Elizabeth,McKinley,,Chicago,IL,28,4,459620,584.09,0,Single Speed,0,01/00/1900,8/29/2017 9:10:35
+68,886,Joseph,Castello,,CHICAGO,IL,35,4,271143,584.28,0,Single Speed,0,01/00/1900,8/28/2017 12:16:49
+69,911,Katie,Kolon,BFF Bikes,Chicago,IL,40,4,386486,622.17,0,Single Speed,0,01/00/1900,9/6/2017 10:00:26
+70,906,Aaron,Johnson,MSN Pro Coaching,Loves Park,IL,47,4,376596,637.91,0,Single Speed,0,01/00/1900,9/3/2017 17:22:49
+71,950,Allison,Zmuda,Comrade Cycles Racing,Chicago,IL,36,5,533666,9999,0,Single Speed,0,01/00/1900,8/28/2017 13:19:02
+72,915,Edward,Krei,Mox Multisport,Chicago,IL,34,3,257615,9999,0,Single Speed,0,01/00/1900,8/28/2017 14:05:43
+73,949,Avery,Young,,Chicago,IL,27,5,511916,9999,0,Single Speed,0,01/00/1900,8/31/2017 13:05:49
+74,945,Megan,Tsupros,,Chicago,IL,33,5,529220,9999,0,Single Speed,0,01/00/1900,9/4/2017 21:28:02
+75,876,Kyle,Baroni,,Chicago,IL,29,5,353862,9999,0,Single Speed,0,01/00/1900,9/5/2017 0:52:49
+1,972,Luke,Stover,The Pony Shop,Evanston,IL,18,3,484835,342.02,0,Junior 15-18,0,01/00/1900,9/1/2017 14:12:40
+2,993,Jonathan,Costin,The Pony Shop,Arlington Heights,IL,16,4,402430,359.95,0,Junior 15-18,0,01/00/1900,9/2/2017 9:22:03
+3,982,Evert,Lindberg,The Pony Shop,Wilmette,IL,16,4,412549,369.5,0,Junior 15-18,0,01/00/1900,8/29/2017 12:47:03
+4,971,Peter,Swinand,The Pony Shop,Evanston,IL,15,4,365965,385.07,0,Junior 15-18,0,01/00/1900,8/31/2017 9:28:25
+5,984,Melroy (Will),Holzhauer,,Geneva,IL,15,4,486336,423.98,0,Junior 15-18,0,01/00/1900,8/28/2017 10:07:42
+6,990,Andrew,Flynn,The Pony Shop,Wilmette,IL,15,4,486514,432.62,0,Junior 15-18,0,01/00/1900,9/6/2017 20:42:14
+7,976,Aiden,Riefe,The Pony Shop,Glencoe,IL,16,5,404082,432.96,0,Junior 15-18,0,01/00/1900,9/5/2017 21:53:18
+8,991,Joshua,Fitzgerald,F3 Cycling p/b 7 Mile Cycles,Elk Grove Village,IL,18,4,521258,445.41,0,Junior 15-18,0,01/00/1900,9/1/2017 10:17:48
+9,980,Maxwell,Montagano,,Chicago,IL,17,5,520142,446.76,0,Junior 15-18,0,01/00/1900,9/7/2017 10:36:04
+10,995,Charlotte,Bokhof,The Pony Shop,Wilmette,IL,15,4,456067,487.35,0,Junior 15-18,0,01/00/1900,8/28/2017 10:18:38
+11,974,Lincoln,Scheer,,Oak Park,IL,16,4,358371,497.06,0,Junior 15-18,0,01/00/1900,8/28/2017 20:41:17
+12,997,Jordan,Austin,The Weather Channel,Orland Park,IL,14,4,415381,501.56,0,Junior 15-18,0,01/00/1900,9/7/2017 10:29:10
+13,973,Finn,Stover,The Pony Shop,Evanston,IL,16,4,484836,511.11,0,Junior 15-18,0,01/00/1900,9/1/2017 14:12:40
+14,975,Katherine,Schafer,PSIMET Racing,Deer Park,IL,15,4,378878,532.71,0,Junior 15-18,0,01/00/1900,9/5/2017 23:45:35
+15,988,Luke,Goldman,xXx Racing,Chicago,IL,15,5,467668,544.99,0,Junior 15-18,0,01/00/1900,8/30/2017 18:29:05
+16,983,Olivia,Kelley,Team Bicycle Heaven,Geneva,IL,17,4,516654,556.47,0,Junior 15-18,0,01/00/1900,9/3/2017 18:49:34
+17,977,Owen,Neal,,Chicago,IL,17,5,416605,559.29,0,Junior 15-18,0,01/00/1900,8/28/2017 10:12:10
+18,994,Max,Chilsen,The Pony Shop,Evanston,IL,15,5,516448,587.86,0,Junior 15-18,0,01/00/1900,8/29/2017 6:32:29
+19,999,Tess,Anderson,Spin Doctor Cyclewerks CX Team,South Elgin,IL,18,5,326642,606.73,0,Junior 15-18,0,01/00/1900,8/31/2017 12:05:09
+20,987,Pamela,Gonzalez,JC Crew/ Sammys cross,CHICAGO,IL,15,4,413976,621.77,0,Junior 15-18,0,01/00/1900,9/6/2017 14:58:01
+21,989,Alan,Garza,,Chicago,IL,15,5,443783,643.84,0,Junior 15-18,0,01/00/1900,9/4/2017 12:44:40
+22,986,Jessica,Groenhof,F3 Cycling p/b 7 Mile Cycles,Elk Grove Village,IL,15,5,417062,853.51,0,Junior 15-18,0,01/00/1900,8/28/2017 11:22:21
+23,978,Rachael,Mullins,The Pony Shop,Evanston,IL,15,5,539232,9999,0,Junior 15-18,0,01/00/1900,9/4/2017 22:10:09
+24,996,Keegan,Baisa,RegionRacing p/b Strack & Van Til,Saint John,IN,17,5,540706,9999,0,Junior 15-18,0,01/00/1900,9/5/2017 9:17:10
+25,979,Osiris,Mora,,Chicago,IL,15,5,541329,9999,0,Junior 15-18,0,01/00/1900,9/6/2017 22:21:01
+26,981,Domonique,Montagano,Blackstone Bicycle Works,CHICAGO,IL,17,4,ONE DAY,9999,0,Junior 15-18,0,01/00/1900,9/7/2017 10:36:04
+27,998,Alejandro,Arellano,,Chicago,IL,17,5,541077,9999,0,Junior 15-18,0,01/00/1900,9/7/2017 17:57:23
+28,992,Wanya,Ellzey,Blackstone Bicycle Works,CHICAGO,IL,17,5,ONE DAY,9999,0,Junior 15-18,0,01/00/1900,9/7/2017 19:01:36
+29,985,Carlin,Henikoff,The Pony Shop,Evanston,IL,18,5,541441,9999,0,Junior 15-18,0,01/00/1900,9/7/2017 21:17:24
+1,806,Wyatt,Stover,The Pony Shop,Evanston,IL,14,4,443178,412.19,0,Junior 9-14,0,01/00/1900,9/1/2017 14:12:40
+2,786,Bennett,Lindberg,The Pony Shop,Wilmette,IL,14,4,412706,430.86,0,Junior 9-14,0,01/00/1900,8/29/2017 12:47:03
+3,811,Marcus,Van Mieghem,The Pony Shop,Evanston,IL,14,5,516103,434.5,0,Junior 9-14,0,01/00/1900,8/28/2017 12:45:43
+4,787,Henrique,Lowe,Lake Geneva Youth Camp Cycling,Walworth,WI,14,4,448281,436.1,0,Junior 9-14,0,01/00/1900,8/30/2017 23:14:24
+5,795,Henry,Praznowski,The Pony Shop,Chicago,IL,13,4,412294,451.88,0,Junior 9-14,0,01/00/1900,8/28/2017 17:44:02
+6,784,Aidan,Letzel,The Pony Shop,Mount Prospect,IL,12,5,484631,458.08,0,Junior 9-14,0,01/00/1900,8/28/2017 22:50:01
+7,814,Chloe,Yoder,The Pony Shop,Lake Villa,IL,14,4,516333,477.25,0,Junior 9-14,0,01/00/1900,8/28/2017 10:57:17
+8,783,Nicholas,Labbe,The Pony Shop,Rolling Meadows Il,IL,13,4,493062,478.83,0,Junior 9-14,0,01/00/1900,8/28/2017 10:08:37
+9,809,George,Swinand,The Pony Shop,Evanston,IL,10,5,417551,492.02,0,Junior 9-14,0,01/00/1900,8/31/2017 9:28:25
+10,790,Jacob,Mobley,The Pony Shop,Glenview,IL,14,5,516191,513.84,0,Junior 9-14,0,01/00/1900,8/28/2017 11:44:51
+11,804,William,Spende,Lake Geneva Youth Camp Cycling,Walworth,WI,12,5,454684,556.5,0,Junior 9-14,0,01/00/1900,9/3/2017 17:36:16
+12,776,Ellie,Hosey,UPB Cycling,Western Springs,IL,14,4,457243,583.53,0,Junior 9-14,0,01/00/1900,8/28/2017 11:41:13
+13,808,Francesca,Swinand,The Pony Shop,Evanston,IL,12,4,392300,601.85,0,Junior 9-14,0,01/00/1900,8/31/2017 9:28:25
+14,762,Kate,Doelman,The Pony Shop,Glencoe,IL,12,4,487719,617.96,0,Junior 9-14,0,01/00/1900,9/7/2017 9:29:15
+15,782,Matt,Kremer,Sammy's Racing,South Elgin,IL,12,5,521219,623.7,0,Junior 9-14,0,01/00/1900,8/29/2017 10:35:13
+16,788,Eamon,McIntyre,The Pony Shop,Evanston,IL,12,5,443560,640.26,0,Junior 9-14,0,01/00/1900,9/8/2017 0:40:07
+17,767,Lydia,Elbert,The Pony Shop,Chicago,IL,13,4,516539,650.36,0,Junior 9-14,0,01/00/1900,8/28/2017 10:35:14
+18,753,Emiliano,Arteaga,The Weather Channel,Broadview,IL,11,5,518311,674.7,0,Junior 9-14,0,01/00/1900,9/4/2017 12:22:17
+19,817,Henri,Zigmont,The Pony Shop,Evanston,IL,11,5,492843,677.42,0,Junior 9-14,0,01/00/1900,9/6/2017 16:15:40
+20,805,Leo,Stover,The Pony Shop,Evanston,IL,11,5,484832,680.2,0,Junior 9-14,0,01/00/1900,9/1/2017 14:12:40
+21,798,Sadie,Scheer,,Oak Park,IL,14,4,414841,680.53,0,Junior 9-14,0,01/00/1900,8/28/2017 20:41:17
+22,797,Malena,Riefe,The Pony Shop,Glencoe,IL,12,4,428455,680.56,0,Junior 9-14,0,01/00/1900,9/5/2017 21:53:18
+23,807,Avital,Strauss,The Pony Shop,Evanston,IL,14,4,488295,680.76,0,Junior 9-14,0,01/00/1900,8/28/2017 13:50:33
+24,764,Patrick,Doyle,UPB Cycling,Austin,TX,11,5,416470,694.94,0,Junior 9-14,0,01/00/1900,9/6/2017 17:00:55
+25,792,Pierce,Norris,The Pony Shop,Chicago,IL,13,5,485446,696.76,0,Junior 9-14,0,01/00/1900,9/2/2017 14:56:51
+26,768,Henry,Elbert,The Pony Shop,Chicago,IL,12,5,517034,700.05,0,Junior 9-14,0,01/00/1900,8/28/2017 10:35:14
+27,752,Leo,Antoniewicz,,Chicago,IL,11,5,489299,711.24,0,Junior 9-14,0,01/00/1900,8/28/2017 17:48:10
+28,754,Dakota,Austin,The Weather Channel,Orland Park,IL,12,4,416314,735.43,0,Junior 9-14,0,01/00/1900,9/4/2017 11:53:07
+29,770,James,Groenhof,F3 p/b 7 Mile Cycles,ELK GROVE VILLAGE,IL,11,5,486537,737.37,0,Junior 9-14,0,01/00/1900,8/28/2017 11:22:21
+30,760,Drake,Dash,ABD Cycling Club,Batavia,IL,12,5,486517,740.23,0,Junior 9-14,0,01/00/1900,9/6/2017 22:18:03
+31,793,Sebastian,Ocampo,,Maywood,IL,12,5,520137,743.36,0,Junior 9-14,0,01/00/1900,9/6/2017 22:18:21
+32,773,Logan,Harris,,Chicago,IL,12,5,541400,753.87,0,Junior 9-14,0,01/00/1900,9/7/2017 15:14:06
+33,815,Josh,Yoder,The Pony Shop,Lake Villa,IL,12,5,516336,758.58,0,Junior 9-14,0,01/00/1900,8/28/2017 10:57:17
+34,769,Beatrix,Gilson,The Pony Shop,Wilmette,IL,14,4,484664,769.25,0,Junior 9-14,0,01/00/1900,8/30/2017 17:20:04
+35,758,Roland,Connelly,UPB Cycling Club,Lagrange,IL,13,5,527475,770.09,0,Junior 9-14,0,01/00/1900,8/29/2017 15:42:34
+36,765,Matteo,Drummer,Velosmith,SKOKIE,IL,10,5,ONE DAY,794.54,0,Junior 9-14,0,01/00/1900,9/5/2017 16:01:18
+37,763,Katherine,Doyle,UPB Cycling,Austin,TX,11,4,416474,810.29,0,Junior 9-14,0,01/00/1900,9/6/2017 17:00:55
+38,813,George,Werderich,,Yorkville,IL,13,5,530005,814.01,0,Junior 9-14,0,01/00/1900,9/7/2017 18:42:52
+39,771,Aidan,Hardison,,Palos Park,IL,12,5,443782,824.29,0,Junior 9-14,0,01/00/1900,9/7/2017 14:51:38
+40,755,Elora,Brady,The Pony Shop,Chicago,IL,13,4,486541,833.12,0,Junior 9-14,0,01/00/1900,8/28/2017 11:16:45
+41,759,Andrew,Curtis,PSIMET Racing,Elgin,IL,12,5,476242,846.37,0,Junior 9-14,0,01/00/1900,9/6/2017 14:36:02
+42,794,Grace,Praznowski,The Pony Shop,Chicago,IL,10,4,514588,877.64,0,Junior 9-14,0,01/00/1900,8/28/2017 17:44:02
+43,800,Kale,Schrauth,The Pony Shop,Glenview,IL,10,5,519121,882.85,0,Junior 9-14,0,01/00/1900,9/7/2017 11:56:46
+44,774,Catherine,Hecht,The Pony Shop,Winnetka,IL,12,4,484606,901.36,0,Junior 9-14,0,01/00/1900,9/5/2017 15:45:34
+45,778,Chloe,Kelley,Team Bicycle Heaven,Geneva,IL,10,4,516716,914.42,0,Junior 9-14,0,01/00/1900,9/3/2017 18:52:52
+46,777,Henry,Kaiser,Main Street Bicycles Sasquatch Squadron,Oakwood Hills,IL,9,5,540095,9999,0,Junior 9-14,0,01/00/1900,8/28/2017 10:24:21
+47,756,Calvin,Carter,,LIBERTYVILLE,IL,12,5,ONE DAY,9999,0,Junior 9-14,0,01/00/1900,8/28/2017 10:31:41
+48,757,"Hayes ""Doughnuts""",Carter,,LIBERTYVILLE,IL,10,5,ONE DAY,9999,0,Junior 9-14,0,01/00/1900,8/28/2017 10:31:41
+49,766,Ann Louise,Elbert,The Pony Shop,Chicago,IL,10,5,538767,9999,0,Junior 9-14,0,01/00/1900,8/28/2017 10:35:14
+50,789,Madison,Miles,,Tower Lakes,IL,10,5,540534,9999,0,Junior 9-14,0,01/00/1900,8/28/2017 10:47:16
+51,751,Henry,Antoniewicz,,Chicago,IL,9,5,540193,9999,0,Junior 9-14,0,01/00/1900,8/28/2017 17:48:10
+52,775,Aubrey,Hosey,UPB Cycling Club,Western Springs,IL,12,5,540079,9999,0,Junior 9-14,0,01/00/1900,8/28/2017 20:32:40
+53,785,Delaney,Letzel,The Pony Shop,Mount Prospect,IL,9,5,539247,9999,0,Junior 9-14,0,01/00/1900,8/28/2017 22:50:01
+54,781,Julia,Kremer,Sammy's Racing,South Elgin,IL,10,5,540616,9999,0,Junior 9-14,0,01/00/1900,8/29/2017 10:35:13
+55,816,William,Young,The Pony Shop,Wilmette,IL,10,5,540872,9999,0,Junior 9-14,0,01/00/1900,9/1/2017 1:44:25
+56,791,Isabella,Moore,,Chicago,IL,11,5,541042,9999,0,Junior 9-14,0,01/00/1900,9/3/2017 22:35:46
+57,780,Konrad,Kosuge,,Glenview,IL,14,5,535345,9999,0,Junior 9-14,0,01/00/1900,9/5/2017 10:16:19
+58,779,Charles,Knetl,South Chicago Wheelmen,Homewood,IL,14,5,540478,9999,0,Junior 9-14,0,01/00/1900,9/5/2017 20:26:50
+59,802,Carter,Smott,PSIMET Racing,HOFFMAN ESTATES,IL,13,5,ONE DAY,9999,0,Junior 9-14,0,01/00/1900,9/5/2017 20:59:28
+60,801,Griffen,Smott,PSIMET Racing,HOFFMAN ESTATES,IL,11,5,ONE DAY,9999,0,Junior 9-14,0,01/00/1900,9/5/2017 21:01:23
+61,803,Owen,Smott,PSIMET Racing,HOFFMAN ESTATES,IL,9,5,ONE DAY,9999,0,Junior 9-14,0,01/00/1900,9/5/2017 21:02:58
+62,810,Leo,Valentin,,Chicago,IL,10,5,540410,9999,0,Junior 9-14,0,01/00/1900,9/5/2017 22:32:17
+63,796,Lucas,Rasmussen,The Pony Shop,Libertyville,IL,9,5,539576,9999,0,Junior 9-14,0,01/00/1900,9/6/2017 10:11:19
+64,761,David,Decker,Sammy's Racing,Palatine,IL,14,5,541132,9999,0,Junior 9-14,0,01/00/1900,9/7/2017 7:49:27
+65,812,Noah,Villarreal,,Munster,IN,14,5,540100,9999,0,Junior 9-14,0,01/00/1900,9/7/2017 11:23:46
+66,799,Alex,Schrauth,The Pony Shop,Glenview Il,IL,9,5,541374,9999,0,Junior 9-14,0,01/00/1900,9/7/2017 11:56:46
+67,772,William,Hardison,,Palos Park,IL,14,5,540541,9999,0,Junior 9-14,0,01/00/1900,9/7/2017 14:51:38
+1,845,Samantha,Scipio,Comrade Cycles Racing,Chicago,IL,28,4,519820,489.18,0,Women Cat 4/5,0,01/00/1900,8/28/2017 13:23:19
+2,866,Kristina,Caudle,BFF Bikes,Hanover,IL,34,4,431760,490.23,0,Women Cat 4/5,0,01/00/1900,9/7/2017 9:58:36
+3,871,Jordan,Austin,The Weather Channel,Orland Park,IL,14,4,415381,501.56,0,Women Cat 4/5,0,01/00/1900,9/7/2017 10:29:10
+4,849,Blanka,Mikulkova,xXx Racing,Chicago,IL,38,4,477113,502.66,0,Women Cat 4/5,0,01/00/1900,9/2/2017 12:59:49
+5,862,Wendy,Esposito,,Roselle,IL,46,4,517418,503.64,0,Women Cat 4/5,0,01/00/1900,8/28/2017 21:42:10
+6,859,Leah,Goldbloom,,Chicago,IL,27,4,487077,529.2,0,Women Cat 4/5,0,01/00/1900,9/7/2017 14:41:49
+7,854,Megan,Kelly,Half Acre Cycling,Chicago,IL,32,4,296364,553.58,0,Women Cat 4/5,0,01/00/1900,8/28/2017 13:50:51
+8,860,Vincci,Fung,PSIMET Racing,Chicago,IL,28,4,499223,574.05,0,Women Cat 4/5,0,01/00/1900,9/6/2017 22:40:15
+9,875,Anna,Affias,Spidermonkey Cycling,Chicago,IL,31,4,503371,575.86,0,Women Cat 4/5,0,01/00/1900,9/6/2017 17:31:12
+10,861,Janet,Fidanze,BFF Bikes,Chicago,IL,48,5,538967,576.73,0,Women Cat 4/5,0,01/00/1900,8/31/2017 16:28:00
+11,867,Elizabeth,Bosch,,Chicago,IL,48,4,419302,578.67,0,Women Cat 4/5,0,01/00/1900,9/7/2017 10:53:37
+12,852,Lynne,Kiesling,BFF Bikes,Chicago,IL,53,4,474126,583.7,0,Women Cat 4/5,0,01/00/1900,9/7/2017 12:49:22
+13,869,Alex,Betzel,,CHICAGO,IL,29,4,ONE DAY,590.68,0,Women Cat 4/5,0,01/00/1900,9/6/2017 13:49:42
+14,858,Emily,Heavey,,Chicago,IL,31,4,514774,599.62,0,Women Cat 4/5,0,01/00/1900,8/28/2017 14:02:31
+15,846,Carrie,Schoeneberger,Main Street Bicycles Sasquatch Squadron,Chicago,IL,25,5,539311,603.14,0,Women Cat 4/5,0,01/00/1900,9/4/2017 10:54:41
+16,840,Melissa,Zammit,The Chainlink,Chicago,IL,36,4,439653,611.68,0,Women Cat 4/5,0,01/00/1900,9/5/2017 11:55:37
+17,874,Jen,Agan,,Chicago,IL,42,4,300136,618.81,0,Women Cat 4/5,0,01/00/1900,8/28/2017 23:29:06
+18,851,Katie,Kolon,BFF Bikes,Chicago,IL,40,4,386486,622.17,0,Women Cat 4/5,0,01/00/1900,9/6/2017 10:00:26
+19,847,Kimberly,Scheer,UPB Cycling Club,Oak Park,IL,47,4,400114,648.97,0,Women Cat 4/5,0,01/00/1900,9/1/2017 11:43:46
+20,857,Lisa,Hilleren,BFF Bikes,Chicago,IL,29,4,514484,671.38,0,Women Cat 4/5,0,01/00/1900,8/28/2017 12:00:47
+21,868,Amber,Bonogofsky,Bike Haven Race Team,Woodstock,IL,30,4,470754,683.65,0,Women Cat 4/5,0,01/00/1900,9/1/2017 13:47:13
+22,865,Crystal,Costello,BFF Bikes,Chicago,IL,28,4,486893,694.68,0,Women Cat 4/5,0,01/00/1900,9/7/2017 23:42:24
+23,842,Michele,Underwood,Mox Multisport,Chicago,IL,46,4,538966,696.26,0,Women Cat 4/5,0,01/00/1900,8/28/2017 13:36:10
+24,850,K,Maddelein,Vision Quest,Naperville,IL,52,4,286404,703.1,0,Women Cat 4/5,0,01/00/1900,9/5/2017 7:40:17
+25,841,Graciela,Viale-Val,,Evanston,IL,79,4,387028,716.87,0,Women Cat 4/5,0,01/00/1900,8/30/2017 21:02:37
+26,853,Donna,Kielbasa,Spin Doctor Cyclewerks CX Team,Bartlett,IL,52,5,537873,749.67,0,Women Cat 4/5,0,01/00/1900,9/4/2017 14:42:55
+27,870,Anne,Barnes,,CHICAGO,IL,55,4,53860,799.61,0,Women Cat 4/5,0,01/00/1900,9/7/2017 15:54:43
+28,839,Allison,Zmuda,Comrade Cycles Racing,Chicago,IL,36,5,533666,9999,0,Women Cat 4/5,0,01/00/1900,8/28/2017 13:19:02
+29,864,Katerina,Crivello,INTENT,Downers Grove,IL,51,5,540369,9999,0,Women Cat 4/5,0,01/00/1900,8/28/2017 15:26:50
+30,856,Lauren,Jacobs,xXx Racing,Chicago,IL,33,5,529225,9999,0,Women Cat 4/5,0,01/00/1900,8/31/2017 13:27:42
+31,863,Charlotte,Erickson,INTENT,Palatine,IL,30,5,535275,9999,0,Women Cat 4/5,0,01/00/1900,9/4/2017 11:19:18
+32,843,Megan,Tsupros,,Chicago,IL,33,5,529220,9999,0,Women Cat 4/5,0,01/00/1900,9/4/2017 21:28:02
+33,855,Denise,Karlin,,Highland Park,IL,50,5,522595,9999,0,Women Cat 4/5,0,01/00/1900,9/5/2017 13:25:25
+34,844,Amber,Shesler,,Milwaukee,WI,24,4,458390,9999,0,Women Cat 4/5,0,01/00/1900,9/6/2017 18:09:08
+35,873,Maxine,Aguilar,Blackstone Bicycle Works,CHICAGO,IL,19,4,ONE DAY,9999,0,Women Cat 4/5,0,01/00/1900,9/7/2017 10:36:04
+36,872,Carmen,Aiken,,CHICAGO,IL,31,4,ONE DAY,9999,0,Women Cat 4/5,0,01/00/1900,9/7/2017 11:26:05
+37,848,Diana M.,Posadas,,Chicago,IL,40,5,539554,9999,0,Women Cat 4/5,0,01/00/1900,9/7/2017 16:41:40
+1,279,Michael,Patton,Bonkers Cycling,Chicago,IL,30,3,388367,304.62,0,Men Cat 3,0,01/00/1900,8/28/2017 10:09:27
+2,258,Troy,Crady,Mox Multisport,Chicago,IL,47,3,274912,308.9,0,Men Cat 3,0,01/00/1900,8/28/2017 15:28:22
+3,263,Alex,Edwards,PSIMET Racing,Streamwood,IL,27,3,208217,313.66,0,Men Cat 3,0,01/00/1900,8/28/2017 12:19:37
+4,291,Jared,Verbeke,xXx Racing,Chicago,IL,30,3,476576,314.92,0,Men Cat 3,0,01/00/1900,8/28/2017 12:13:41
+5,281,Nicholas,Pomella,PSIMET Racing,Palatine,IL,26,3,392940,315.52,0,Men Cat 3,0,01/00/1900,9/1/2017 14:11:41
+6,286,Marc,Royster,Union Cycling Team,Chicago,IL,36,3,456497,327.22,0,Men Cat 3,0,01/00/1900,9/7/2017 21:50:22
+7,265,Brandon,Gobel,Tuxedo Thunder Cycling,Chicago,IL,33,3,417934,331.67,0,Men Cat 3,0,01/00/1900,8/29/2017 22:12:38
+8,285,David,Ross,Team Bicycle Heaven,Dekalb,IL,33,3,368066,332.07,0,Men Cat 3,0,01/00/1900,8/28/2017 15:32:44
+9,284,Kevin,Richardson,Mox Multisport,Chicago,IL,40,3,503734,332.44,0,Men Cat 3,0,01/00/1900,8/28/2017 14:21:01
+10,273,Brad,Mitchell,PSIMET Racing,Chicago,IL,31,3,433326,337.19,0,Men Cat 3,0,01/00/1900,9/1/2017 14:26:34
+11,257,Willem,Conradie,,Chicago,IL,34,3,416904,337.7,0,Men Cat 3,0,01/00/1900,8/30/2017 9:47:55
+12,295,Dylan,Zakrajsek,Lake Geneva Youth Camp Cycling,Lake Geneva,WI,15,3,475253,340.33,0,Men Cat 3,0,01/00/1900,9/7/2017 9:54:01
+13,256,Eric,Christ,Team Bicycle Heaven,Palatine,IL,31,3,300410,345.37,0,Men Cat 3,0,01/00/1900,9/3/2017 12:53:06
+14,293,Piotr,Wiktorczyk,F3 Cycling p/b 7 Mile Cycles,Niles,IL,40,3,455947,345.52,0,Men Cat 3,0,01/00/1900,8/28/2017 23:55:25
+15,297,Tom,Zozokos,Main Street Bicycles Sasquatch Squadron,Palatine,IL,30,3,414866,349.02,0,Men Cat 3,0,01/00/1900,9/7/2017 20:58:43
+16,255,Damian,Chlanda,,Evanston,IL,30,3,469297,350.93,0,Men Cat 3,0,01/00/1900,9/4/2017 19:56:42
+17,253,Brian,Bauer,,Chicago,IL,32,3,300221,351.58,0,Men Cat 3,0,01/00/1900,9/7/2017 21:03:14
+18,267,Joseph,Johns,,Chicago,IL,31,3,380603,354.42,0,Men Cat 3,0,01/00/1900,9/6/2017 12:36:47
+19,251,Andrew,Aaron,Palomino American Cyclocross,Bayside,WI,34,3,487893,354.94,0,Men Cat 3,0,01/00/1900,9/5/2017 13:39:52
+20,277,Jereme,Noffke,,Madison,WI,36,3,185686,358.03,0,Men Cat 3,0,01/00/1900,9/6/2017 12:16:59
+21,270,Larry,Lenne,Team Heroes,Indianapolis,IN,51,3,496863,358.09,0,Men Cat 3,0,01/00/1900,9/5/2017 11:02:58
+22,278,Ara,Oggoian,Team Bicycle Heaven,Geneva,IL,48,3,26581,359.87,0,Men Cat 3,0,01/00/1900,9/5/2017 18:51:25
+23,275,John,Neal,,Chicago,IL,52,3,326892,364.4,0,Men Cat 3,0,01/00/1900,8/29/2017 18:52:28
+24,296,Mark,Zalewski,Spidermonkey Cycling,Chicago,IL,41,3,172471,364.61,0,Men Cat 3,0,01/00/1900,8/28/2017 13:11:45
+25,260,Christopher,Demetriou,Main Street Bicycles Sasquatch Squadron,Chicago,IL,29,3,416307,366.58,0,Men Cat 3,0,01/00/1900,9/6/2017 11:51:02
+26,0,Brandon,Conine,UPB Cycling,Chicago,IL,35,3,443688,366.99,0,Men Cat 3,0,01/00/1900,8/29/2017 7:28:01
+27,280,Shelby,Phillips,Comrade Cycles Racing,Chicago,IL,36,3,416319,367.15,0,Men Cat 3,0,01/00/1900,9/5/2017 14:55:30
+28,261,Aaron,Deutchman,,Bettendorf,IA,29,3,478044,370.31,0,Men Cat 3,0,01/00/1900,9/5/2017 7:46:04
+29,282,Drew,Priestgrochowski,,Chicago,IL,30,3,456396,370.76,0,Men Cat 3,0,01/00/1900,8/31/2017 17:59:04
+30,274,Gregory,Nash,INTENT,Barrington,IL,42,3,232258,371.92,0,Men Cat 3,0,01/00/1900,9/5/2017 14:32:04
+31,294,Brett,Williams,Main Street Bicycles Sasquatch Squadron,East Dundee,IL,34,3,358838,372.9,0,Men Cat 3,0,01/00/1900,9/3/2017 23:13:41
+32,271,Jef,Mayer,,Chicago,IL,40,3,475010,376.37,0,Men Cat 3,0,01/00/1900,9/7/2017 20:40:46
+33,266,Kennen,Hootman,INTENT,Addison,IL,30,3,422237,378.36,0,Men Cat 3,0,01/00/1900,9/5/2017 18:41:07
+34,264,Kyle,French,Half Acre Cycling,Champaign,IL,32,3,390179,385.68,0,Men Cat 3,0,01/00/1900,9/4/2017 17:04:51
+35,272,Todd,Metz,,Rockdale,IL,55,3,54928,395.91,0,Men Cat 3,0,01/00/1900,9/5/2017 10:56:15
+36,259,Johnathan,Crawford,Union Cycling Team,Evanston,IL,42,3,377685,396.28,0,Men Cat 3,0,01/00/1900,8/31/2017 6:24:53
+37,252,Diego,Arana,,Oak Lawn,IL,19,3,361121,396.38,0,Men Cat 3,0,01/00/1900,9/5/2017 8:17:09
+38,287,Benjamin,Schlarman,,CHICAGO,IL,34,3,414176,397.99,0,Men Cat 3,0,01/00/1900,9/3/2017 11:29:58
+39,276,Patrick,Newman,,WESTERN SPRINGS,IL,46,3,192215,405.99,0,Men Cat 3,0,01/00/1900,9/5/2017 19:46:24
+40,292,Grant,Wiersum,,Chicago,IL,26,3,308596,407.84,0,Men Cat 3,0,01/00/1900,8/29/2017 12:17:37
+41,262,Mitchell,Dutczak,The Pony Shop,Crete,IL,17,3,297673,417,0,Men Cat 3,0,01/00/1900,9/4/2017 19:06:35
+42,254,Daniel,Burkhardt,,Chicago,IL,25,3,365180,419.55,0,Men Cat 3,0,01/00/1900,9/4/2017 23:05:34
+43,283,Ryan,Prystai,Tainted Butter,TORONTO,ON,35,3,INTL-CAN,422.94,0,Men Cat 3,0,01/00/1900,8/29/2017 10:34:51
+44,290,Aaron,Smith,,Chicago,IL,30,3,455065,432.58,0,Men Cat 3,0,01/00/1900,8/28/2017 10:56:28
+45,288,Eric,Shivvers,PSIMET Racing,Chicago,IL,50,3,282025,449.49,0,Men Cat 3,0,01/00/1900,9/3/2017 10:51:33
+46,268,Craig,Kielbasa,South Chicago Wheelmen,Bartlett,IL,24,3,394336,452.17,0,Men Cat 3,0,01/00/1900,9/4/2017 14:52:21
+47,289,Joshua,Shough,,Chicago,IL,36,3,300665,468.51,0,Men Cat 3,0,01/00/1900,8/29/2017 20:49:38
+48,269,Edward,Krei,Mox Multisport,Chicago,IL,34,3,257615,9999,0,Men Cat 3,0,01/00/1900,8/28/2017 14:05:43
+1,4,Maria,Larkin,Chicago Cuttin Crew,Chicago,IL,31,1,306811,350.96,0,Women Cat 1/2,0,01/00/1900,9/5/2017 14:48:40
+2,2,Katie,Isermann,PSIMET Racing,Chicago,IL,37,2,300135,383.94,0,Women Cat 1/2,0,01/00/1900,8/28/2017 11:43:43
+3,5,Ella,Neurohr,Chicago Cuttin Crew,Chicago,IL,18,2,308188,403.74,0,Women Cat 1/2,0,01/00/1900,9/6/2017 8:51:24
+4,7,Christine,Thornburg,,Lincolnshire,IL,45,2,406781,410.42,0,Women Cat 1/2,0,01/00/1900,9/7/2017 13:18:46
+5,3,Lindsay,Knight,Tenspeed Hero,Chicago,IL,34,2,329788,415.18,0,Women Cat 1/2,0,01/00/1900,9/1/2017 14:37:05
+6,6,Jodie,Prestine,Ben's Cycle/Milwaukee Bicycle Co.,Brookfield,WI,54,2,481324,430.61,0,Women Cat 1/2,0,01/00/1900,8/28/2017 11:01:51
+7,9,Jessica,Whiton,xXx Racing,Chicago,IL,44,2,298762,444.68,0,Women Cat 1/2,0,01/00/1900,9/3/2017 16:00:51
+8,1,Lindsay,Freeborn,,Elburn,IL,50,2,301944,524.18,0,Women Cat 1/2,0,01/00/1900,9/4/2017 8:07:44
+9,8,June,Upshaw,F3 Cycling p/b 7 Mile Cycles,Village Of Lakewood,IL,54,1,143649,9999,0,Women Cat 1/2,0,01/00/1900,8/28/2017 14:49:16
+1,53,Gretchen,Kingry,Mox Multisport,Chicago,IL,30,3,502310,408.11,0,Women Cat 3/4,0,01/00/1900,8/28/2017 14:07:21
+2,66,Ashley,Cova,PSIMET Racing,Chicago,IL,30,4,493207,423.58,0,Women Cat 3/4,0,01/00/1900,9/6/2017 9:05:08
+3,50,Meesa,Maeng,Union Cycling Team,Chicago,IL,32,4,484723,435.8,0,Women Cat 3/4,0,01/00/1900,8/29/2017 16:47:30
+4,65,Kristine,Deibler,Union Cycling Team,Chicago,IL,28,4,424697,438.08,0,Women Cat 3/4,0,01/00/1900,9/7/2017 21:25:37
+5,63,Haley,Engle,Half Acre Cycling,Chicago,IL,28,3,484486,439.74,0,Women Cat 3/4,0,01/00/1900,8/28/2017 21:07:24
+6,49,Lorraine,McCarthy,,Vernon Hills,IL,55,4,418113,447.05,0,Women Cat 3/4,0,01/00/1900,9/6/2017 16:42:59
+7,38,Amelia,Van Maldegiam,PSIMET Racing,Bartlett,IL,19,3,361267,454.25,0,Women Cat 3/4,0,01/00/1900,9/5/2017 16:46:52
+8,44,Lily,Peck,Women's CX Project,Shelbyville,IN,17,3,413104,456.95,0,Women Cat 3/4,0,01/00/1900,9/7/2017 7:31:45
+9,37,Rachel,Wills,Chicago Womens Elite Cycling,Wilmette,IL,35,3,316704,457.73,0,Women Cat 3/4,0,01/00/1900,8/28/2017 23:17:41
+10,40,Kimberly,Stover,The Pony Shop,Evanston,IL,50,4,514459,460.6,0,Women Cat 3/4,0,01/00/1900,9/6/2017 21:44:26
+11,70,Kelsey,Campbell Dollaghan,BFF Bikes,Chicago,IL,33,4,443034,470.95,0,Women Cat 3/4,0,01/00/1900,9/7/2017 22:03:45
+12,73,Emily,Blim,Union Cycling Team,Oak Park,IL,23,4,514599,472.99,0,Women Cat 3/4,0,01/00/1900,9/7/2017 17:03:56
+13,68,Beth,Christiansen,Union Cycling Team,Evanston,IL,51,3,187395,482.95,0,Women Cat 3/4,0,01/00/1900,9/4/2017 20:53:55
+14,64,Eleanor,Dyas,Midwest Devo,Carmel,IN,16,3,426252,484.28,0,Women Cat 3/4,0,01/00/1900,9/5/2017 21:05:58
+15,58,Ashley,Heidenreich,Half Acre Cycling,Chicago,IL,33,3,402622,485.68,0,Women Cat 3/4,0,01/00/1900,9/5/2017 13:30:20
+16,45,Emily,Payonk,,Fort Wayne,IN,32,3,467027,485.86,0,Women Cat 3/4,0,01/00/1900,9/7/2017 21:23:28
+17,36,Lauren,Wiscomb,Bonkers Cycling,Wilmette,IL,31,3,484687,487.59,0,Women Cat 3/4,0,01/00/1900,9/1/2017 18:30:17
+18,60,Jennifer,Groen,Half Acre Cycling,Chicago,IL,49,3,306517,488.34,0,Women Cat 3/4,0,01/00/1900,8/29/2017 13:16:15
+19,42,Samantha,Scipio,Comrade Cycles Racing,Chicago,IL,28,4,519820,489.18,0,Women Cat 3/4,0,01/00/1900,8/28/2017 13:23:19
+20,69,Kristina,Caudle,BFF Bikes,Hanover,IL,34,4,431760,490.23,0,Women Cat 3/4,0,01/00/1900,8/28/2017 11:54:05
+21,75,Amy,Ancheta,Spidermonkey Cycling,Chicago,IL,35,4,403434,491.56,0,Women Cat 3/4,0,01/00/1900,9/5/2017 23:42:13
+22,43,Mary,Randall,Chicago Cuttin Crew,Chicago,IL,36,3,375931,499.5,0,Women Cat 3/4,0,01/00/1900,9/6/2017 8:51:24
+23,71,Kaitlyn,Bowden,PSIMET Racing,Sugar Grove,IL,26,4,382884,502.26,0,Women Cat 3/4,0,01/00/1900,8/28/2017 10:26:04
+24,67,Lauren,Conroy,Comrade Cycles Racing,Chicago,IL,32,4,443795,509.15,0,Women Cat 3/4,0,01/00/1900,8/28/2017 10:08:29
+25,61,Jamie,Gavin-Smyth,Chicago Cuttin Crew,Chicago,IL,35,3,293047,516.83,0,Women Cat 3/4,0,01/00/1900,9/7/2017 12:11:58
+26,46,Jennifer,Mosley,Half Acre Cycling,Chicago,IL,44,3,302834,523.8,0,Women Cat 3/4,0,01/00/1900,8/31/2017 9:27:25
+27,51,Tammi,Longsjo,,Chicago,IL,51,4,300605,526.43,0,Women Cat 3/4,0,01/00/1900,8/30/2017 19:16:39
+28,41,Kayci,Sterzer,Comrade Cycles Racing,Chicago,IL,29,4,477872,539.51,0,Women Cat 3/4,0,01/00/1900,9/8/2017 0:39:03
+29,57,Jessica,Helmlinger,BELGIANWERKX,Cedarburg,WI,33,3,255881,542,0,Women Cat 3/4,0,01/00/1900,9/7/2017 10:06:04
+30,54,Megan,Kelly,Half Acre Cycling,Chicago,IL,32,4,296364,553.58,0,Women Cat 3/4,0,01/00/1900,8/29/2017 18:54:09
+31,62,Lindsey,Fahey,Spidermonkey Cycling,Chicago,IL,35,3,397587,566.04,0,Women Cat 3/4,0,01/00/1900,8/28/2017 13:06:36
+32,56,Nancy,Heymann,F3 Cycling p/b 7 Mile Cycles,Highland Park,IL,58,3,283728,566.09,0,Women Cat 3/4,0,01/00/1900,8/28/2017 22:21:37
+33,72,Elizabeth,Bosch,,Chicago,IL,48,4,419302,578.67,0,Women Cat 3/4,0,01/00/1900,9/7/2017 10:53:37
+34,47,Elizabeth,McKinley,,Chicago,IL,28,4,459620,584.09,0,Women Cat 3/4,0,01/00/1900,8/29/2017 9:10:35
+35,59,Emily,Heavey,,Chicago,IL,31,4,514774,599.62,0,Women Cat 3/4,0,01/00/1900,8/28/2017 14:02:31
+36,52,Katie,Kolon,BFF Bikes,Chicago,IL,40,4,386486,622.17,0,Women Cat 3/4,0,01/00/1900,9/6/2017 10:00:26
+37,74,Leah,Barry,,Chicago,IL,27,4,515827,630.2,0,Women Cat 3/4,0,01/00/1900,9/5/2017 10:20:08
+38,55,Lisa,Hilleren,BFF Bikes,Chicago,IL,29,4,514484,671.38,0,Women Cat 3/4,0,01/00/1900,8/28/2017 12:00:47
+39,39,Graciela,Viale-Val,,Evanston,IL,79,4,387028,716.87,0,Women Cat 3/4,0,01/00/1900,8/30/2017 21:02:37
+40,48,Kathryn,McDicken,,Appleton,WI,17,4,381393,9999,0,Women Cat 3/4,0,01/00/1900,9/7/2017 22:50:51
+1,102,David,Reyes,Tenspeed Hero,Chicago,IL,34,1,211512,234.02,0,Men Cat 1/2/3,0,01/00/1900,9/7/2017 21:24:51
+2,82,Karson,Glass,Heritage Cycling,Chicago,IL,32,1,361989,245.8,0,Men Cat 1/2/3,0,01/00/1900,9/3/2017 22:37:05
+3,89,Peter,Kelley,Team Bicycle Heaven,Geneva,IL,37,1,306717,249.56,0,Men Cat 1/2/3,0,01/00/1900,8/28/2017 12:14:59
+4,86,Rory,Jack,Recycled Cycles Racing,Seattle,WA,27,2,329332,251.58,0,Men Cat 1/2/3,0,01/00/1900,9/7/2017 15:00:24
+5,85,Jacob,Huizenga,Chicago Cuttin Crew,Chicago,IL,32,1,408363,253.65,0,Men Cat 1/2/3,0,01/00/1900,8/31/2017 17:50:50
+6,92,Jason,Knauff,Burnham Racing,Glencoe,IL,40,2,145455,260.11,0,Men Cat 1/2/3,0,01/00/1900,8/28/2017 12:16:32
+7,88,Matthew,Kelley,,Homewood,IL,33,1,340630,269.1,0,Men Cat 1/2/3,0,01/00/1900,9/7/2017 23:29:21
+8,107,Jack,Warner,F3 Cycling p/b 7 Mile Cycles,Trout Valley,IL,19,2,358924,269.11,0,Men Cat 1/2/3,0,01/00/1900,8/28/2017 18:15:48
+9,76,Nicholas,Andriano,Main Street Bicycles Sasquatch Squadron,Carpentersville,IL,29,2,388197,272.52,0,Men Cat 1/2/3,0,01/00/1900,9/4/2017 20:14:17
+10,94,Zeno,Molteni,Plus One Cycling,Arlington Heights,IL,37,3,458003,273.23,0,Men Cat 1/2/3,0,01/00/1900,9/5/2017 15:37:49
+11,80,Nico,Cabrera,Chicago Cuttin Crew,Chicago,IL,34,2,282686,276.84,0,Men Cat 1/2/3,0,01/00/1900,8/31/2017 17:52:07
+12,91,Jonathan,Kloppenburg,Spidermonkey Cycling,Chicago,IL,38,2,173352,281.08,0,Men Cat 1/2/3,0,01/00/1900,9/5/2017 23:42:13
+13,96,Jarret,Oldham,First Internet Bank Cycling Team,Chicago,IL,24,2,432674,284.37,0,Men Cat 1/2/3,0,01/00/1900,9/5/2017 15:28:06
+14,95,Bailey,Newbrey,Chicago Cuttin Crew,Chicago,IL,32,2,378712,290.06,0,Men Cat 1/2/3,0,01/00/1900,9/6/2017 8:49:06
+15,99,Brian,Piotrowski,xXx Racing,Chicago,IL,32,2,281964,292.39,0,Men Cat 1/2/3,0,01/00/1900,8/29/2017 9:31:05
+16,84,Giordano,Guagliardo,,Lake Barrington,IL,36,3,317230,292.88,0,Men Cat 1/2/3,0,01/00/1900,9/7/2017 15:36:30
+17,90,Robert,Kelley,Team Bicycle Heaven,Geneva,IL,51,1,52765,298.22,0,Men Cat 1/2/3,0,01/00/1900,8/28/2017 12:15:08
+18,77,Robert,Bigelow-Rubin,Comrade Cycles Racing,Chicago,IL,28,2,472543,302.18,0,Men Cat 1/2/3,0,01/00/1900,8/28/2017 11:59:07
+19,83,Juan,Gonzalez,JC Crew/ Sammys cross,CHICAGO,IL,18,3,299118,307.05,0,Men Cat 1/2/3,0,01/00/1900,9/6/2017 14:51:06
+20,108,Chris,Young,xXx Racing,Chicago,IL,35,2,330644,310.91,0,Men Cat 1/2/3,0,01/00/1900,9/7/2017 10:52:43
+21,81,Alex,Edwards,PSIMET Racing,Streamwood,IL,27,3,208217,313.66,0,Men Cat 1/2/3,0,01/00/1900,8/28/2017 12:19:37
+22,105,Paul,Swinand,The Pony Shop,Evanston,IL,51,1,45986,315.12,0,Men Cat 1/2/3,0,01/00/1900,8/31/2017 9:28:25
+23,100,Nicholas,Pomella,PSIMET Racing,Palatine,IL,26,3,392940,315.52,0,Men Cat 1/2/3,0,01/00/1900,9/1/2017 14:11:41
+24,103,Steve,Schafer,,Deer Park,IL,48,3,309583,318.21,0,Men Cat 1/2/3,0,01/00/1900,9/5/2017 23:45:35
+25,79,Peter,Cavoto,PSIMET Racing,Chicago,IL,45,2,359848,336.78,0,Men Cat 1/2/3,0,01/00/1900,8/28/2017 12:15:17
+26,93,Paul-Brian,McInerney,Half Acre Cycling,Chicago,IL,48,2,286420,344.06,0,Men Cat 1/2/3,0,01/00/1900,8/31/2017 9:27:25
+27,98,Jake,Peterson,Team Bicycle Heaven,Batavia,IL,24,2,456923,346.12,0,Men Cat 1/2/3,0,01/00/1900,8/30/2017 14:26:59
+28,97,Michael,Page,Plus One Cycling,Algonquin,IL,28,2,384606,354.23,0,Men Cat 1/2/3,0,01/00/1900,9/7/2017 22:39:55
+29,87,Joseph,Johns,,Chicago,IL,31,3,380603,354.42,0,Men Cat 1/2/3,0,01/00/1900,9/6/2017 12:36:47
+30,106,John,Villena,,Chicago,IL,36,3,290160,376.08,0,Men Cat 1/2/3,0,01/00/1900,8/21/2017 12:11:49
+31,104,Benjamin,Schlarman,,CHICAGO,IL,34,3,414176,397.99,0,Men Cat 1/2/3,0,01/00/1900,9/3/2017 11:29:58
+32,78,David,Bowers,Half Acre Cycling,Chicago,IL,38,3,264405,402.71,0,Men Cat 1/2/3,0,01/00/1900,9/7/2017 22:10:21
+33,101,Ryan,Prystai,Tainted Butter,TORONTO,ON,35,3,INTL-CAN,422.94,0,Men Cat 1/2/3,0,01/00/1900,8/29/2017 10:34:51
+1,400,Johan,Konter,Union Cycling Team,Chicago,IL,31,4,470365,362.29,0,Men Cat 4,0,01/00/1900,9/6/2017 13:17:59
+2,351,Noah,Anderson,Spin Doctor Cyclewerks CX Team,South Elgin,IL,21,4,326640,369.54,0,Men Cat 4,0,01/00/1900,8/31/2017 12:05:09
+3,352,Adam,Andriano,Main Street Bicycles Sasquatch Squadron,Elgin,IL,34,4,439259,370,0,Men Cat 4,0,01/00/1900,8/28/2017 12:17:14
+4,358,Jeremy,Bloyd-Peshkin,INTENT,Chicago,IL,23,4,518778,378.61,0,Men Cat 4,0,01/00/1900,8/28/2017 10:27:27
+5,384,David,Harriff,,Skokie,IL,40,4,484841,387.76,0,Men Cat 4,0,01/00/1900,8/29/2017 22:39:06
+6,422,Colton,Peterson,,Batavia,IL,19,4,525236,388.26,0,Men Cat 4,0,01/00/1900,9/7/2017 13:29:10
+7,363,Derek,Burge-Beckley,Bonkers Cycling,Chicago,IL,27,4,424947,388.97,0,Men Cat 4,0,01/00/1900,9/7/2017 16:24:28
+8,381,Edward,Gross,SRAM Factory,Chicago,IL,35,4,418896,391.3,0,Men Cat 4,0,01/00/1900,9/6/2017 16:14:41
+9,387,Sean,Hayek,DICE,Moline,IL,43,4,457233,391.81,0,Men Cat 4,0,01/00/1900,8/28/2017 19:27:36
+10,388,Matt,Henderson,,Chicago,IL,35,4,484349,391.82,0,Men Cat 4,0,01/00/1900,8/30/2017 0:59:14
+11,447,Jack,Zakrajsek,Lake Geneva Youth Camp Cycling,Lake Geneva,WI,17,4,517520,394.04,0,Men Cat 4,0,01/00/1900,9/7/2017 9:54:01
+12,362,Andrzej,Brzoznowski,Half Acre Cycling,Chicago,IL,34,4,470533,395.95,0,Men Cat 4,0,01/00/1900,9/3/2017 22:19:45
+13,428,Connor,Ramsey,,Rochester,IL,26,4,390862,397.68,0,Men Cat 4,0,01/00/1900,8/30/2017 21:51:40
+14,371,David,Corey,,West Dundee,IL,33,4,518171,398.15,0,Men Cat 4,0,01/00/1900,9/7/2017 7:27:33
+15,354,Mike,Bacino,Plus One Cycling,Barrington,IL,33,4,408480,399.19,0,Men Cat 4,0,01/00/1900,9/5/17 1:48:56 PM
+16,444,Andrew,Waggoner,,Evanston,IL,36,4,375977,405.34,0,Men Cat 4,0,01/00/1900,8/28/17 10:08:10 AM
+17,408,Wally,May,Union Cycling Team,Niles,IL,24,4,485600,406.15,0,Men Cat 4,0,01/00/1900,9/4/17 4:35:38 PM
+18,423,Torey,Peterson,,Chicago,IL,29,4,448431,407.28,0,Men Cat 4,0,01/00/1900,8/28/17 2:50:59 PM
+19,441,Dave,Towner,Cycling Republic Racing Team,Carpentersville,IL,49,4,440284,411.58,0,Men Cat 4,0,01/00/1900,8/28/17 8:23:05 PM
+20,370,Kevin,Corcoran,xXx Racing,Chicago,IL,41,4,418397,412.17,0,Men Cat 4,0,01/00/1900,9/7/17 11:03:55 AM
+21,437,Aaron,Swanton,Comrade Cycles Racing,Chicago,IL,37,4,489074,412.73,0,Men Cat 4,0,01/00/1900,9/7/17 9:55:17 AM
+22,407,Vince,Mavrick,Main Street Bicycles Sasquatch Squadron,Pingree Grove,IL,36,4,412534,413.11,0,Men Cat 4,0,01/00/1900,8/28/17 12:14:30 PM
+23,426,Sebastian,Pott,,Chicago,IL,39,4,489760,421.68,0,Men Cat 4,0,01/00/1900,9/7/17 12:16:25 AM
+24,412,Arthur,Miles,Vision Quest,Tower Lakes,IL,44,4,417107,426.35,0,Men Cat 4,0,01/00/1900,8/28/17 10:07:59 AM
+25,418,Brett,Obourke,UPB Cycling,Hinsdale,IL,42,4,390405,426.68,0,Men Cat 4,0,01/00/1900,9/4/17 5:57:21 PM
+26,364,Aaron,Byrnes,PSIMET Racing,Chicago,IL,42,4,362040,430.44,0,Men Cat 4,0,01/00/1900,9/5/17 11:41:25 AM
+27,429,Scott,Rothbarth,xXx Racing,Chicago,IL,27,4,518009,433.55,0,Men Cat 4,0,01/00/1900,8/31/17 1:06:27 PM
+28,401,Henrique,Lowe,Lake Geneva Youth Camp Cycling,Walworth,WI,14,4,448281,436.1,0,Men Cat 4,0,01/00/1900,8/30/17 11:14:24 PM
+29,445,Zachary,Weidenaar,Mox Multisport,Lansing,IL,36,4,517282,437.52,0,Men Cat 4,0,01/00/1900,9/7/17 12:37:20 AM
+30,355,Richard,Baisa,RegionRacing p/b Strack & Van Til,Saint John,IN,46,4,250430,437.54,0,Men Cat 4,0,01/00/1900,9/5/17 9:17:10 AM
+31,391,Michael,Hulburt,,Chicago,IL,30,4,430326,440.7,0,Men Cat 4,0,01/00/1900,8/28/17 10:27:11 PM
+32,386,Kristopher,Hartner,Bonkers Cycling,Naperville,IL,52,4,487965,444.51,0,Men Cat 4,0,01/00/1900,8/29/17 1:52:45 AM
+33,435,Matthew,Stephens,,Chicago,IL,48,4,488720,445.05,0,Men Cat 4,0,01/00/1900,9/6/17 10:44:36 AM
+34,361,Chris,Brown,,Chicago,IL,61,4,520287,446.79,0,Men Cat 4,0,01/00/1900,9/2/17 2:33:07 AM
+35,443,Daniel,Wachter,Half Acre Cycling,Chicago,IL,40,4,379091,449.29,0,Men Cat 4,0,01/00/1900,9/8/17 12:18:19 AM
+36,424,Blake,Picard,Main Street Bicycles Sasquatch Squadron,Crystal Lake,IL,33,4,493227,451.44,0,Men Cat 4,0,01/00/1900,9/4/17 9:28:12 PM
+37,383,Ross,Handler,,Chicago,IL,32,4,454249,451.84,0,Men Cat 4,0,01/00/1900,9/7/17 1:16:27 PM
+38,436,Kyle,Suratte,,Woodstock,IL,31,4,403395,455.77,0,Men Cat 4,0,01/00/1900,8/31/17 8:09:08 PM
+39,379,Arturo,Garza-Gongora,,Chicago,IL,30,4,466969,456.06,0,Men Cat 4,0,01/00/1900,9/5/17 12:42:44 AM
+40,434,Sean,Seamon,,Wheaton,IL,35,4,411873,457.19,0,Men Cat 4,0,01/00/1900,9/4/17 8:34:31 PM
+41,419,Terry,O'Grady,PSIMET Racing,Chicago,IL,52,4,264048,459.79,0,Men Cat 4,0,01/00/1900,9/5/17 3:20:00 AM
+42,410,Jonathan,Mendez,,Chicago,IL,26,4,454964,460.87,0,Men Cat 4,0,01/00/1900,9/5/17 1:03:18 AM
+43,430,Daniel,Schaumann,Comrade Cycles Racing,Chicago,IL,31,4,486279,461.93,0,Men Cat 4,0,01/00/1900,9/6/17 5:29:07 PM
+44,433,Jon,Schratz,,Aurora,IL,38,4,389098,465.45,0,Men Cat 4,0,01/00/1900,9/6/17 7:53:05 AM
+45,405,Matt,Maniscalco,Spidermonkey Cycling,Chicago,IL,34,4,422762,471.06,0,Men Cat 4,0,01/00/1900,8/29/17 11:03:01 AM
+46,397,Douglas,Kerr,The Pony Shop,Chicago,IL,26,4,512084,475.06,0,Men Cat 4,0,01/00/1900,9/4/17 8:20:30 PM
+47,398,John,Kingry,Mox Multisport,Chicago,IL,33,4,431899,478.76,0,Men Cat 4,0,01/00/1900,8/28/17 2:20:17 PM
+48,439,Jafet,Torres,Bonkers Cycling,Chicago,IL,26,4,411568,479.42,0,Men Cat 4,0,01/00/1900,9/5/17 1:02:38 AM
+49,449,Bartosz,Zurawski,,Chicago,IL,44,4,518289,481.75,0,Men Cat 4,0,01/00/1900,9/4/17 8:35:02 PM
+50,406,Monte,Martin,,Chicago,IL,38,4,328840,482.8,0,Men Cat 4,0,01/00/1900,8/29/17 6:03:40 PM
+51,396,Michael,Kelly,South Chicago Wheelmen,Chicago,IL,57,4,196801,489.87,0,Men Cat 4,0,01/00/1900,8/28/17 12:15:56 PM
+52,404,Kevin,Mallory,xXx Racing,Chicago,IL,59,4,485808,496.39,0,Men Cat 4,0,01/00/1900,8/28/17 10:07:31 AM
+53,375,Eric,Epifanio,Bonkers Cycling,Chicago,IL,33,4,503423,498.12,0,Men Cat 4,0,01/00/1900,8/28/17 1:59:41 PM
+54,372,Duane,Crowe,Half Acre Cycling,Chicago,IL,31,4,456790,500.69,0,Men Cat 4,0,01/00/1900,9/4/17 1:49:54 PM
+55,427,Joseph,Proszowski,Bouledogue Tout Noir,Chicago,IL,29,4,376389,506.78,0,Men Cat 4,0,01/00/1900,9/4/17 10:23:07 AM
+56,446,Chris,Westall,Beverly Bike,Lombard,IL,48,4,517862,508.62,0,Men Cat 4,0,01/00/1900,9/6/17 11:44:29 AM
+57,442,Roland,Varriale,Ten27 Cycling Club,Chicago,IL,34,4,472553,510.59,0,Men Cat 4,0,01/00/1900,9/3/17 7:28:30 PM
+58,382,Andres,Gutierrez,INTENT,Palatine,IL,35,4,449150,511.6,0,Men Cat 4,0,01/00/1900,9/4/17 11:19:18 AM
+59,438,Jack,Thornburg,,Chicago,IL,30,4,481675,512.28,0,Men Cat 4,0,01/00/1900,9/6/17 2:50:35 PM
+60,420,Brian,Ohalloran,xXx Racing,Chicago,IL,52,4,484468,517.43,0,Men Cat 4,0,01/00/1900,8/30/17 1:51:00 PM
+61,368,Daniel,Chiaravalli,,Chicago,IL,41,4,493505,517.56,0,Men Cat 4,0,01/00/1900,8/30/17 6:53:46 PM
+62,365,Gregory,Carver,,Crystal Lake,IL,38,4,488017,518.6,0,Men Cat 4,0,01/00/1900,9/4/17 3:10:55 PM
+63,374,Gregory,Dyas,A Cycling Team,Carmel,IN,44,4,396942,521.55,0,Men Cat 4,0,01/00/1900,9/5/17 9:05:58 PM
+64,360,Ruairi,Brady,PSIMET Racing,Chicago,IL,39,4,467894,527.8,0,Men Cat 4,0,01/00/1900,8/28/17 1:56:05 PM
+65,413,Kyle,Millns,INTENT,Chicago,IL,32,4,374976,534.6,0,Men Cat 4,0,01/00/1900,9/6/17 11:03:32 PM
+66,421,Kevin,Oneill,xXx Racing,Chicago,IL,43,4,213060,538.94,0,Men Cat 4,0,01/00/1900,9/8/17 12:29:23 AM
+67,390,Kendall,Hudson,xXx Racing,Skokie,IL,48,4,458249,539.14,0,Men Cat 4,0,01/00/1900,8/31/17 10:58:50 AM
+68,425,John,Pontarelli,GSECC - Garner Semi Elite Cross Crew,Wilmette,IL,27,4,264878,543.45,0,Men Cat 4,0,01/00/1900,9/7/17 10:45:30 PM
+69,432,Zach,Schneider,The Chainlink,Chicago,IL,36,4,508055,545.62,0,Men Cat 4,0,01/00/1900,8/31/17 8:06:54 AM
+70,369,Ben,Connor,,Naperville,IL,50,4,516195,552.88,0,Men Cat 4,0,01/00/1900,8/28/17 10:26:33 PM
+71,376,Stephen,Feehery,South Chicago Wheelmen,Homewood,IL,53,4,11378,554.4,0,Men Cat 4,0,01/00/1900,8/28/17 12:15:47 PM
+72,356,William,Barnes,PSIMET Racing,Chicago,IL,40,4,302902,559.86,0,Men Cat 4,0,01/00/1900,9/3/17 4:00:51 PM
+73,411,Anthony,Mikos,PSIMET Racing,West Dundee,IL,37,4,484480,563.86,0,Men Cat 4,0,01/00/1900,8/28/17 12:15:25 PM
+74,393,Patrick,Jenkins,,Chicago,IL,51,4,412724,568.86,0,Men Cat 4,0,01/00/1900,9/6/17 7:27:18 AM
+75,448,William,Zola,Tuxedo Thunder Cycling,Chicago,IL,32,4,375838,569.29,0,Men Cat 4,0,01/00/1900,9/5/17 10:23:29 AM
+76,357,Timothy,Barrett,Team Bicycle Heaven,North Aurora,IL,47,4,360364,570.09,0,Men Cat 4,0,01/00/1900,8/31/17 1:08:20 AM
+77,399,Steve,Kismohr,,Chicago,IL,48,4,327028,571.34,0,Men Cat 4,0,01/00/1900,8/29/17 5:07:36 PM
+78,440,Max,Torres,Beverly Bike,Chicago,IL,28,4,443145,572.51,0,Men Cat 4,0,01/00/1900,9/5/17 8:17:23 AM
+79,366,Joseph,Castello,,CHICAGO,IL,35,4,271143,584.28,0,Men Cat 4,0,01/00/1900,8/28/17 12:16:40 PM
+80,403,John,Mahr,,Chicago,IL,54,4,116316,588.25,0,Men Cat 4,0,01/00/1900,9/7/17 9:23:03 PM
+81,353,Derek,Augustynowicz,RegionRacing p/b Strack & Van Til,Highland,IN,35,4,248449,588.49,0,Men Cat 4,0,01/00/1900,8/29/17 11:45:29 AM
+82,385,Matthew,Harris,Half Acre Cycling,Chicago,IL,33,4,301503,589.96,0,Men Cat 4,0,01/00/1900,9/1/17 1:16:04 AM
+83,380,Barron,Gira,PSIMET Racing,Sleepy Hollow,IL,53,4,257330,590.48,0,Men Cat 4,0,01/00/1900,8/28/17 10:41:04 AM
+84,414,John,Mitchell,xXx Racing,Chicago,IL,56,4,343594,590.79,0,Men Cat 4,0,01/00/1900,9/1/17 9:18:31 AM
+85,417,Andrew,Nix,xXx Racing,Chicago,IL,32,4,274776,591.77,0,Men Cat 4,0,01/00/1900,9/7/17 10:29:11 PM
+86,409,Bryan,McClaran,INTENT,Chicago,IL,33,4,393271,594.51,0,Men Cat 4,0,01/00/1900,9/7/17 1:17:51 PM
+87,395,Michael,Junius,Tower Racing,Chicago,IL,50,4,276547,598.68,0,Men Cat 4,0,01/00/1900,9/1/17 10:16:52 AM
+88,367,Gerard,Castro,,Frankfort,IL,44,4,455127,599.19,0,Men Cat 4,0,01/00/1900,9/7/17 10:32:15 PM
+89,377,Gregg,Foster,RegionRacing p/b Strack & Van Til,Griffith,IN,50,4,376340,602.94,0,Men Cat 4,0,01/00/1900,9/7/17 11:59:16 PM
+90,373,Michael,Dutczak,,Crete,IL,55,4,261776,608.86,0,Men Cat 4,0,01/00/1900,9/7/17 6:44:30 PM
+91,389,Max,Hertz,Tuxedo Thunder Cycling,Chicago,IL,31,4,390282,616.34,0,Men Cat 4,0,01/00/1900,9/2/17 9:58:14 AM
+92,359,Alex,Braatz,The Chainlink,Chicago,IL,31,4,407112,618.67,0,Men Cat 4,0,01/00/1900,8/28/17 1:48:24 PM
+93,415,Mulubwa,Munkanta,SRAM Factory,Chicago,IL,48,4,389187,620.31,0,Men Cat 4,0,01/00/1900,9/6/17 4:16:00 PM
+94,394,Aaron,Johnson,MSN Pro Coaching,Loves Park,IL,47,4,376596,637.91,0,Men Cat 4,0,01/00/1900,9/3/17 5:22:49 PM
+95,416,Nathan,Newton,SRAM Factory,Chicago,IL,35,4,190344,681.68,0,Men Cat 4,0,01/00/1900,9/6/17 4:15:26 PM
+96,378,Jeff,Gabbard,,Gages Lake,IL,47,4,532926,9999,0,Men Cat 4,0,01/00/1900,8/28/17 10:01:28 AM
+97,431,Matthew,Schmitz,Half Acre Cycling,Chicago,IL,34,4,360071,9999,0,Men Cat 4,0,01/00/1900,8/30/17 6:57:09 PM
+98,402,Nolan,Magsamen,Cycling Republic Racing Team,Algonquin,IL,23,4,351714,9999,0,Men Cat 4,0,01/00/1900,9/6/17 11:45:47 AM
+99,392,Case,Hultman,Tower Racing,Westmont,IL,48,4,275629,9999,0,Men Cat 4,0,01/00/1900,9/7/17 10:17:31 AM
+1,673,Johan,Konter,Union Cycling Team,Chicago,IL,31,4,470365,362.29,0,Men Cat 4/5,0,01/00/1900,9/6/17 1:17:59 PM
+2,602,Adam,Andriano,Main Street Bicycles Sasquatch Squadron,Elgin,IL,34,4,439259,370,0,Men Cat 4/5,0,01/00/1900,8/28/17 12:17:14 PM
+3,701,Matthew,Parris,,Chicago,IL,31,4,487408,375.11,0,Men Cat 4/5,0,01/00/1900,9/5/17 6:38:20 PM
+4,704,Tyler,Poore,Main Street Bicycles Sasquatch Squadron,Carpentersville,IL,19,5,460047,381.71,0,Men Cat 4/5,0,01/00/1900,9/5/17 11:17:17 AM
+5,621,Derek,Burge-Beckley,Bonkers Cycling,Chicago,IL,27,4,424947,388.97,0,Men Cat 4/5,0,01/00/1900,9/7/17 4:24:28 PM
+6,655,Edward,Gross,SRAM Factory,Chicago,IL,35,4,418896,391.3,0,Men Cat 4/5,0,01/00/1900,9/6/17 4:14:49 PM
+7,662,Matt,Henderson,,Chicago,IL,35,4,484349,391.82,0,Men Cat 4/5,0,01/00/1900,8/30/17 12:59:14 AM
+8,620,Andrzej,Brzoznowski,Half Acre Cycling,Chicago,IL,34,4,470533,395.95,0,Men Cat 4/5,0,01/00/1900,9/3/17 10:19:45 PM
+9,605,Mike,Bacino,Plus One Cycling,Barrington,IL,33,4,408480,399.19,0,Men Cat 4/5,0,01/00/1900,9/5/17 1:48:56 PM
+10,684,Wally,May,Union Cycling Team,Niles,IL,24,4,485600,406.15,0,Men Cat 4/5,0,01/00/1900,9/4/17 4:35:38 PM
+11,702,Torey,Peterson,,Chicago,IL,29,4,448431,407.28,0,Men Cat 4/5,0,01/00/1900,8/28/17 2:50:59 PM
+12,719,Dave,Towner,Cycling Republic Racing Team,Carpentersville,IL,49,4,440284,411.58,0,Men Cat 4/5,0,01/00/1900,8/28/17 8:23:05 PM
+13,634,Kevin,Corcoran,xXx Racing,Chicago,IL,41,4,418397,412.17,0,Men Cat 4/5,0,01/00/1900,8/28/17 12:13:50 PM
+14,716,Aaron,Swanton,Comrade Cycles Racing,Chicago,IL,37,4,489074,412.73,0,Men Cat 4/5,0,01/00/1900,9/7/17 9:55:17 AM
+15,683,Vince,Mavrick,Main Street Bicycles Sasquatch Squadron,Pingree Grove,IL,36,4,412534,413.11,0,Men Cat 4/5,0,01/00/1900,9/3/17 10:43:13 AM
+16,689,Arthur,Miles,Vision Quest,Tower Lakes,IL,44,4,417107,426.35,0,Men Cat 4/5,0,01/00/1900,8/28/17 10:07:59 AM
+17,695,Brett,Obourke,UPB Cycling,Hinsdale,IL,42,4,390405,426.68,0,Men Cat 4/5,0,01/00/1900,9/4/17 5:57:21 PM
+18,640,Matt,Duer,,Evanston,IL,33,5,501677,430.15,0,Men Cat 4/5,0,01/00/1900,8/30/17 9:04:06 PM
+19,623,Aaron,Byrnes,PSIMET Racing,Chicago,IL,42,4,362040,430.44,0,Men Cat 4/5,0,01/00/1900,9/5/17 11:41:25 AM
+20,710,Scott,Rothbarth,xXx Racing,Chicago,IL,27,4,518009,433.55,0,Men Cat 4/5,0,01/00/1900,8/31/17 1:06:27 PM
+21,722,Zachary,Weidenaar,Mox Multisport,Lansing,IL,36,4,517282,437.52,0,Men Cat 4/5,0,01/00/1900,9/7/17 12:37:20 AM
+22,607,Richard,Baisa,RegionRacing p/b Strack & Van Til,Saint John,IN,46,4,250430,437.54,0,Men Cat 4/5,0,01/00/1900,9/5/17 9:17:10 AM
+23,665,Michael,Hulburt,,Chicago,IL,30,4,430326,440.7,0,Men Cat 4/5,0,01/00/1900,8/28/17 10:27:11 PM
+24,645,Art,Fessler,Cycling Republic Racing Team,Dundee,IL,52,4,493937,445.82,0,Men Cat 4/5,0,01/00/1900,8/31/17 1:49:27 PM
+25,691,Maxwell,Montagano,,Chicago,IL,17,5,520142,446.76,0,Men Cat 4/5,0,01/00/1900,9/7/17 10:36:04 AM
+26,619,Chris,Brown,,Chicago,IL,61,4,520287,446.79,0,Men Cat 4/5,0,01/00/1900,9/2/17 2:33:07 AM
+27,715,Kyle,Suratte,,Woodstock,IL,31,4,403395,455.77,0,Men Cat 4/5,0,01/00/1900,8/31/17 8:09:08 PM
+28,674,Alex,Kulyk,,Glenview,IL,28,5,432491,459.26,0,Men Cat 4/5,0,01/00/1900,9/6/17 8:10:54 PM
+29,697,Terry,O'Grady,PSIMET Racing,Chicago,IL,52,4,264048,459.79,0,Men Cat 4/5,0,01/00/1900,9/5/17 3:20:00 AM
+30,687,Jonathan,Mendez,,Chicago,IL,26,4,454964,460.87,0,Men Cat 4/5,0,01/00/1900,9/5/17 1:03:18 AM
+31,706,Achim,Rees,xXx Racing,Chicago,IL,39,5,489293,460.88,0,Men Cat 4/5,0,01/00/1900,8/30/17 9:55:18 PM
+32,618,Peter,Britton,PSIMET Racing,Lake In The Hills,IL,38,5,467444,462.21,0,Men Cat 4/5,0,01/00/1900,9/2/17 10:48:57 AM
+33,660,Andrew,Hastings,,CHICAGO,IL,30,5,489277,462.83,0,Men Cat 4/5,0,01/00/1900,9/6/17 2:56:04 PM
+34,712,Jon,Schratz,,Aurora,IL,38,4,389098,465.45,0,Men Cat 4/5,0,01/00/1900,9/6/17 7:53:05 AM
+35,680,Matt,Maniscalco,Spidermonkey Cycling,Chicago,IL,34,4,422762,471.06,0,Men Cat 4/5,0,01/00/1900,8/29/17 11:03:01 AM
+36,675,Nicholas,Labbe,The Pony Shop,Rolling Meadows Il,IL,13,4,493062,478.83,0,Men Cat 4/5,0,01/00/1900,8/28/17 10:08:37 AM
+37,718,Jafet,Torres,Bonkers Cycling,Chicago,IL,26,4,411568,479.42,0,Men Cat 4/5,0,01/00/1900,9/5/17 1:02:38 AM
+38,724,Bartosz,Zurawski,,Chicago,IL,44,4,518289,481.75,0,Men Cat 4/5,0,01/00/1900,9/4/17 8:35:02 PM
+39,681,Monte,Martin,,Chicago,IL,38,4,328840,482.8,0,Men Cat 4/5,0,01/00/1900,8/29/17 6:03:40 PM
+40,627,Dan,Charleston,,CHICAGO,IL,28,5,488371,486.58,0,Men Cat 4/5,0,01/00/1900,9/7/17 11:07:43 PM
+41,643,Eric,Epifanio,Bonkers Cycling,Chicago,IL,33,4,503423,498.12,0,Men Cat 4/5,0,01/00/1900,8/28/17 1:59:41 PM
+42,667,Phillip,Hutchinson,,Chicago,IL,42,5,443311,506.49,0,Men Cat 4/5,0,01/00/1900,8/28/17 12:18:35 PM
+43,721,Roland,Varriale,Ten27 Cycling Club,Chicago,IL,34,4,472553,510.59,0,Men Cat 4/5,0,01/00/1900,9/3/17 7:28:30 PM
+44,657,Andres,Gutierrez,INTENT,Palatine,IL,35,4,449150,511.6,0,Men Cat 4/5,0,01/00/1900,9/4/17 11:19:18 AM
+45,717,Jack,Thornburg,,Chicago,IL,30,4,481675,512.28,0,Men Cat 4/5,0,01/00/1900,9/6/17 2:50:35 PM
+46,659,Michael,Hartmann,,Naperville,IL,43,5,541010,513.07,0,Men Cat 4/5,0,01/00/1900,9/5/17 5:47:46 PM
+47,698,Brian,Ohalloran,xXx Racing,Chicago,IL,52,4,484468,517.43,0,Men Cat 4/5,0,01/00/1900,8/30/17 1:51:00 PM
+48,628,Daniel,Chiaravalli,,Chicago,IL,41,4,493505,517.56,0,Men Cat 4/5,0,01/00/1900,8/30/17 6:53:46 PM
+49,625,Gregory,Carver,,Crystal Lake,IL,38,4,488017,518.6,0,Men Cat 4/5,0,01/00/1900,9/4/17 3:10:55 PM
+50,624,Anthony,Cambio,,Arlington Heights,IL,52,4,83509,523.55,0,Men Cat 4/5,0,01/00/1900,9/5/17 5:15:31 PM
+51,617,Ruairi,Brady,PSIMET Racing,Chicago,IL,39,4,467894,527.8,0,Men Cat 4/5,0,01/00/1900,8/28/17 1:56:05 PM
+52,705,Jamie,Proctor,,Chicago,IL,36,4,413252,533.77,0,Men Cat 4/5,0,01/00/1900,9/6/17 4:36:42 PM
+53,654,Pete,Gray,,CHICAGO,IL,40,5,521078,537.24,0,Men Cat 4/5,0,01/00/1900,9/6/17 6:02:51 PM
+54,651,Charles,Goldman,xXx Racing,Chicago,IL,56,4,13541,542.67,0,Men Cat 4/5,0,01/00/1900,8/30/17 6:29:05 PM
+55,652,Luke,Goldman,xXx Racing,Chicago,IL,15,5,467668,544.99,0,Men Cat 4/5,0,01/00/1900,8/30/17 6:29:05 PM
+56,664,Clinton,Holler,RAPHA CYCLING CLUB,Chicago,IL,28,4,356130,547.64,0,Men Cat 4/5,0,01/00/1900,9/2/17 6:18:34 PM
+57,613,Graeme,Boland,,North Aurora,IL,20,5,519892,552.57,0,Men Cat 4/5,0,01/00/1900,9/5/17 2:56:35 PM
+58,692,Jordan,Morrell,,Chicago,IL,33,5,518269,553.28,0,Men Cat 4/5,0,01/00/1900,9/6/17 3:43:07 PM
+59,677,Tom,Lentz,,Trout Valley,IL,42,5,539562,559.57,0,Men Cat 4/5,0,01/00/1900,8/29/17 6:44:06 AM
+60,685,Mike,McCall,,CHICAGO,IL,43,5,ONE DAY,561.52,0,Men Cat 4/5,0,01/00/1900,8/28/17 10:08:53 AM
+61,693,Masaya,Nakai,,Palatine,IL,31,5,541054,570,0,Men Cat 4/5,0,01/00/1900,9/4/17 1:44:29 AM
+62,610,Timothy,Barrett,Team Bicycle Heaven,North Aurora,IL,47,4,360364,570.09,0,Men Cat 4/5,0,01/00/1900,8/31/17 1:08:20 AM
+63,656,Jim,Gust,,Batavia,IL,31,5,469215,571.15,0,Men Cat 4/5,0,01/00/1900,9/7/17 1:54:18 PM
+64,650,Michael,Gnutek,,Palatine,IL,41,5,520167,576.35,0,Men Cat 4/5,0,01/00/1900,9/5/17 11:03:13 PM
+65,604,Derek,Augustynowicz,RegionRacing p/b Strack & Van Til,Highland,IN,35,4,248449,588.49,0,Men Cat 4/5,0,01/00/1900,8/29/17 11:45:29 AM
+66,626,Gerard,Castro,,Frankfort,IL,44,4,455127,599.19,0,Men Cat 4/5,0,01/00/1900,9/7/17 10:32:15 PM
+67,700,Brian,Parache,xXx Racing,Chicago,IL,19,5,457658,599.57,0,Men Cat 4/5,0,01/00/1900,9/7/17 11:36:11 PM
+68,699,John,Ott,Main Street Bicycles Sasquatch Squadron,West Dundee,IL,26,5,443638,600.79,0,Men Cat 4/5,0,01/00/1900,8/30/17 11:14:20 AM
+69,647,Gregg,Foster,RegionRacing p/b Strack & Van Til,Griffith,IN,50,4,376340,602.94,0,Men Cat 4/5,0,01/00/1900,9/7/17 11:59:16 PM
+70,615,Nick,Bowersox,,Chicago,IL,30,5,538254,603.04,0,Men Cat 4/5,0,01/00/1900,8/29/17 10:44:18 AM
+71,688,Daniel,Michau,,Chicago,IL,30,5,540970,608.15,0,Men Cat 4/5,0,01/00/1900,9/2/17 1:04:19 PM
+72,690,Eric,Miller,,Flossmoor,IL,43,5,517843,612.06,0,Men Cat 4/5,0,01/00/1900,9/7/17 12:57:35 AM
+73,616,Alex,Braatz,The Chainlink,Chicago,IL,31,4,407112,618.67,0,Men Cat 4/5,0,01/00/1900,8/28/17 1:48:24 PM
+74,622,Chris,Bushell,,CHICAGO,IL,56,5,ONE DAY,627.65,0,Men Cat 4/5,0,01/00/1900,8/28/17 8:45:47 PM
+75,670,Peter,Kang,,CHICAGO,IL,36,5,ONE DAY,627.72,0,Men Cat 4/5,0,01/00/1900,9/5/17 12:51:20 PM
+76,608,Robert,Baisa,Region Racing,Tinley Park,IL,71,5,48139,629.37,0,Men Cat 4/5,0,01/00/1900,9/2/17 9:53:04 PM
+77,636,Sachin,Diwan,Spidermonkey Cycling,Chicago,IL,49,5,528986,630.15,0,Men Cat 4/5,0,01/00/1900,8/28/17 5:49:41 PM
+78,672,Peter,Kleinhenz,Union Cycling Team,Evanston,IL,25,5,529105,635.41,0,Men Cat 4/5,0,01/00/1900,9/7/17 1:43:47 PM
+79,663,Peter,Hoffmann,,Chicago,IL,28,5,501242,643.6,0,Men Cat 4/5,0,01/00/1900,9/5/17 11:01:59 AM
+80,671,Wayne,Kimble,,Villa Park,IL,33,5,512207,644.49,0,Men Cat 4/5,0,01/00/1900,9/6/17 2:11:08 PM
+81,711,Jeff,Sanner,Half Acre Cycling,Chicago,IL,36,5,293872,658.5,0,Men Cat 4/5,0,01/00/1900,9/5/17 10:04:57 PM
+82,649,Doug,Gerity,,Dekalb,IL,49,5,520328,663.38,0,Men Cat 4/5,0,01/00/1900,9/7/17 7:31:58 PM
+83,709,Cristian,Rodriguez,INTENT,Highwood,IL,21,5,518541,669.09,0,Men Cat 4/5,0,01/00/1900,9/7/17 9:34:39 PM
+84,694,Andrzej,Nowakowski,,River Grove,IL,44,5,541160,671.15,0,Men Cat 4/5,0,01/00/1900,9/5/17 1:44:30 PM
+85,638,David,Donnelly,Spidermonkey Cycling,Chicago,IL,44,5,306967,678.89,0,Men Cat 4/5,0,01/00/1900,8/31/17 5:43:22 PM
+86,632,Joseph,Conway,,Berwyn,IL,38,5,520649,683.97,0,Men Cat 4/5,0,01/00/1900,9/1/17 9:39:38 AM
+87,714,Nathaniel,Staffel,,CHICAGO,IL,32,5,ONE DAY,9999,0,Men Cat 4/5,0,01/00/1900,8/28/17 10:25:20 AM
+88,713,Nathan,Snydacker,,Oak Park,IL,42,5,540486,9999,0,Men Cat 4/5,0,01/00/1900,8/28/17 10:31:42 AM
+89,658,Geoffrey,Harding,The Chainlink,Chicago,IL,40,5,515088,9999,0,Men Cat 4/5,0,01/00/1900,8/28/17 12:39:39 PM
+90,639,Chris,Drouganis,,Willow Springs,IL,34,5,527374,9999,0,Men Cat 4/5,0,01/00/1900,8/28/17 3:06:24 PM
+91,601,Corey,Anderson,INTENT,Downers Grove,IL,52,5,540425,9999,0,Men Cat 4/5,0,01/00/1900,8/28/17 3:26:50 PM
+92,629,Ian,Chown,Union Cycling Team,Evanston,IL,38,5,534206,9999,0,Men Cat 4/5,0,01/00/1900,8/31/17 5:11:19 PM
+93,661,David,Heiberger,,CHICAGO,IL,36,5,ONE DAY,9999,0,Men Cat 4/5,0,01/00/1900,8/31/17 9:32:01 PM
+94,633,Ysier,Copeland,,Denver,CO,26,5,418953,9999,0,Men Cat 4/5,0,01/00/1900,9/1/17 1:39:01 PM
+95,679,Andrew,Lulis,,Normal,IL,25,5,530630,9999,0,Men Cat 4/5,0,01/00/1900,9/2/17 11:51:59 AM
+96,703,Ron,Poore,Main Street Bicycles Sasquatch Squadron,Carpentersville,IL,52,5,528942,9999,0,Men Cat 4/5,0,01/00/1900,9/2/17 2:51:32 PM
+97,644,Bob,Feeny,,Chicago,IL,32,5,540982,9999,0,Men Cat 4/5,0,01/00/1900,9/2/17 5:15:40 PM
+98,641,Ryan,Durrie,PSIMET Racing,Chicago,IL,39,5,481947,9999,0,Men Cat 4/5,0,01/00/1900,9/2/17 7:50:56 PM
+99,686,Randy,McEntee,,Western Springs,IL,40,5,537830,9999,0,Men Cat 4/5,0,01/00/1900,9/3/17 2:25:21 PM
+100,682,Kevin,Marvinac,The Chainlink,CHICAGO,IL,31,5,ONE DAY,9999,0,Men Cat 4/5,0,01/00/1900,9/3/17 4:20:44 PM
+101,603,Evan,Arena,,CHICAGO,IL,39,5,ONE DAY,9999,0,Men Cat 4/5,0,01/00/1900,9/4/17 11:06:02 AM
+102,637,Alan,Donnelly,,Chicago,IL,45,5,413419,9999,0,Men Cat 4/5,0,01/00/1900,9/4/17 10:29:38 PM
+103,609,Kyle,Baroni,,Chicago,IL,29,5,353862,9999,0,Men Cat 4/5,0,01/00/1900,9/5/17 12:52:49 AM
+104,606,Keegan,Baisa,RegionRacing p/b Strack & Van Til,Saint John,IN,17,5,540706,9999,0,Men Cat 4/5,0,01/00/1900,9/5/17 9:17:10 AM
+105,611,Carlos,Bernabe,Beverly Bike,Chicago,IL,25,5,515379,9999,0,Men Cat 4/5,0,01/00/1900,9/5/17 11:11:11 AM
+106,678,Brian,Lewis-Jones,Tuxedo Thunder,CHICAGO,IL,33,5,541144,9999,0,Men Cat 4/5,0,01/00/1900,9/5/17 11:17:15 AM
+107,720,Kyle,Trebotich,The Chainlink,Charlotte,NC,34,5,271242,9999,0,Men Cat 4/5,0,01/00/1900,9/6/17 11:13:21 AM
+108,708,Glenn,Rischke,Velosmith Bicycle Studio,Chicago,IL,45,5,540272,9999,0,Men Cat 4/5,0,01/00/1900,9/6/17 9:39:01 PM
+109,696,Joshua,Ocampo,,Maywood,IL,38,5,539871,9999,0,Men Cat 4/5,0,01/00/1900,9/6/17 10:31:29 PM
+110,676,John,Lee,,WILMETTE,IL,23,5,ONE DAY,9999,0,Men Cat 4/5,0,01/00/1900,9/6/17 10:51:24 PM
+111,666,Case,Hultman,Tower Racing,Westmont,IL,48,4,275629,9999,0,Men Cat 4/5,0,01/00/1900,9/7/17 10:17:31 AM
+112,612,Kahari,Blackburn,Blackstone Bicycle Works,CHICAGO,IL,24,5,ONE DAY,9999,0,Men Cat 4/5,0,01/00/1900,9/7/17 10:36:04 AM
+113,630,Christian,Clark,Blackstone Bicycle Works,CHICAGO,IL,20,5,ONE DAY,9999,0,Men Cat 4/5,0,01/00/1900,9/7/17 10:36:04 AM
+114,648,Maalik,Gardner,Blackstone Bicycle Works,CHICAGO,IL,26,5,ONE DAY,9999,0,Men Cat 4/5,0,01/00/1900,9/7/17 10:36:04 AM
+115,669,Dantrell,Johnson,Blackstone Bicycle Works,CHICAGO,IL,22,5,ONE DAY,9999,0,Men Cat 4/5,0,01/00/1900,9/7/17 10:36:04 AM
+116,614,Carson,Boneck,Velosmith Bicycle Studio,Wilmette,IL,43,5,541387,9999,0,Men Cat 4/5,0,01/00/1900,9/7/17 1:10:20 PM
+117,723,Vasyl,Yavorskyi,,CHICAGO,IL,25,5,ONE DAY,9999,0,Men Cat 4/5,0,01/00/1900,9/7/17 1:51:05 PM
+118,707,Benjamin,Reynolds,,Zion,IL,28,5,341472,9999,0,Men Cat 4/5,0,01/00/1900,9/7/17 2:07:51 PM
+119,631,Greg,Colding,,Chicago,IL,35,5,539390,9999,0,Men Cat 4/5,0,01/00/1900,9/7/17 4:07:11 PM
+120,642,Andrew,Duvall,,Libertyville,IL,29,5,516323,9999,0,Men Cat 4/5,0,01/00/1900,9/7/17 5:43:15 PM
+121,646,Tyler,Flaker,,CHICAGO,IL,30,5,ONE DAY,9999,0,Men Cat 4/5,0,01/00/1900,9/7/17 7:13:20 PM
+122,653,Juan,Gonzalez,JC-crew/Sammys cross,CHICAGO,IL,48,5,ONE DAY,9999,0,Men Cat 4/5,0,01/00/1900,9/7/17 10:36:31 PM
+123,635,Aaron,Davis,Blackstone Bicycle Works,CHICAGO,IL,19,5,ONE DAY,9999,0,Men Cat 4/5,0,01/00/1900,9/7/17 10:48:08 PM
+124,668,Carlos,Javier,KLiCK Cycling,Philadelphia,PA,33,5,485350,9999,0,Men Cat 4/5,0,01/00/1900,9/7/17 11:03:29 PM

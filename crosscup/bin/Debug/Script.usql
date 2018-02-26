@@ -68,8 +68,7 @@
            r.[Lap 5] AS lap5,
            r.[Lap 6] AS lap6,
            r.[Lap 7] AS lap7,
-           r.[Lap 8] AS lap8,
-           r.[Lap 9] AS lap9
+           r.[Lap 8] AS lap8          
     FROM @resultrows AS r
          INNER JOIN @stageset AS s             
          ON r.Bib == s.stagebib;

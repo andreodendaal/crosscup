@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScriptAndGraph GraphType="VertexCommands">
+  <Vertices count="0" />
+  <Outputs />
+  <graph serveForThirdParty="True" JsonErrors="True" JobType="BatchSqlIp" MaxPercentInputUnavailability="0" vertexExecutable="scopehost.exe" BroadcastCopyThroughCommandLine="ScopeEngine.dll -scopeVertex SV_CopyThrough">
+    <metadataoperation exeName="MetaDataExecutor.exe" argument="&quot;commit&quot; &quot;-CosmosCluster&quot; &quot;localhost&quot; &quot;-APEnvironment&quot; &quot;Default&quot; &quot;-APCluster&quot; &quot;localhost&quot;">
+      <MetadataJob xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Scope.Metadata.Contract">
+        <StorageInfo>
+          <DataRoot>C:\repo\crosscup\USQLDataRoot</DataRoot>
+          <MountPointName>_catalog_</MountPointName>
+          <MountPointPhysicalPath>C:\repo\crosscup\USQLDataRoot/_catalog_/</MountPointPhysicalPath>
+        </StorageInfo>
+        <OperationsSequence>
+          <MetadataOperation i:type="CreateEntityOperation">
+            <Entity i:type="DatabaseInfo">
+              <Id>bd2e2139-7465-40a2-aced-3f4180c5b77c</Id>
+              <Name>
+                <Server>localcomputeaccount</Server>
+                <FirstPart>RaceDataTest</FirstPart>
+              </Name>
+              <Revision>00000000-0000-0000-0000-000000000000</Revision>
+              <CreateDate i:nil="true" />
+              <IsAutoStatCreate>false</IsAutoStatCreate>
+              <IsAutoStatUpdate>false</IsAutoStatUpdate>
+            </Entity>
+          </MetadataOperation>
+          <MetadataOperation i:type="CreateEntityOperation">
+            <Entity i:type="SchemaInfo">
+              <Id>cf3585c8-5c03-43b6-b492-1796ece16d63</Id>
+              <Name>
+                <Server>localcomputeaccount</Server>
+                <FirstPart>RaceDataTest</FirstPart>
+                <SecondPart>dbo</SecondPart>
+              </Name>
+            </Entity>
+          </MetadataOperation>
+          <MetadataOperation i:type="CreateEntityOperation">
+            <Entity i:type="SchemaInfo">
+              <Id>8c2f11f4-52f4-4f10-bc3d-ff9991580064</Id>
+              <Name>
+                <Server>localcomputeaccount</Server>
+                <FirstPart>RaceDataTest</FirstPart>
+                <SecondPart>sys</SecondPart>
+              </Name>
+            </Entity>
+          </MetadataOperation>
+          <MetadataOperation i:type="CreateEntityOperation">
+            <Entity i:type="SchemaInfo">
+              <Id>7639244f-bde2-4839-ae8d-e63d1f5c7f49</Id>
+              <Name>
+                <Server>localcomputeaccount</Server>
+                <FirstPart>RaceDataTest</FirstPart>
+                <SecondPart>INFORMATION_SCHEMA</SecondPart>
+              </Name>
+            </Entity>
+          </MetadataOperation>
+          <MetadataOperation i:type="CreateEntityOperation">
+            <Entity i:type="SchemaInfo">
+              <Id>1ce3126c-f1ae-406a-a426-b85c35a25dec</Id>
+              <Name>
+                <Server>localcomputeaccount</Server>
+                <FirstPart>RaceDataTest</FirstPart>
+                <SecondPart>usql</SecondPart>
+              </Name>
+            </Entity>
+          </MetadataOperation>
+          <MetadataOperation i:type="CreateEntityOperation">
+            <Entity i:type="TableSchemaInfo">
+              <Id>2bc264b1-8860-46b3-8473-afbbc7a1e92c</Id>
+              <Name>
+                <Server>localcomputeaccount</Server>
+                <FirstPart>RaceDataTest</FirstPart>
+                <SecondPart>dbo</SecondPart>
+                <ThirdPart>RaceDetailsTest</ThirdPart>
+                <FourthPart>Schema_2bc264b1-8860-46b3-8473-afbbc7a1e92c</FourthPart>
+              </Name>
+              <ColumnIterations>
+                <ArrayOfTableColumnInfo>
+                  <TableColumnInfo>
+                    <Name>RaceDate</Name>
+                    <Type>System.DateTime</Type>
+                    <TypeInfo i:nil="true" />
+                  </TableColumnInfo>
+                  <TableColumnInfo>
+                    <Name>RaceTime</Name>
+                    <Type>System.DateTime</Type>
+                    <TypeInfo i:nil="true" />
+                  </TableColumnInfo>
+                  <TableColumnInfo>
+                    <Name>RaceName</Name>
+                    <Type>System.String</Type>
+                    <TypeInfo i:nil="true" />
+                  </TableColumnInfo>
+                </ArrayOfTableColumnInfo>
+              </ColumnIterations>
+              <ParentName>
+                <Server>localcomputeaccount</Server>
+                <FirstPart>RaceDataTest</FirstPart>
+                <SecondPart>dbo</SecondPart>
+                <ThirdPart>RaceDetailsTest</ThirdPart>
+              </ParentName>
+            </Entity>
+          </MetadataOperation>
+          <MetadataOperation i:type="CreateEntityOperation">
+            <Entity i:type="TableInfo">
+              <Id>5e92e3ea-8fc1-4316-9834-95c9f1669141</Id>
+              <Name>
+                <Server>localcomputeaccount</Server>
+                <FirstPart>RaceDataTest</FirstPart>
+                <SecondPart>dbo</SecondPart>
+                <ThirdPart>RaceDetailsTest</ThirdPart>
+              </Name>
+              <ColumnList />
+              <CreateDate i:nil="true" />
+              <DistributionInfo i:nil="true" />
+              <ExternalTable i:nil="true" />
+              <FunctionInfo i:nil="true" />
+              <IndexList />
+              <ModifyDate i:nil="true" />
+              <PartitionKeyList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+            </Entity>
+          </MetadataOperation>
+          <MetadataOperation i:type="AlterEntityOperation">
+            <DisposeDataArtifacts>true</DisposeDataArtifacts>
+            <EntityId>
+              <Id>5e92e3ea-8fc1-4316-9834-95c9f1669141</Id>
+              <Name>
+                <Server>localcomputeaccount</Server>
+                <FirstPart>RaceDataTest</FirstPart>
+                <SecondPart>dbo</SecondPart>
+                <ThirdPart>RaceDetailsTest</ThirdPart>
+              </Name>
+            </EntityId>
+            <ExpectedRevision i:nil="true" />
+            <NewEntity i:type="TableInfo">
+              <Id>7f03f2c0-840f-4d3f-bbc5-77cdf7a16517</Id>
+              <Name>
+                <Server>localcomputeaccount</Server>
+                <FirstPart>RaceDataTest</FirstPart>
+                <SecondPart>dbo</SecondPart>
+                <ThirdPart>RaceDetailsTest</ThirdPart>
+              </Name>
+              <ColumnList />
+              <CreateDate i:nil="true" />
+              <DistributionInfo i:nil="true" />
+              <ExternalTable i:nil="true" />
+              <FunctionInfo i:nil="true" />
+              <IndexList>
+                <IndexInfo>
+                  <Columns xmlns:d7p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                    <d7p1:string>RaceDate</d7p1:string>
+                    <d7p1:string>RaceName</d7p1:string>
+                  </Columns>
+                  <DistributionInfo>
+                    <Count>0</Count>
+                    <DynamicCount>0</DynamicCount>
+                    <Keys>
+                      <DirectedColumnInfo>
+                        <Descending>false</Descending>
+                        <Name>RaceDate</Name>
+                      </DirectedColumnInfo>
+                    </Keys>
+                    <Type>2</Type>
+                  </DistributionInfo>
+                  <FunctionInfo i:nil="true" />
+                  <IndexId>1</IndexId>
+                  <IndexKeys>
+                    <DirectedColumnInfo>
+                      <Descending>false</Descending>
+                      <Name>RaceDate</Name>
+                    </DirectedColumnInfo>
+                    <DirectedColumnInfo>
+                      <Descending>false</Descending>
+                      <Name>RaceName</Name>
+                    </DirectedColumnInfo>
+                  </IndexKeys>
+                  <IsColumnstore>false</IsColumnstore>
+                  <IsUnique>false</IsUnique>
+                  <Name>clx_RaceDetail</Name>
+                  <PartitionFunction>d2c09328-a2c2-4522-97ba-1c9f33b4f9bb</PartitionFunction>
+                  <PartitionKeyList xmlns:d7p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                </IndexInfo>
+              </IndexList>
+              <ModifyDate i:nil="true" />
+              <PartitionKeyList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+            </NewEntity>
+          </MetadataOperation>
+        </OperationsSequence>
+        <ScopeJobInfo>
+          <JobGuid>00000000-0000-0000-0000-000000000000</JobGuid>
+          <JobName></JobName>
+        </ScopeJobInfo>
+      </MetadataJob>
+    </metadataoperation>
+  </graph>
+  <Scopescript>// Auto-generated header code
+
+// Auto-generated header code ended
+
+// User script
+CREATE DATABASE IF NOT EXISTS RaceDataTest;
+
+USE DATABASE RaceDataTest;
+CREATE TABLE IF NOT EXISTS RaceDetailsTest
+(
+           RaceDate DateTime,
+           RaceTime DateTime,
+           RaceName string
+           );
+
+CREATE CLUSTERED INDEX clx_RaceDetail 
+ON RaceDataTest.dbo.RaceDetailsTest(RaceDate, RaceName ASC)
+DISTRIBUTED BY HASH (RaceDate);
+
+
+
+// User script ended
+// Auto-generated footer code
+
+// Auto-generated footer code ended
+
+</Scopescript>
+  <Optimization succeeded="true" time="00:00:00.2355790" latency="-1" totalCost="-1" />
+  <ScopeVertexAnnotations />
+</ScriptAndGraph>
