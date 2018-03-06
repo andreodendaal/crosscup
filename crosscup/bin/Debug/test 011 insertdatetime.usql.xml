@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CompileResult scriptPath="C:\repo\crosscup\crosscup\test 011 insertdatetime.usql"><Error><Start>432</Start><End>441</End><Message>E_CSC_USER_INVALIDCSHARP: C# error CS0103: The name 'lapstring' does not exist in the current context
+Description:
+C# compiler reported that this expression is not valid C#.
+Resolution:
+Make sure that a valid C# expression is specified.... at token 'lapstring', line 18
+near the ###:
+**************
+g, Lap1Split, 
+           Lap1Seconds)
+VALUES
+(new DateTime(2017, 12, 28), 
+ new DateTime(2017, 12, 28, 09,30,00,00), 
+ "2017 Caldwell woods",
+ "7:34",
+  ### lapstring = Lap1String,
+ 454);
+// User script ended
+// Auto-generated footer code
+// Generated Code Behind Footer
+// Generated Code Behind Footer
+
+// Aut</Message></Error><Error><Start>444</Start><End>454</End><Message>E_CSC_USER_INVALIDCSHARP: C# error CS0103: The name 'Lap1String' does not exist in the current context
+Description:
+C# compiler reported that this expression is not valid C#.
+Resolution:
+Make sure that a valid C# expression is specified.... at token 'Lap1String', line 18
+near the ###:
+**************
+, 
+           Lap1Seconds)
+VALUES
+(new DateTime(2017, 12, 28), 
+ new DateTime(2017, 12, 28, 09,30,00,00), 
+ "2017 Caldwell woods",
+ "7:34",
+ lapstring =  ### Lap1String,
+ 454);
+// User script ended
+// Auto-generated footer code
+// Generated Code Behind Footer
+// Generated Code Behind Footer
+
+// Auto-generated </Message></Error></CompileResult>

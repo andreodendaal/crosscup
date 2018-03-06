@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CompileResult scriptPath="C:\repo\crosscup\crosscup\test 013 splitTimes.usql"><Error><Start>447</Start><End>453</End><Message>E_CSC_USER_INVALIDTYPEINOUTPUTTER: Outputters.Csv was used to output column Lapsplit of type Microsoft.Analytics.Types.Sql.SqlArray&lt;System.String&gt;.
+Description:
+Outputters.Csv only supports built-in types.
+Resolution:
+Implement a custom outputter that knows how to serialize this type or call a serialization method on the type in the preceding SELECT.... at token 'OUTPUT', line 19
+near the ###:
+**************
+aceName, Lap1String, 
+           Lap1Seconds);
+
+@time_as_array =
+    SELECT new SQL.ARRAY&lt;string&gt;(Lap1String.Split(':')) AS Lapsplit
+    FROM @initial;
+
+ ### OUTPUT @time_as_array   
+TO "/output/timesplit.csv"  
+USING Outputters.Csv();
+// User script ended
+// Auto-generated footer code
+
+// Auto-generated footer</Message></Error></CompileResult>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScopeVertices helperAssembly="__ScopeCodeGen__.dll" signatureVersion="1">
+  <ScopeVertex id="SV1_Extract_Partition" cppReady="true" nativeOnly="true">
+    <operator id="RowGenerator_0" uid="1" assemblyName="__ScopeCodeGen__.dll" className="RowGenerator">
+      <input id="RowGenerator_0" uid="1" schema="" inputIndex="0" numberOfInputs="ALL" />
+      <output id="RowGenerator_0_Data0" uid="2" schema="" />
+    </operator>
+    <operator id="Process_1" uid="3" assemblyName="__ScopeCodeGen__.dll" className="SequenceProject">
+      <input id="RowGenerator_0_Data0" uid="2" schema="" />
+      <output id="Process_1_Data0" uid="4" schema="RowNumber0__:long?" />
+    </operator>
+    <operator id="Process_2" uid="5" assemblyName="__ScopeCodeGen__.dll" className="SqlFilterTransformer_3">
+      <input id="Process_1_Data0" uid="4" schema="RowNumber0__:long?" />
+      <output id="Process_2_Data0" uid="6" schema="RaceDate:DateTime,RaceTime:DateTime,RaceName:string,Lap1String:string,Lap1Seconds:int" />
+    </operator>
+    <operator id="Partition_3" uid="7" assemblyName="__ScopeCodeGen__.dll" className="ScopeHashPartitioner_1" args="RaceDate,RaceName" payloadMetadataOperator="Create" outputPayloadMetadataId="Partition_3_Metadata_out">
+      <input id="Process_2_Data0" uid="6" schema="RaceDate:DateTime,RaceTime:DateTime,RaceName:string,Lap1String:string,Lap1Seconds:int" />
+      <output id="SV1_Extract_Partition_out0" uid="8" schema="RaceDate:DateTime,RaceTime:DateTime,RaceName:string,Lap1String:string,Lap1Seconds:int" outputIndex="0" numberOfOutputs="2" payloadMetadataId="Partition_3_Metadata_out" />
+    </operator>
+  </ScopeVertex>
+  <ScopeVertex id="SV2_Split" cppReady="true" nativeOnly="true">
+    <operator id="Process_4" uid="9" assemblyName="ScopeRuntime.exe" className="ScopeRuntime.ValidateProcessor" args="sort:RaceDate:ASC,RaceName:ASC disabled">
+      <input id="SV1_Extract_Partition_out0" uid="8" schema="RaceDate:DateTime,RaceTime:DateTime,RaceName:string,Lap1String:string,Lap1Seconds:int" inputIndex="0" numberOfInputs="1" payloadMetadataId="Partition_3_Metadata_out" />
+      <output id="Process_4_Data0" uid="10" schema="RaceDate:DateTime,RaceTime:DateTime,RaceName:string,Lap1String:string,Lap1Seconds:int" />
+    </operator>
+    <operator id="SStreamOutput_5" uid="11" assemblyName="__ScopeCodeGen__.dll" className="ScopeSStreamOutput_1" args="-hashPartition -partitionKey RaceDate:DateTime,RaceName:string -sortKey RaceDate:DateTime:Ascending,RaceName:string:Ascending" payloadMetadataOperator="Consume" inputPayloadMetadataId="Partition_3_Metadata_out">
+      <input id="Process_4_Data0" uid="10" schema="RaceDate:DateTime,RaceTime:DateTime,RaceName:string,Lap1String:string,Lap1Seconds:int" />
+      <output id="SV2_Split_out0" uid="12" schema="RaceDate:DateTime,RaceTime:DateTime,RaceName:string,Lap1String:string,Lap1Seconds:int" outputIndex="0" numberOfOutputs="1" />
+      <output id="SV2_Split_out1" uid="13" schema="RaceDate:DateTime,RaceTime:DateTime,RaceName:string,Lap1String:string,Lap1Seconds:int" outputIndex="1" numberOfOutputs="1" />
+    </operator>
+  </ScopeVertex>
+  <ScopeVertex id="SV3_Aggregate_Internal" cppReady="true" nativeOnly="true">
+    <operator id="MetadataAggregate_6" uid="14" assemblyName="ScopeRuntime.exe" className="ScopeRuntime.PartitionMetadataAggregator" args="-hashPartition -partitionKey RaceDate:DateTime,RaceName:string -sortKey RaceDate:DateTime:Ascending,RaceName:string:Ascending">
+      <input id="SV2_Split_out1" uid="13" schema="RaceDate:DateTime,RaceTime:DateTime,RaceName:string,Lap1String:string,Lap1Seconds:int" inputIndex="0" numberOfInputs="ALL" />
+      <output id="SV3_Aggregate_Internal_out0" uid="15" schema="RaceDate:DateTime,RaceTime:DateTime,RaceName:string,Lap1String:string,Lap1Seconds:int" outputIndex="0" numberOfOutputs="1" />
+    </operator>
+  </ScopeVertex>
+  <ScopeVertex id="SV3_Aggregate" cppReady="true" nativeOnly="true">
+    <operator id="MetadataAggregate_6" uid="14" assemblyName="ScopeRuntime.exe" className="ScopeRuntime.PartitionMetadataAggregator" args="-hashPartition -partitionKey RaceDate:DateTime,RaceName:string -sortKey RaceDate:DateTime:Ascending,RaceName:string:Ascending">
+      <input id="SV2_Split_out1" uid="13" schema="RaceDate:DateTime,RaceTime:DateTime,RaceName:string,Lap1String:string,Lap1Seconds:int" inputIndex="0" numberOfInputs="ALL" />
+      <output id="SV3_Aggregate_Internal_out0" uid="15" schema="RaceDate:DateTime,RaceTime:DateTime,RaceName:string,Lap1String:string,Lap1Seconds:int" />
+    </operator>
+    <operator id="SStreamMetadataOutput_7" uid="16" assemblyName="ScopeRuntime.exe" className="ScopeRuntime.SStreamMetadataOutputter" args="-hashPartition -partitionKey RaceDate:DateTime,RaceName:string -sortKey RaceDate:DateTime:Ascending,RaceName:string:Ascending">
+      <input id="SV3_Aggregate_Internal_out0" uid="15" schema="RaceDate:DateTime,RaceTime:DateTime,RaceName:string,Lap1String:string,Lap1Seconds:int" />
+      <output id="SV3_Aggregate_out0" uid="17" schema="RaceDate:DateTime,RaceTime:DateTime,RaceName:string,Lap1String:string,Lap1Seconds:int" outputIndex="0" numberOfOutputs="1" />
+    </operator>
+  </ScopeVertex>
+  <ScopeVertex id="SV1_Dataset" cppReady="true" nativeOnly="true">
+    <operator id="Concatenate_9" uid="18" usqlTableName="RaceDataTest.dbo.RaceDetailsTest">
+      <input id="SV2_Split_out0" uid="12" schema="RaceDate:DateTime,RaceTime:DateTime,RaceName:string,Lap1String:string,Lap1Seconds:int" inputIndex="0" numberOfInputs="1" />
+      <input id="SV3_Aggregate_out0" uid="17" schema="RaceDate:DateTime,RaceTime:DateTime,RaceName:string,Lap1String:string,Lap1Seconds:int" inputIndex="1" numberOfInputs="1" />
+    </operator>
+  </ScopeVertex>
+</ScopeVertices>

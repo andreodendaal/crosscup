@@ -1,0 +1,83 @@
+﻿{
+"CompilerPlanStart":"3\/4\/2018 10:41:41 AM"
+},
+{
+"Settings":"-c++ -mp -pdb Partial -OUTPUT_PATH C:\\repo\\crosscup\\USQLDataRoot -cosmosCluster localhost -apEnvironment Default -apCluster localhost -Off ForceShadowCopy -On ADL -Off Sirius -On SQLIP -Off SQLIPSQLProxy -Off SQLIPSQLProxyNative -buckets 1 -SplitPartitionThreshold 52428800 -ClientVersion 10.2.2.0"
+}{
+"\/\/ Auto-generated header code\/\/ Generated Code Behind HeaderUSE DATABASE [RaceDataTest]":
+{
+"NodeName":"UseDatabaseStatement"
+},
+{
+"Name":"RaceDataTest"
+}},
+{
+"\/\/ Generated Code Behind Header\/\/ Auto-generated header code ended\/\/ User scriptCREATE D":
+{
+"NodeName":"CreateDatabaseStatement"
+},
+{
+"Name":"RaceDataTest"
+}},
+{
+"USE DATABASE RaceDataTest":
+{
+"NodeName":"UseDatabaseStatement"
+},
+{
+"Name":"RaceDataTest"
+}},
+{
+"DROP TABLE IF EXISTS RaceDetailsTest":
+{
+"NodeName":"DropTableStatement"
+},
+{
+"Name":"RaceDetailsTest"
+}},
+{
+"CREATE TABLE IF NOT EXISTS RaceDetailsTest(           RaceDate DateTime,           RaceTim":
+{
+"NodeName":"CreateTableStatement"
+},
+{
+"Name":"RaceDetailsTest"
+},
+{
+"Columns":
+{
+"ColumnName":"RaceDate"
+},
+{
+"ColumnName":"RaceTime"
+},
+{
+"ColumnName":"RaceName"
+},
+{
+"ColumnName":"Lap1String"
+},
+{
+"ColumnName":"Lap1Split"
+},
+{
+"ColumnName":"Lap1Seconds"
+},
+{
+"ColumnName":"Lap1DerivedSeconds"
+}}
+},
+{
+"CREATE CLUSTERED INDEX clx_RaceDetail ON RaceDataTest.dbo.RaceDetailsTest(RaceDate, RaceName A":
+{
+"NodeName":"CreateSqlIndexStatement"
+},
+{
+"IndexName":"clx_RaceDetail"
+},
+{
+"ObjectName":"RaceDataTest.dbo.RaceDetailsTest"
+}},
+{
+"CompilerPlanEnd":"3\/4\/2018 10:41:41 AM"
+}

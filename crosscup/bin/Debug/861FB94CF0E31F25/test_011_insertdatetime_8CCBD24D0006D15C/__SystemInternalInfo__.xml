@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CSSRelatedInfo>
+  <ScopeCounters>
+    <Counter Name="ResourcesDownloading" Value="0" Unit="second" Intervals="0" />
+    <Counter Name="Overall" Value="2.444225" Unit="second" Intervals="0" />
+    <Counter Name="FrontEndRun" Value="2.4136821" Unit="second" Intervals="0" />
+    <Counter Name="AstBuilder" Value="1.0379866" Unit="second" Intervals="1" />
+    <Counter Name="SyntaxVerifier" Value="0.079707" Unit="second" Intervals="1" />
+    <Counter Name="DdlResolver" Value="0.7665981" Unit="second" Intervals="1" />
+    <Counter Name="RoslynStartup" Value="0.4835351" Unit="second" Intervals="3" />
+    <Counter Name="SMS" Value="0.0891012" Unit="second" Intervals="2" />
+    <Counter Name="ResourceReferencePass" Value="0.0024376" Unit="second" Intervals="1" />
+    <Counter Name="InputOutputPass" Value="0.0284947" Unit="second" Intervals="1" />
+    <Counter Name="SStreamMetadataWait" Value="1.48E-05" Unit="second" Intervals="1" />
+    <Counter Name="SStreamMetadataAsync" Value="0" Unit="second" Intervals="0" />
+    <Counter Name="BinderPass" Value="1.2355978" Unit="second" Intervals="0" />
+    <Counter Name="ExpressionBinding" Value="1.1644778" Unit="second" Intervals="0" />
+    <Counter Name="OneColumnBinding" Value="0" Unit="second" Intervals="0" />
+    <Counter Name="QualifiedColumnBinding" Value="0" Unit="second" Intervals="0" />
+    <Counter Name="SimpleAggregateBinding" Value="0" Unit="second" Intervals="0" />
+    <Counter Name="RoslynFirstCall" Value="1.137749" Unit="second" Intervals="0" />
+    <Counter Name="RoslynBinding" Value="0.0167361" Unit="second" Intervals="0" />
+    <Counter Name="Table Files Read" Value="0" Unit="count" />
+  </ScopeCounters>
+</CSSRelatedInfo>

@@ -1,0 +1,26 @@
+// Auto-generated header code
+// Generated Code Behind Header
+USE DATABASE [RaceDataTest];
+// Generated Code Behind Header
+
+// Auto-generated header code ended
+
+// User script
+
+INSERT INTO RaceDataTest.dbo.RaceDetailsTest
+(RaceDate, RaceTime, RaceName, Lap1String, Lap1Split, 
+           Lap1Seconds)
+VALUES
+(new DateTime(2017, 12, 28), 
+ new DateTime(2017, 12, 28, 09,30,00,00), 
+ "2017 Caldwell woods",
+ "7:34",
+ lapstring = Lap1String,
+ 454);
+// User script ended
+// Auto-generated footer code
+// Generated Code Behind Footer
+// Generated Code Behind Footer
+
+// Auto-generated footer code ended
+

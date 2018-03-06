@@ -1,15 +1,22 @@
 ﻿CREATE DATABASE IF NOT EXISTS RaceDataTest;
 
 USE DATABASE RaceDataTest;
+
+DROP TABLE IF EXISTS RaceDetailsTest;
+
 CREATE TABLE IF NOT EXISTS RaceDetailsTest
 (
            RaceDate DateTime,
            RaceTime DateTime,
-           RaceName string
+           RaceName string,
+           Lap1String string,
+           Lap1Split string,
+           Lap1Seconds int,
+           Lap1DerivedSeconds int
            );
 
 CREATE CLUSTERED INDEX clx_RaceDetail 
 ON RaceDataTest.dbo.RaceDetailsTest(RaceDate, RaceName ASC)
-PARTITIONED BY (RaceDate)
+
 DISTRIBUTED BY HASH (RaceDate, RaceName);
 

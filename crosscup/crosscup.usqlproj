@@ -20,29 +20,25 @@
     <OutputPath>bin\Release\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <Script Include="010 buld environment.usql" />
-    <Script Include="testdatetime.usql" />
-    <Script Include="testinsert.usql" />
-    <Script Include="testjoin.usql" />
-    <Script Include="testResults.usql" />
-    <Script Include="testStaging.usql" />
-    <ScriptCode Include="010 buld environment.usql.cs">
-      <DependentUpon>010 buld environment.usql</DependentUpon>
+    <Script Include="010 build environment.usql" />
+    <Script Include="test 010 testEnvironmentSetup.usql" />
+    <Script Include="test 011 insertdatetime.usql" />
+    <Script Include="test 012  joinInsert.usql" />
+    <Script Include="test 013 splitTimes.usql" />
+    <ScriptCode Include="010 build environment.usql.cs">
+      <DependentUpon>010 build environment.usql</DependentUpon>
     </ScriptCode>
-    <ScriptCode Include="testdatetime.usql.cs">
-      <DependentUpon>testdatetime.usql</DependentUpon>
+    <ScriptCode Include="test 010 testEnvironmentSetup.usql.cs">
+      <DependentUpon>test 010 testEnvironmentSetup.usql</DependentUpon>
     </ScriptCode>
-    <ScriptCode Include="testinsert.usql.cs">
-      <DependentUpon>testinsert.usql</DependentUpon>
+    <ScriptCode Include="test 011 insertdatetime.usql.cs">
+      <DependentUpon>test 011 insertdatetime.usql</DependentUpon>
     </ScriptCode>
-    <ScriptCode Include="testjoin.usql.cs">
-      <DependentUpon>testjoin.usql</DependentUpon>
+    <ScriptCode Include="test 012  joinInsert.usql.cs">
+      <DependentUpon>test 012  joinInsert.usql</DependentUpon>
     </ScriptCode>
-    <ScriptCode Include="testResults.usql.cs">
-      <DependentUpon>testResults.usql</DependentUpon>
-    </ScriptCode>
-    <ScriptCode Include="testStaging.usql.cs">
-      <DependentUpon>testStaging.usql</DependentUpon>
+    <ScriptCode Include="test 013 splitTimes.usql.cs">
+      <DependentUpon>test 013 splitTimes.usql</DependentUpon>
     </ScriptCode>
   </ItemGroup>
   <ItemGroup>

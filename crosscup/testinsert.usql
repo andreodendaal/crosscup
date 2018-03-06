@@ -1,5 +1,0 @@
-﻿
-INSERT INTO RaceDataTest.dbo.RaceDetailsTest
-(RaceDate, RaceTime, RaceName)
-VALUES
-(new DateTime(2017, 12, 28), new DateTime(2017, 12, 28, 09,30,00,00), "2017 Caldwell woods");
