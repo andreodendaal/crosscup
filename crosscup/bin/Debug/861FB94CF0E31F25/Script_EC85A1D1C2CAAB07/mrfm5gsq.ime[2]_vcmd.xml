@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<vertexCommand command="Start" jobType="None" managedMemorySize="0" vertexArg="ScopeEngine.dll -scopeVertex SV2_Extract -vertexNumber 0">
-  <inputs>
-    <input name="" path="C:\Users\aodendaa\AppData\Local\USQLDataRoot\crosscup\input\2017 CCC Lap Times - Caldwell .csv" blockAligned="True" globalStartOffset="0" localStartOffset="0" localEndOffset="52820" length="52820" />
-  </inputs>
-  <outputs>
-    <output path="C:\Users\aodendaa\Source\Repos\crosscup\crosscup\bin\Debug\861FB94CF0E31F25\_Temp\Script_EC85A1D1C2CAAB07\scopetmpfile._SV2_Extract_out0" isFirstOutputPiece="False" />
-  </outputs>
-</vertexCommand>

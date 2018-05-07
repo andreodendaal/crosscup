@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScriptAndGraph GraphType="VertexCommands">
+  <Vertices count="7">
+    <Vertex index="1" command="-scopeVertex SV1_Extract  -i C:\repo\crosscup\USQLDataRoot\input\2017CaldwellWoodsScheduleStaging.csv  -o &quot;C:\repo\crosscup\crosscup\bin\Debug\020  joinInsert\_TMP\scopetmpfile._SV1_Extract_out0&quot;" />
+    <Vertex index="2" command="-scopeVertex SV2_Extract  -i C:\repo\crosscup\USQLDataRoot\input\2017CCCLapTimesCaldwell.csv  -o &quot;C:\repo\crosscup\crosscup\bin\Debug\020  joinInsert\_TMP\scopetmpfile._SV2_Extract_out0&quot;" />
+    <Vertex index="3" command="-scopeVertex SV3_Combine_Split  -i &quot;C:\repo\crosscup\crosscup\bin\Debug\020  joinInsert\_TMP\scopetmpfile._SV1_Extract_out0&quot; -ichannel SV1_Extract_out0 -i &quot;C:\repo\crosscup\crosscup\bin\Debug\020  joinInsert\_TMP\scopetmpfile._SV2_Extract_out0&quot; -ichannel SV2_Extract_out0  -o &quot;C:\repo\crosscup\crosscup\bin\Debug\020  joinInsert\_TMP\scopetmpfile._SV3_Combine_Split_out0&quot; -o &quot;C:\repo\crosscup\crosscup\bin\Debug\020  joinInsert\_TMP\scopetmpfile._SV3_Combine_Split_out1(WITH_HEADER)&quot;" />
+    <Vertex index="4" command="-scopeVertex SV4_Partition  -i &quot;C:\repo\crosscup\crosscup\bin\Debug\020  joinInsert\_TMP\scopetmpfile._SV3_Combine_Split_out0&quot; -ichannel SV3_Combine_Split_out0  -o &quot;C:\repo\crosscup\crosscup\bin\Debug\020  joinInsert\_TMP\scopetmpfile._SV4_Partition_out0_[0]&quot; -o &quot;C:\repo\crosscup\crosscup\bin\Debug\020  joinInsert\_TMP\scopetmpfile._SV4_Partition_out0_[1]&quot;" />
+    <Vertex index="5" command="-scopeVertex SV5_Split  -i &quot;C:\repo\crosscup\crosscup\bin\Debug\020  joinInsert\_TMP\scopetmpfile._SV4_Partition_out0_[0]&quot; -ichannel SV4_Partition_out0  -o &quot;C:\repo\crosscup\crosscup\bin\Debug\020  joinInsert\_TMP\scopetmpfile._SV5_Split_out0_[0]&quot; -o &quot;C:\repo\crosscup\crosscup\bin\Debug\020  joinInsert\_TMP\scopetmpfile._SV5_Split_out1_[0]&quot;" />
+    <Vertex index="6" command="-scopeVertex SV5_Split  -i &quot;C:\repo\crosscup\crosscup\bin\Debug\020  joinInsert\_TMP\scopetmpfile._SV4_Partition_out0_[1]&quot; -ichannel SV4_Partition_out0  -o &quot;C:\repo\crosscup\crosscup\bin\Debug\020  joinInsert\_TMP\scopetmpfile._SV5_Split_out0_[1]&quot; -o &quot;C:\repo\crosscup\crosscup\bin\Debug\020  joinInsert\_TMP\scopetmpfile._SV5_Split_out1_[1]&quot;" />
+    <Vertex index="7" command="-scopeVertex SV6_Aggregate  -i &quot;C:\repo\crosscup\crosscup\bin\Debug\020  joinInsert\_TMP\scopetmpfile._SV5_Split_out1_[0]&quot; -ichannel SV5_Split_out1 -i &quot;C:\repo\crosscup\crosscup\bin\Debug\020  joinInsert\_TMP\scopetmpfile._SV5_Split_out1_[1]&quot; -ichannel SV5_Split_out1  -o &quot;C:\repo\crosscup\crosscup\bin\Debug\020  joinInsert\_TMP\scopetmpfile._SV6_Aggregate_out0&quot;" />
+    <Vertex command="-concatenate -i &quot;C:\repo\crosscup\crosscup\bin\Debug\020  joinInsert\_TMP\scopetmpfile._SV3_Combine_Split_out1&quot; -o C:\repo\crosscup\USQLDataRoot\output\stagingplacing.csv" />
+    <Vertex command="-concatenate  -i &quot;C:\repo\crosscup\crosscup\bin\Debug\020  joinInsert\_TMP\scopetmpfile._SV5_Split_out0_[0]&quot; -ichannel SV5_Split_out0  -i &quot;C:\repo\crosscup\crosscup\bin\Debug\020  joinInsert\_TMP\scopetmpfile._SV5_Split_out0_[1]&quot; -ichannel SV5_Split_out0  -i &quot;C:\repo\crosscup\crosscup\bin\Debug\020  joinInsert\_TMP\scopetmpfile._SV6_Aggregate_out0&quot; -ichannel SV6_Aggregate_out0 -o C:\repo\crosscup\USQLDataRoot\_catalog_\database\f21794a6-a1e4-46a4-b510-2853b3ccb087\schema\69d4eaba-3433-48c0-a6fd-fec7b0fdf651\table\57bd8fe2-5ef9-4cd7-9299-e7deab809c99\4dfed319-ccde-45f6-9ab0-d474e76c658b.ss" />
+  </Vertices>
+  <Outputs>
+    <Output path="C:\repo\crosscup\USQLDataRoot\_catalog_\database\f21794a6-a1e4-46a4-b510-2853b3ccb087\schema\69d4eaba-3433-48c0-a6fd-fec7b0fdf651\table\57bd8fe2-5ef9-4cd7-9299-e7deab809c99\4dfed319-ccde-45f6-9ab0-d474e76c658b.ss" isBinary="True" />
+    <Output path="C:\repo\crosscup\USQLDataRoot\output\stagingplacing.csv" isBinary="False" schema="RaceDate:DateTime,EventName:string,RaceName:string,RacePlacing:string,RaceStaging:string,RaceNumber:string,RaceNumberStaged:string,LastName:string,FirstName:string,LicenceNumber:string,FinishTime:string,Gap:string,Lap1:string,Lap2:string,Lap3:string,Lap4:string,Lap5:string,Lap6:string,Lap7:string,Lap8:string" />
+  </Outputs>
+  <graph serveForThirdParty="True" JsonErrors="True" JobType="BatchSqlIp" MaxPercentInputUnavailability="0" SStreamInfoFilePath="__SStreamInfo__.xml" vertexExecutable="scopehost.exe" BroadcastCopyThroughCommandLine="ScopeEngine.dll -scopeVertex SV_CopyThrough">
+    <process id="SV1_Extract" command="ScopeEngine.dll -scopeVertex SV1_Extract" nativeOnly="true" managedMemorySize="0" nativeIOMemorySize="125829121" nativeExecutionMemorySize="285212672" DummyVertexOptimization="AllInputsEmptyImpliesOutputsEmpty|RunAtLeastOneVertex" trustedVertex="True">
+      <input id="Extract_0[ALL]" streamSize="86731">
+        <cosmosStream cosmosPath="C:\repo\crosscup\USQLDataRoot\input\2017CaldwellWoodsScheduleStaging.csv" streamSize="86731" />
+      </input>
+      <output id="SV1_Extract_out0" />
+    </process>
+    <process id="SV2_Extract" command="ScopeEngine.dll -scopeVertex SV2_Extract" nativeOnly="true" managedMemorySize="0" nativeIOMemorySize="125829121" nativeExecutionMemorySize="268435456" DummyVertexOptimization="AllInputsEmptyImpliesOutputsEmpty|RunAtLeastOneVertex" trustedVertex="True">
+      <input id="Extract_2[ALL]" streamSize="52820">
+        <cosmosStream cosmosPath="C:\repo\crosscup\USQLDataRoot\input\2017CCCLapTimesCaldwell.csv" streamSize="52820" />
+      </input>
+      <output id="SV2_Extract_out0" />
+    </process>
+    <process id="SV3_Combine_Split" command="ScopeEngine.dll -scopeVertex SV3_Combine_Split" nativeOnly="true" managedMemorySize="0" nativeIOMemorySize="92274693" nativeExecutionMemorySize="5825888251" DummyVertexOptimization="AllInputsEmptyImpliesOutputsEmpty|RunAtLeastOneVertex" trustedVertex="True">
+      <input id="SV1_Extract_out0" />
+      <input id="SV2_Extract_out0" />
+      <output id="SV3_Combine_Split_out0" />
+      <output id="SV3_Combine_Split_out1" cosmosStream="C:\repo\crosscup\USQLDataRoot\output\stagingplacing.csv" />
+    </process>
+    <process id="SV4_Partition" command="ScopeEngine.dll -scopeVertex SV4_Partition" nativeOnly="true" managedMemorySize="0" nativeIOMemorySize="58720259" nativeExecutionMemorySize="4194304" trustedVertex="True">
+      <input id="SV3_Combine_Split_out0" />
+      <output id="SV4_Partition_out0[1...2]" />
+    </process>
+    <process id="SV5_Split" command="ScopeEngine.dll -scopeVertex SV5_Split" nativeOnly="true" managedMemorySize="0" nativeIOMemorySize="51380225" nativeExecutionMemorySize="16777216" trustedVertex="True">
+      <input id="SV4_Partition_out0[dim_0]" />
+      <output id="SV5_Split_out0[dim_0]" />
+      <output id="SV5_Split_out1[dim_0]" />
+    </process>
+    <process id="SV6_Aggregate" aggregate="Full" command="ScopeEngine.dll -scopeVertex SV6_Aggregate" nativeOnly="true" managedMemorySize="0" nativeIOMemorySize="103809025" nativeExecutionMemorySize="8388608" internalVertexCommand="ScopeEngine.dll -scopeVertex SV6_Aggregate_Internal" internalNativeOnly="true" trustedVertex="True">
+      <input id="SV5_Split_out1[ALL]" />
+      <output id="SV6_Aggregate_out0" />
+    </process>
+    <dataset id="Concatenate_14[]" usqlTableName="localcomputeaccount.RaceData.dbo.RaceDetails" cosmosStream="C:\repo\crosscup\USQLDataRoot\_catalog_\database\f21794a6-a1e4-46a4-b510-2853b3ccb087\schema\69d4eaba-3433-48c0-a6fd-fec7b0fdf651\table\57bd8fe2-5ef9-4cd7-9299-e7deab809c99\4dfed319-ccde-45f6-9ab0-d474e76c658b.ss">
+      <element id="SV5_Split_out0[ANY]" />
+      <element id="SV6_Aggregate_out0" />
+    </dataset>
+    <metadataoperation exeName="MetaDataExecutor.exe" argument="&quot;commit&quot; &quot;-CosmosCluster&quot; &quot;localhost&quot; &quot;-APEnvironment&quot; &quot;Default&quot; &quot;-APCluster&quot; &quot;localhost&quot;">
+      <MetadataJob xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Scope.Metadata.Contract">
+        <StorageInfo>
+          <DataRoot>C:\repo\crosscup\USQLDataRoot</DataRoot>
+          <MountPointName>_catalog_</MountPointName>
+          <MountPointPhysicalPath>C:\repo\crosscup\USQLDataRoot/_catalog_/</MountPointPhysicalPath>
+        </StorageInfo>
+        <OperationsSequence>
+          <MetadataOperation i:type="CreateEntityOperation">
+            <Entity i:type="DistributionGroupInfo">
+              <Id>4dfed319-ccde-45f6-9ab0-d474e76c658b</Id>
+              <Name>
+                <Server>localcomputeaccount</Server>
+                <FirstPart>RaceData</FirstPart>
+                <SecondPart>dbo</SecondPart>
+                <ThirdPart>RaceDetails</ThirdPart>
+                <FourthPart>4dfed319-ccde-45f6-9ab0-d474e76c658b</FourthPart>
+              </Name>
+              <BaseDistributionGroup i:nil="true" />
+              <ColumnstoreStatData i:nil="true" />
+              <ColumnstoreStatPath i:nil="true" />
+              <CosmosVCLocation i:nil="true" />
+              <CreateTime>2018-04-07T21:44:21.3277433Z</CreateTime>
+              <DistributionItems />
+              <IndexId>1</IndexId>
+              <MatchingColumnIteration>0</MatchingColumnIteration>
+              <ParentName>
+                <Name xmlns:d6p1="http://www.w3.org/2001/XMLSchema" i:type="d6p1:string" xmlns="">&lt;DdlName xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Scope.Metadata.Contract"&gt;&lt;Server&gt;localcomputeaccount&lt;/Server&gt;&lt;FirstPart&gt;RaceData&lt;/FirstPart&gt;&lt;SecondPart&gt;dbo&lt;/SecondPart&gt;&lt;ThirdPart&gt;RaceDetails&lt;/ThirdPart&gt;&lt;/DdlName&gt;</Name>
+                <Type xmlns:d6p1="http://www.w3.org/2001/XMLSchema" i:type="d6p1:string" xmlns="">Scope.Metadata.Contract.TableInfo</Type>
+              </ParentName>
+              <StreamInfo i:nil="true" />
+              <StreamName>_catalog_/database/f21794a6-a1e4-46a4-b510-2853b3ccb087/schema/69d4eaba-3433-48c0-a6fd-fec7b0fdf651/table/57bd8fe2-5ef9-4cd7-9299-e7deab809c99/4dfed319-ccde-45f6-9ab0-d474e76c658b.ss</StreamName>
+            </Entity>
+          </MetadataOperation>
+        </OperationsSequence>
+        <ScopeJobInfo>
+          <JobGuid>00000000-0000-0000-0000-000000000000</JobGuid>
+          <JobName></JobName>
+        </ScopeJobInfo>
+      </MetadataJob>
+    </metadataoperation>
+  </graph>
+  <Scopescript>// Auto-generated header code
+
+// Auto-generated header code ended
+// User script
+
+
+DECLARE @racename string = "Caldwell Woods";
+DECLARE @racedate DateTime = new DateTime(2017,09,10);
+
+
+@resultrows =
+    EXTRACT Category string,
+            Place string,
+            Bib string,
+            Last string,
+            First string,
+            Time string,
+            Gap string,
+            [Lap 1] string,
+            [Lap 2] string,
+            [Lap 3] string,
+            [Lap 4] string,
+            [Lap 5] string,
+            [Lap 6] string,
+            [Lap 7] string,
+            [Lap 8] string
+            
+    FROM "/input/2017CCCLapTimesCaldwell.csv"
+    USING Extractors.Csv(skipFirstNRows : 3);
+
+@stagingrows =
+    EXTRACT [STAGE #] string,
+            [BIB #] string,
+            [FIRST NAME] string,
+            [LAST NAME] string,
+            [TEAM] string,
+            [CITY] string,
+            [STATE] string,
+            [AGE] string,
+            [CAT] string,
+            [LICENSE] string,
+            [CXR Points] string,
+            [CCC Points] string,
+            [Category Entered] string,
+            [CCC Points Most Recent Date Placing] string,
+            [CCC Points Most Recent Date] string,
+            [Time Entered] string
+            
+    FROM "/input/2017CaldwellWoodsScheduleStaging.csv"
+    USING Extractors.Csv(skipFirstNRows : 1, silent: true);
+
+@stageset =
+    SELECT [BIB #] AS stagebib,
+           [LICENSE] AS usaclicence,
+           [STAGE #] AS racestaging
+    FROM @stagingrows;         
+
+@mergestagingresults =
+    SELECT 
+           @racedate AS RaceDate,
+           @racename AS EventName,
+           r.Category AS RaceName,
+           r.Place AS RacePlacing,
+           s.racestaging AS RaceStaging,
+           r.Bib AS RaceNumber,
+           s.stagebib AS RaceNumberStaged,
+           r.Last AS LastName,
+           r.First AS FirstName,
+           s.usaclicence AS LicenceNumber,
+           r.Time AS FinishTime,
+           r.Gap AS Gap,
+           r.[Lap 1] AS Lap1,
+           r.[Lap 2] AS Lap2,
+           r.[Lap 3] AS Lap3,
+           r.[Lap 4] AS Lap4,
+           r.[Lap 5] AS Lap5,
+           r.[Lap 6] AS Lap6,
+           r.[Lap 7] AS Lap7,
+           r.[Lap 8] AS Lap8          
+    FROM @resultrows AS r
+         INNER JOIN @stageset AS s             
+         ON r.Bib == s.stagebib;
+
+USE DATABASE RaceData;
+
+/* write to u-sql */
+
+INSERT INTO RaceDetails
+(
+    RaceDate,
+    EventName,
+    RaceName,
+    RacePlacing,
+    RaceStaging,
+    RaceNumber,
+    RaceNumberStaged,
+    LastName,
+    FirstName,
+    LicenceNumber,
+    FinishTime,
+    Gap,
+    Lap1,
+    Lap2,
+    Lap3,
+    Lap4,
+    Lap5,
+    Lap6,
+    Lap7,
+    Lap8
+)
+SELECT
+    r.RaceDate,
+    r.EventName,
+    r.RaceName,
+    r.RacePlacing,
+    r.RaceStaging,
+    r.RaceNumber,
+    r.RaceNumberStaged,
+    r.LastName,
+    r.FirstName,
+    r.LicenceNumber,
+    r.FinishTime,
+    r.Gap,
+    r.Lap1,
+    r.Lap2,
+    r.Lap3,
+    r.Lap4,
+    r.Lap5,
+    r.Lap6,
+    r.Lap7,
+    r.Lap8
+FROM @mergestagingresults AS r;
+
+/* write to file */
+OUTPUT @mergestagingresults
+TO "/output/stagingplacing.csv"
+USING Outputters.Csv(outputHeader : true);
+// User script ended
+// Auto-generated footer code
+
+// Auto-generated footer code ended
+
+</Scopescript>
+  <Optimization succeeded="true" time="00:00:01.0417251" latency="-1" totalCost="-1" />
+  <ScopeVertexAnnotations>
+    <ScopeVertex name="SV1_Extract">
+      <Operation annotation="EXTRACT USING IExtractor" />
+    </ScopeVertex>
+    <ScopeVertex name="SV2_Extract">
+      <Operation annotation="EXTRACT USING IExtractor" />
+    </ScopeVertex>
+  </ScopeVertexAnnotations>
+</ScriptAndGraph>

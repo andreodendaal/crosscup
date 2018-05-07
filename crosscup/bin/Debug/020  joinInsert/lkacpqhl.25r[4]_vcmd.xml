@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vertexCommand command="Start" jobType="None" managedMemorySize="0" vertexArg="ScopeEngine.dll -scopeVertex SV4_Partition -vertexNumber 0">
+  <inputs>
+    <input name="SV3_Combine_Split_out0" path="C:\repo\crosscup\crosscup\bin\Debug\020  joinInsert\_TMP\scopetmpfile._SV3_Combine_Split_out0" blockAligned="True" globalStartOffset="0" localStartOffset="0" localEndOffset="74393" length="74393" />
+  </inputs>
+  <outputs>
+    <output path="C:\repo\crosscup\crosscup\bin\Debug\020  joinInsert\_TMP\scopetmpfile._SV4_Partition_out0_[0]" isFirstOutputPiece="False" />
+    <output path="C:\repo\crosscup\crosscup\bin\Debug\020  joinInsert\_TMP\scopetmpfile._SV4_Partition_out0_[1]" isFirstOutputPiece="False" />
+  </outputs>
+</vertexCommand>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScopeVertices helperAssembly="__ScopeCodeGen__.dll" signatureVersion="1">
+  <ScopeVertex id="SV1_Extract" cppReady="true" nativeOnly="true">
+    <operator id="Extract_0" uid="1" assemblyName="Microsoft.Analytics.Interfaces.dll" className="Microsoft.Analytics.Interfaces.IExtractor">
+      <input id="Extract_0" uid="1" schema="STAGE #:string,BIB #:string,FIRST NAME:string,LAST NAME:string,TEAM:string,CITY:string,STATE:string,AGE:string,CAT:string,LICENSE:string,CXR Points:string,CCC Points:string,Category Entered:string,CCC Points Most Recent Date Placing:string,CCC Points Most Recent Date:string,Time Entered:string" inputIndex="0" numberOfInputs="ALL" />
+      <output id="Extract_0_Data0" uid="2" schema="STAGE #:string,BIB #:string,LICENSE:string" />
+    </operator>
+    <operator id="Process_1" uid="3" assemblyName="__ScopeCodeGen__.dll" className="SqlFilterTransformer_6">
+      <input id="Extract_0_Data0" uid="2" schema="STAGE #:string,BIB #:string,LICENSE:string" />
+      <output id="SV1_Extract_out0" uid="4" schema="stagebib:string,usaclicence:string,racestaging:string" outputIndex="0" numberOfOutputs="1" />
+    </operator>
+  </ScopeVertex>
+  <ScopeVertex id="SV2_Extract" cppReady="true" nativeOnly="true">
+    <operator id="Extract_2" uid="5" assemblyName="Microsoft.Analytics.Interfaces.dll" className="Microsoft.Analytics.Interfaces.IExtractor">
+      <input id="Extract_2" uid="5" schema="Category:string,Place:string,Bib:string,Last:string,First:string,Time:string,Gap:string,Lap 1:string,Lap 2:string,Lap 3:string,Lap 4:string,Lap 5:string,Lap 6:string,Lap 7:string,Lap 8:string" inputIndex="0" numberOfInputs="ALL" />
+      <output id="SV2_Extract_out0" uid="6" schema="Category:string,Place:string,Bib:string,Last:string,First:string,Time:string,Gap:string,Lap 1:string,Lap 2:string,Lap 3:string,Lap 4:string,Lap 5:string,Lap 6:string,Lap 7:string,Lap 8:string" outputIndex="0" numberOfOutputs="1" />
+    </operator>
+  </ScopeVertex>
+  <ScopeVertex id="SV3_Combine_Split" cppReady="true" nativeOnly="true">
+    <operator id="HashJoin_3" uid="7" assemblyName="__ScopeCodeGen__.dll" className="HashCombine" args="-key Bib|stagebib">
+      <input id="SV2_Extract_out0" uid="6" schema="Category:string,Place:string,Bib:string,Last:string,First:string,Time:string,Gap:string,Lap 1:string,Lap 2:string,Lap 3:string,Lap 4:string,Lap 5:string,Lap 6:string,Lap 7:string,Lap 8:string" inputIndex="1" numberOfInputs="1" />
+      <input id="SV1_Extract_out0" uid="4" schema="stagebib:string,usaclicence:string,racestaging:string" inputIndex="0" numberOfInputs="1" />
+      <output id="HashJoin_3_Data0" uid="8" schema="Category:string,Place:string,Bib:string,Last:string,First:string,Time:string,Gap:string,Lap 1:string,Lap 2:string,Lap 3:string,Lap 4:string,Lap 5:string,Lap 6:string,Lap 7:string,Lap 8:string,stagebib:string,usaclicence:string,racestaging:string" />
+    </operator>
+    <operator id="Process_4" uid="9" assemblyName="__ScopeCodeGen__.dll" className="ScopeSorter_1" args="-keys Category">
+      <input id="HashJoin_3_Data0" uid="8" schema="Category:string,Place:string,Bib:string,Last:string,First:string,Time:string,Gap:string,Lap 1:string,Lap 2:string,Lap 3:string,Lap 4:string,Lap 5:string,Lap 6:string,Lap 7:string,Lap 8:string,stagebib:string,usaclicence:string,racestaging:string" />
+      <output id="Process_4_Data0" uid="10" schema="Category:string,Place:string,Bib:string,Last:string,First:string,Time:string,Gap:string,Lap 1:string,Lap 2:string,Lap 3:string,Lap 4:string,Lap 5:string,Lap 6:string,Lap 7:string,Lap 8:string,stagebib:string,usaclicence:string,racestaging:string" />
+    </operator>
+    <operator id="Process_5" uid="11" assemblyName="__ScopeCodeGen__.dll" className="SqlFilterTransformer_7">
+      <input id="Process_4_Data0" uid="10" schema="Category:string,Place:string,Bib:string,Last:string,First:string,Time:string,Gap:string,Lap 1:string,Lap 2:string,Lap 3:string,Lap 4:string,Lap 5:string,Lap 6:string,Lap 7:string,Lap 8:string,stagebib:string,usaclicence:string,racestaging:string" />
+      <output id="Process_5_Data0" uid="12" schema="Gap:string,RaceDate:DateTime,EventName:string,RaceName:string,RacePlacing:string,RaceStaging:string,RaceNumber:string,RaceNumberStaged:string,LastName:string,FirstName:string,LicenceNumber:string,FinishTime:string,Lap1:string,Lap2:string,Lap3:string,Lap4:string,Lap5:string,Lap6:string,Lap7:string,Lap8:string" />
+    </operator>
+    <operator id="Split_6" uid="13" assemblyName="ScopeRuntime.exe" className="ScopeRuntime.ScopeFilterSelectSplitter">
+      <input id="Process_5_Data0" uid="12" schema="Gap:string,RaceDate:DateTime,EventName:string,RaceName:string,RacePlacing:string,RaceStaging:string,RaceNumber:string,RaceNumberStaged:string,LastName:string,FirstName:string,LicenceNumber:string,FinishTime:string,Lap1:string,Lap2:string,Lap3:string,Lap4:string,Lap5:string,Lap6:string,Lap7:string,Lap8:string" />
+      <output id="SV3_Combine_Split_out0" uid="14" schema="RaceDate:DateTime,RaceTime:DateTime?,EventName:string,RaceName:string,RacePlacing:string,RaceStaging:string,RaceNumber:string,RaceNumberStaged:string,LastName:string,FirstName:string,LicenceNumber:string,FinishTime:string,Gap:string,Lap1:string,Lap2:string,Lap3:string,Lap4:string,Lap5:string,Lap6:string,Lap7:string,Lap8:string" outputIndex="0" numberOfOutputs="1" assemblyName="__ScopeCodeGen__.dll" className="SqlSplitOutputter_1" />
+      <output id="SV3_Combine_Split_out1" uid="15" schema="RaceDate:DateTime,EventName:string,RaceName:string,RacePlacing:string,RaceStaging:string,RaceNumber:string,RaceNumberStaged:string,LastName:string,FirstName:string,LicenceNumber:string,FinishTime:string,Gap:string,Lap1:string,Lap2:string,Lap3:string,Lap4:string,Lap5:string,Lap6:string,Lap7:string,Lap8:string" outputIndex="1" numberOfOutputs="1" finalOutput="true" assemblyName="__ScopeCodeGen__.dll" className="SqlSplitOutputter_2" encoding="Text" args="" />
+    </operator>
+  </ScopeVertex>
+  <ScopeVertex id="SV4_Partition" cppReady="true" nativeOnly="true">
+    <operator id="Partition_7" uid="16" assemblyName="__ScopeCodeGen__.dll" className="ScopeHashPartitioner_1" args="RaceDate,RaceName" payloadMetadataOperator="Create" outputPayloadMetadataId="Partition_7_Metadata_out">
+      <input id="SV3_Combine_Split_out0" uid="14" schema="RaceDate:DateTime,RaceTime:DateTime?,EventName:string,RaceName:string,RacePlacing:string,RaceStaging:string,RaceNumber:string,RaceNumberStaged:string,LastName:string,FirstName:string,LicenceNumber:string,FinishTime:string,Gap:string,Lap1:string,Lap2:string,Lap3:string,Lap4:string,Lap5:string,Lap6:string,Lap7:string,Lap8:string" inputIndex="0" numberOfInputs="1" />
+      <output id="SV4_Partition_out0" uid="17" schema="RaceDate:DateTime,RaceTime:DateTime?,EventName:string,RaceName:string,RacePlacing:string,RaceStaging:string,RaceNumber:string,RaceNumberStaged:string,LastName:string,FirstName:string,LicenceNumber:string,FinishTime:string,Gap:string,Lap1:string,Lap2:string,Lap3:string,Lap4:string,Lap5:string,Lap6:string,Lap7:string,Lap8:string" outputIndex="0" numberOfOutputs="2" payloadMetadataId="Partition_7_Metadata_out" />
+    </operator>
+  </ScopeVertex>
+  <ScopeVertex id="SV5_Split" cppReady="true" nativeOnly="true">
+    <operator id="Process_8" uid="18" assemblyName="ScopeRuntime.exe" className="ScopeRuntime.ValidateProcessor" args="sort:RaceDate:ASC,RaceName:ASC disabled">
+      <input id="SV4_Partition_out0" uid="17" schema="RaceDate:DateTime,RaceTime:DateTime?,EventName:string,RaceName:string,RacePlacing:string,RaceStaging:string,RaceNumber:string,RaceNumberStaged:string,LastName:string,FirstName:string,LicenceNumber:string,FinishTime:string,Gap:string,Lap1:string,Lap2:string,Lap3:string,Lap4:string,Lap5:string,Lap6:string,Lap7:string,Lap8:string" inputIndex="0" numberOfInputs="1" payloadMetadataId="Partition_7_Metadata_out" />
+      <output id="Process_8_Data0" uid="19" schema="RaceDate:DateTime,RaceTime:DateTime?,EventName:string,RaceName:string,RacePlacing:string,RaceStaging:string,RaceNumber:string,RaceNumberStaged:string,LastName:string,FirstName:string,LicenceNumber:string,FinishTime:string,Gap:string,Lap1:string,Lap2:string,Lap3:string,Lap4:string,Lap5:string,Lap6:string,Lap7:string,Lap8:string" />
+    </operator>
+    <operator id="SStreamOutput_9" uid="20" assemblyName="__ScopeCodeGen__.dll" className="ScopeSStreamOutput_1" args="-hashPartition -partitionKey RaceDate:DateTime,RaceName:string -sortKey RaceDate:DateTime:Ascending,RaceName:string:Ascending" payloadMetadataOperator="Consume" inputPayloadMetadataId="Partition_7_Metadata_out">
+      <input id="Process_8_Data0" uid="19" schema="RaceDate:DateTime,RaceTime:DateTime?,EventName:string,RaceName:string,RacePlacing:string,RaceStaging:string,RaceNumber:string,RaceNumberStaged:string,LastName:string,FirstName:string,LicenceNumber:string,FinishTime:string,Gap:string,Lap1:string,Lap2:string,Lap3:string,Lap4:string,Lap5:string,Lap6:string,Lap7:string,Lap8:string" />
+      <output id="SV5_Split_out0" uid="21" schema="RaceDate:DateTime,RaceTime:DateTime?,EventName:string,RaceName:string,RacePlacing:string,RaceStaging:string,RaceNumber:string,RaceNumberStaged:string,LastName:string,FirstName:string,LicenceNumber:string,FinishTime:string,Gap:string,Lap1:string,Lap2:string,Lap3:string,Lap4:string,Lap5:string,Lap6:string,Lap7:string,Lap8:string" outputIndex="0" numberOfOutputs="1" />
+      <output id="SV5_Split_out1" uid="22" schema="RaceDate:DateTime,RaceTime:DateTime?,EventName:string,RaceName:string,RacePlacing:string,RaceStaging:string,RaceNumber:string,RaceNumberStaged:string,LastName:string,FirstName:string,LicenceNumber:string,FinishTime:string,Gap:string,Lap1:string,Lap2:string,Lap3:string,Lap4:string,Lap5:string,Lap6:string,Lap7:string,Lap8:string" outputIndex="1" numberOfOutputs="1" />
+    </operator>
+  </ScopeVertex>
+  <ScopeVertex id="SV6_Aggregate_Internal" cppReady="true" nativeOnly="true">
+    <operator id="MetadataAggregate_10" uid="23" assemblyName="ScopeRuntime.exe" className="ScopeRuntime.PartitionMetadataAggregator" args="-hashPartition -partitionKey RaceDate:DateTime,RaceName:string -sortKey RaceDate:DateTime:Ascending,RaceName:string:Ascending">
+      <input id="SV5_Split_out1" uid="22" schema="RaceDate:DateTime,RaceTime:DateTime?,EventName:string,RaceName:string,RacePlacing:string,RaceStaging:string,RaceNumber:string,RaceNumberStaged:string,LastName:string,FirstName:string,LicenceNumber:string,FinishTime:string,Gap:string,Lap1:string,Lap2:string,Lap3:string,Lap4:string,Lap5:string,Lap6:string,Lap7:string,Lap8:string" inputIndex="0" numberOfInputs="ALL" />
+      <output id="SV6_Aggregate_Internal_out0" uid="24" schema="RaceDate:DateTime,RaceTime:DateTime?,EventName:string,RaceName:string,RacePlacing:string,RaceStaging:string,RaceNumber:string,RaceNumberStaged:string,LastName:string,FirstName:string,LicenceNumber:string,FinishTime:string,Gap:string,Lap1:string,Lap2:string,Lap3:string,Lap4:string,Lap5:string,Lap6:string,Lap7:string,Lap8:string" outputIndex="0" numberOfOutputs="1" />
+    </operator>
+  </ScopeVertex>
+  <ScopeVertex id="SV6_Aggregate" cppReady="true" nativeOnly="true">
+    <operator id="MetadataAggregate_10" uid="23" assemblyName="ScopeRuntime.exe" className="ScopeRuntime.PartitionMetadataAggregator" args="-hashPartition -partitionKey RaceDate:DateTime,RaceName:string -sortKey RaceDate:DateTime:Ascending,RaceName:string:Ascending">
+      <input id="SV5_Split_out1" uid="22" schema="RaceDate:DateTime,RaceTime:DateTime?,EventName:string,RaceName:string,RacePlacing:string,RaceStaging:string,RaceNumber:string,RaceNumberStaged:string,LastName:string,FirstName:string,LicenceNumber:string,FinishTime:string,Gap:string,Lap1:string,Lap2:string,Lap3:string,Lap4:string,Lap5:string,Lap6:string,Lap7:string,Lap8:string" inputIndex="0" numberOfInputs="ALL" />
+      <output id="SV6_Aggregate_Internal_out0" uid="24" schema="RaceDate:DateTime,RaceTime:DateTime?,EventName:string,RaceName:string,RacePlacing:string,RaceStaging:string,RaceNumber:string,RaceNumberStaged:string,LastName:string,FirstName:string,LicenceNumber:string,FinishTime:string,Gap:string,Lap1:string,Lap2:string,Lap3:string,Lap4:string,Lap5:string,Lap6:string,Lap7:string,Lap8:string" />
+    </operator>
+    <operator id="SStreamMetadataOutput_11" uid="25" assemblyName="ScopeRuntime.exe" className="ScopeRuntime.SStreamMetadataOutputter" args="-hashPartition -partitionKey RaceDate:DateTime,RaceName:string -sortKey RaceDate:DateTime:Ascending,RaceName:string:Ascending">
+      <input id="SV6_Aggregate_Internal_out0" uid="24" schema="RaceDate:DateTime,RaceTime:DateTime?,EventName:string,RaceName:string,RacePlacing:string,RaceStaging:string,RaceNumber:string,RaceNumberStaged:string,LastName:string,FirstName:string,LicenceNumber:string,FinishTime:string,Gap:string,Lap1:string,Lap2:string,Lap3:string,Lap4:string,Lap5:string,Lap6:string,Lap7:string,Lap8:string" />
+      <output id="SV6_Aggregate_out0" uid="26" schema="RaceDate:DateTime,RaceTime:DateTime?,EventName:string,RaceName:string,RacePlacing:string,RaceStaging:string,RaceNumber:string,RaceNumberStaged:string,LastName:string,FirstName:string,LicenceNumber:string,FinishTime:string,Gap:string,Lap1:string,Lap2:string,Lap3:string,Lap4:string,Lap5:string,Lap6:string,Lap7:string,Lap8:string" outputIndex="0" numberOfOutputs="1" />
+    </operator>
+  </ScopeVertex>
+  <ScopeVertex id="SV1_Dataset" cppReady="true" nativeOnly="true">
+    <operator id="Concatenate_14" uid="27" usqlTableName="localcomputeaccount.RaceData.dbo.RaceDetails">
+      <input id="SV5_Split_out0" uid="21" schema="RaceDate:DateTime,RaceTime:DateTime?,EventName:string,RaceName:string,RacePlacing:string,RaceStaging:string,RaceNumber:string,RaceNumberStaged:string,LastName:string,FirstName:string,LicenceNumber:string,FinishTime:string,Gap:string,Lap1:string,Lap2:string,Lap3:string,Lap4:string,Lap5:string,Lap6:string,Lap7:string,Lap8:string" inputIndex="0" numberOfInputs="1" />
+      <input id="SV6_Aggregate_out0" uid="26" schema="RaceDate:DateTime,RaceTime:DateTime?,EventName:string,RaceName:string,RacePlacing:string,RaceStaging:string,RaceNumber:string,RaceNumberStaged:string,LastName:string,FirstName:string,LicenceNumber:string,FinishTime:string,Gap:string,Lap1:string,Lap2:string,Lap3:string,Lap4:string,Lap5:string,Lap6:string,Lap7:string,Lap8:string" inputIndex="1" numberOfInputs="1" />
+    </operator>
+  </ScopeVertex>
+</ScopeVertices>

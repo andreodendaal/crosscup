@@ -1,0 +1,39 @@
+﻿<MetadataJob xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Scope.Metadata.Contract">
+  <StorageInfo>
+    <DataRoot>C:\repo\crosscup\USQLDataRoot</DataRoot>
+    <MountPointName>_catalog_</MountPointName>
+    <MountPointPhysicalPath>C:\repo\crosscup\USQLDataRoot/_catalog_/</MountPointPhysicalPath>
+  </StorageInfo>
+  <OperationsSequence>
+    <MetadataOperation i:type="CreateEntityOperation">
+      <Entity i:type="DistributionGroupInfo">
+        <Id>4dfed319-ccde-45f6-9ab0-d474e76c658b</Id>
+        <Name>
+          <Server>localcomputeaccount</Server>
+          <FirstPart>RaceData</FirstPart>
+          <SecondPart>dbo</SecondPart>
+          <ThirdPart>RaceDetails</ThirdPart>
+          <FourthPart>4dfed319-ccde-45f6-9ab0-d474e76c658b</FourthPart>
+        </Name>
+        <BaseDistributionGroup i:nil="true" />
+        <ColumnstoreStatData i:nil="true" />
+        <ColumnstoreStatPath i:nil="true" />
+        <CosmosVCLocation i:nil="true" />
+        <CreateTime>2018-04-07T21:44:21.3277433Z</CreateTime>
+        <DistributionItems />
+        <IndexId>1</IndexId>
+        <MatchingColumnIteration>0</MatchingColumnIteration>
+        <ParentName>
+          <Name xmlns:d6p1="http://www.w3.org/2001/XMLSchema" i:type="d6p1:string" xmlns="">&lt;DdlName xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Scope.Metadata.Contract"&gt;&lt;Server&gt;localcomputeaccount&lt;/Server&gt;&lt;FirstPart&gt;RaceData&lt;/FirstPart&gt;&lt;SecondPart&gt;dbo&lt;/SecondPart&gt;&lt;ThirdPart&gt;RaceDetails&lt;/ThirdPart&gt;&lt;/DdlName&gt;</Name>
+          <Type xmlns:d6p1="http://www.w3.org/2001/XMLSchema" i:type="d6p1:string" xmlns="">Scope.Metadata.Contract.TableInfo</Type>
+        </ParentName>
+        <StreamInfo i:nil="true" />
+        <StreamName>_catalog_/database/f21794a6-a1e4-46a4-b510-2853b3ccb087/schema/69d4eaba-3433-48c0-a6fd-fec7b0fdf651/table/57bd8fe2-5ef9-4cd7-9299-e7deab809c99/4dfed319-ccde-45f6-9ab0-d474e76c658b.ss</StreamName>
+      </Entity>
+    </MetadataOperation>
+  </OperationsSequence>
+  <ScopeJobInfo>
+    <JobGuid>00000000-0000-0000-0000-000000000000</JobGuid>
+    <JobName></JobName>
+  </ScopeJobInfo>
+</MetadataJob>

@@ -1,4 +1,5 @@
-﻿DECLARE @racename string = "Caldwell Woods";
+﻿
+DECLARE @racename string = "Caldwell Woods";
 DECLARE @racedate DateTime = new DateTime(2017,09,10);
 
 
@@ -75,7 +76,57 @@ DECLARE @racedate DateTime = new DateTime(2017,09,10);
          INNER JOIN @stageset AS s             
          ON r.Bib == s.stagebib;
 
+USE DATABASE RaceData;
 
+/* write to u-sql */
+
+INSERT INTO RaceDetails
+(
+    RaceDate,
+    EventName,
+    RaceName,
+    RacePlacing,
+    RaceStaging,
+    RaceNumber,
+    RaceNumberStaged,
+    LastName,
+    FirstName,
+    LicenceNumber,
+    FinishTime,
+    Gap,
+    Lap1,
+    Lap2,
+    Lap3,
+    Lap4,
+    Lap5,
+    Lap6,
+    Lap7,
+    Lap8
+)
+SELECT
+    r.RaceDate,
+    r.EventName,
+    r.RaceName,
+    r.RacePlacing,
+    r.RaceStaging,
+    r.RaceNumber,
+    r.RaceNumberStaged,
+    r.LastName,
+    r.FirstName,
+    r.LicenceNumber,
+    r.FinishTime,
+    r.Gap,
+    r.Lap1,
+    r.Lap2,
+    r.Lap3,
+    r.Lap4,
+    r.Lap5,
+    r.Lap6,
+    r.Lap7,
+    r.Lap8
+FROM @mergestagingresults AS r;
+
+/* write to file */
 OUTPUT @mergestagingresults
 TO "/output/stagingplacing.csv"
 USING Outputters.Csv(outputHeader : true);

@@ -1,0 +1,25 @@
+﻿@records = 
+EXTRACT Category string,
+            Place string,
+            Bib string,
+            Last string,
+            First string,
+            Time string,
+            Gap string,
+            [Lap 1] string,
+            [Lap 2] string,
+            [Lap 3] string,
+            [Lap 4] string,
+            [Lap 5] string,
+            [Lap 6] string,
+            [Lap 7] string,
+            [Lap 8] string
+            
+    FROM "/input/2017 CCC Lap Times - Caldwell .csv"
+    USING Extractors.Csv();
+
+
+
+OUTPUT @records
+TO "/output/racename.csv"
+USING Outputters.Csv(outputHeader : true);

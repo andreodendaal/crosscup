@@ -21,12 +21,20 @@
   </PropertyGroup>
   <ItemGroup>
     <Script Include="010 build environment.usql" />
+    <Script Include="020  joinInsert.usql" />
+    <Script Include="test 0121 extractheader.usql" />
     <Script Include="test 010 testEnvironmentSetup.usql" />
     <Script Include="test 011 insertdatetime.usql" />
     <Script Include="test 012  joinInsert.usql" />
     <Script Include="test 013 splitTimes.usql" />
     <ScriptCode Include="010 build environment.usql.cs">
       <DependentUpon>010 build environment.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="020  joinInsert.usql.cs">
+      <DependentUpon>020  joinInsert.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="test 0121 extractheader.usql.cs">
+      <DependentUpon>test 0121 extractheader.usql</DependentUpon>
     </ScriptCode>
     <ScriptCode Include="test 010 testEnvironmentSetup.usql.cs">
       <DependentUpon>test 010 testEnvironmentSetup.usql</DependentUpon>
@@ -49,6 +57,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="input\2017 CCC Lap Times - Caldwell .csv">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="stagingplacing.csv">
       <SubType>Content</SubType>
     </Content>
   </ItemGroup>

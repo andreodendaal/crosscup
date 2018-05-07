@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CSSRelatedInfo>
+  <OptimizerPlanInfo signatureVersion="1">
+    <TableScan present="True" occurrence="2" />
+    <PartitionSeek present="False" occurrence="0" />
+    <PartitionRange present="False" occurrence="0" />
+    <IndexSeek present="False" occurrence="0" />
+    <IndexRange present="False" occurrence="0" />
+    <Join present="True" occurrence="1" />
+    <GroupByAgg present="False" occurrence="0" />
+    <UDProcessor present="False" occurrence="0" />
+    <UDReducer present="False" occurrence="0" />
+    <UDCombiner present="False" occurrence="0" />
+    <UDMultiProcessor present="False" occurrence="0" />
+    <Top present="False" occurrence="0" />
+    <Costs>
+      <ExtractCardinality>986.527180527383</ExtractCardinality>
+      <InputSize>139551</InputSize>
+      <OutputCardinality>957.031724137931</OutputCardinality>
+      <NumTable>2</NumTable>
+      <DataTransferVolume>90918.0137931035</DataTransferVolume>
+      <Latency>-1</Latency>
+      <TotalCost>-1</TotalCost>
+      <EstimatedNumEdges>2</EstimatedNumEdges>
+    </Costs>
+    <OptimizerTrees>
+<InputTree>
+    <LogOp Id="LogOp_Sequence">
+      <OpInfo><TableGroupProperties Grp="Unknown" Remotable="False"/></OpInfo>
+      <LogOp Id="LogOp_Write" USqlTableName="localcomputeaccount.RaceData.dbo.RaceDetails" Table="C:\repo\crosscup\USQLDataRoot\_catalog_\database\f21794a6-a1e4-46a4-b510-2853b3ccb087\schema\69d4eaba-3433-48c0-a6fd-fec7b0fdf651\table\57bd8fe2-5ef9-4cd7-9299-e7deab809c99\4dfed319-ccde-45f6-9ab0-d474e76c658b.ss" XMode="Parallel" PartitionType="Hash" Partitioning="RaceDate,RaceName:[STRICT]" Partitions="0" SortColumn="RaceDate ASC,RaceName ASC" Out="RaceDate,RaceTime,EventName,RaceName,RacePlacing,RaceStaging,RaceNumber,RaceNumberStaged,LastName,FirstName,...">
+        <OpInfo><TableGroupProperties Grp="Unknown" Remotable="False"/></OpInfo>
+        <LogOp Id="LogOp_Project" Remove="RaceDate,EventName,RaceName,RacePlacing,RaceStaging,RaceNumber,RaceNumberStaged,LastName,FirstName,LicenceNumber,...">
+          <OpInfo><TableGroupProperties Grp="Unknown" Remotable="False"/></OpInfo>
+          <LogOp Id="LogOp_RestrRemap" Remove="Gap,RaceDate,EventName,RaceName,RacePlacing,RaceStaging,RaceNumber,RaceNumberStaged,LastName,FirstName..." Remap="EventName#EventName,FinishTime#FinishTime,FirstName#FirstName,Gap#Gap,Lap1#Lap1,Lap2#Lap2,Lap3#Lap3,Lap4#Lap4,Lap5#Lap5,Lap6#Lap6,Lap7#Lap7,Lap8#Lap8,LastName#LastName,LicenceNumber#LicenceNumber,RaceDate#RaceDate,RaceName#RaceName,RaceNumber#RaceNumber,RaceNumberStaged#RaceNumberStaged,RacePlacing#RacePlacing,RaceStaging#RaceStaging">
+            <OpInfo><TableGroupProperties Grp="Unknown" Remotable="False"/></OpInfo>
+            <LogOp Id="LogOp_Spool" Name="__SCOPE_PARAMETER_PREFIX__mergestagingresults" CSRoot="Common" TotalConsumers="2">
+              <OpInfo><TableGroupProperties Grp="Unknown" Remotable="False"/></OpInfo>
+              <LogOp Id="LogOp_RestrRemap" Remove="Category,Place,Bib,Last,First,Time,Lap 1,Lap 2,Lap 3,Lap 4..." Remap="FinishTime#Time,FirstName#First,Lap1#Lap 1,Lap2#Lap 2,Lap3#Lap 3,Lap4#Lap 4,Lap5#Lap 5,Lap6#Lap 6,Lap7#Lap 7,Lap8#Lap 8,LastName#Last,LicenceNumber#usaclicence,RaceName#Category,RaceNumber#Bib,RaceNumberStaged#stagebib,RacePlacing#Place,RaceStaging#racestaging">
+                <OpInfo><TableGroupProperties Grp="Unknown" Remotable="False" Card="478.516" AvgRowLength="166"/></OpInfo>
+                <LogOp Id="LogOp_Project">
+                  <OpInfo><TableGroupProperties Grp="Unknown" Remotable="False" Card="478.516" AvgRowLength="166"/></OpInfo>
+                  <LogOp Id="LogOp_Join">
+                    <OpInfo><TableGroupProperties Grp="Unknown" Remotable="False" Card="478.516" AvgRowLength="144"/></OpInfo>
+                    <LogOp Id="LogOp_Extract" Table="C:\repo\crosscup\USQLDataRoot\input/2017CCCLapTimesCaldwell.csv" XMode="Serial" Udf="IExtractor">
+                      <OpInfo><TableGroupProperties Grp="2.0" Remotable="False" Card="388.382" AvgRowLength="120"/></OpInfo>
+                    </LogOp>
+                    <LogOp Id="LogOp_RestrRemap" Remove="STAGE #,BIB #,FIRST NAME,LAST NAME,TEAM,CITY,STATE,AGE,CAT,LICENSE..." Remap="racestaging#STAGE #,stagebib#BIB #,usaclicence#LICENSE">
+                      <OpInfo><TableGroupProperties Grp="1.0" Remotable="False" Card="598.145" AvgRowLength="24"/></OpInfo>
+                      <LogOp Id="LogOp_Extract" Table="C:\repo\crosscup\USQLDataRoot\input/2017CaldwellWoodsScheduleStaging.csv" XMode="Serial" Udf="IExtractor">
+                        <OpInfo><TableGroupProperties Grp="0.0" Remotable="False" Card="598.145" AvgRowLength="128"/></OpInfo>
+                      </LogOp>
+                    </LogOp>
+                    <ScaOp Id="ScaOp_Comp" CompOp="x_cmpEq"><OpInfo><ScalarGroupProperties Grp="Unknown"/></OpInfo>
+                      <ScaOp Id="ScaOp_Identifier" Column="Bib"><OpInfo><ScalarGroupProperties Grp="Unknown"/></OpInfo>
+                      </ScaOp>
+                      <ScaOp Id="ScaOp_Identifier" Column="stagebib"><OpInfo><ScalarGroupProperties Grp="Unknown"/></OpInfo>
+                      </ScaOp>
+                    </ScaOp>
+                  </LogOp>
+                  <AncOp Id="AncOp_PrjList"><OpInfo><ScalarGroupProperties Grp="11.0"/></OpInfo>
+                    <AncOp Id="AncOp_PrjEl" Column="RaceDate"><OpInfo><ScalarGroupProperties Grp="8.0"/></OpInfo>
+                      <ScaOp Id="ScaOp_Const" TI="Date" Value="System.DateTime.FromBinary(636405984000000000L /* 2017-09-10T00:00:00.0000000 */)" Parameter="0"><OpInfo><ScalarGroupProperties Grp="7.0"/></OpInfo>
+                      </ScaOp>
+                    </AncOp>
+                    <AncOp Id="AncOp_PrjEl" Column="EventName"><OpInfo><ScalarGroupProperties Grp="10.0"/></OpInfo>
+                      <ScaOp Id="ScaOp_Const" TI="String,Nullable,Var" Value="@&quot;Caldwell Woods&quot;" Parameter="0"><OpInfo><ScalarGroupProperties Grp="9.0"/></OpInfo>
+                      </ScaOp>
+                    </AncOp>
+                  </AncOp>
+                </LogOp>
+              </LogOp>
+            </LogOp>
+          </LogOp>
+          <AncOp Id="AncOp_PrjList"><OpInfo><ScalarGroupProperties Grp="58.0"/></OpInfo>
+            <AncOp Id="AncOp_PrjEl" Column="RaceDate"><OpInfo><ScalarGroupProperties Grp="17.0"/></OpInfo>
+              <ScaOp Id="ScaOp_Identifier" Column="RaceDate"><OpInfo><ScalarGroupProperties Grp="16.0"/></OpInfo>
+              </ScaOp>
+            </AncOp>
+            <AncOp Id="AncOp_PrjEl" Column="RaceTime"><OpInfo><ScalarGroupProperties Grp="19.0"/></OpInfo>
+              <ScaOp Id="ScaOp_Const" TI="Date,Nullable" Value="(DateTime?)null" Parameter="0"><OpInfo><ScalarGroupProperties Grp="18.0"/></OpInfo>
+              </ScaOp>
+            </AncOp>
+            <AncOp Id="AncOp_PrjEl" Column="EventName"><OpInfo><ScalarGroupProperties Grp="21.0"/></OpInfo>
+              <ScaOp Id="ScaOp_Identifier" Column="EventName"><OpInfo><ScalarGroupProperties Grp="20.0"/></OpInfo>
+              </ScaOp>
+            </AncOp>
+            <AncOp Id="AncOp_PrjEl" Column="RaceName"><OpInfo><ScalarGroupProperties Grp="23.0"/></OpInfo>
+              <ScaOp Id="ScaOp_Identifier" Column="RaceName"><OpInfo><ScalarGroupProperties Grp="22.0"/></OpInfo>
+              </ScaOp>
+            </AncOp>
+            <AncOp Id="AncOp_PrjEl" Column="RacePlacing"><OpInfo><ScalarGroupProperties Grp="25.0"/></OpInfo>
+              <ScaOp Id="ScaOp_Identifier" Column="RacePlacing"><OpInfo><ScalarGroupProperties Grp="24.0"/></OpInfo>
+              </ScaOp>
+            </AncOp>
+            <AncOp Id="AncOp_PrjEl" Column="RaceStaging"><OpInfo><ScalarGroupProperties Grp="27.0"/></OpInfo>
+              <ScaOp Id="ScaOp_Identifier" Column="RaceStaging"><OpInfo><ScalarGroupProperties Grp="26.0"/></OpInfo>
+              </ScaOp>
+            </AncOp>
+            <AncOp Id="AncOp_PrjEl" Column="RaceNumber"><OpInfo><ScalarGroupProperties Grp="29.0"/></OpInfo>
+              <ScaOp Id="ScaOp_Identifier" Column="RaceNumber"><OpInfo><ScalarGroupProperties Grp="28.0"/></OpInfo>
+              </ScaOp>
+            </AncOp>
+            <AncOp Id="AncOp_PrjEl" Column="RaceNumberStaged"><OpInfo><ScalarGroupProperties Grp="31.0"/></OpInfo>
+              <ScaOp Id="ScaOp_Identifier" Column="RaceNumberStaged"><OpInfo><ScalarGroupProperties Grp="30.0"/></OpInfo>
+              </ScaOp>
+            </AncOp>
+            <AncOp Id="AncOp_PrjEl" Column="LastName"><OpInfo><ScalarGroupProperties Grp="33.0"/></OpInfo>
+              <ScaOp Id="ScaOp_Identifier" Column="LastName"><OpInfo><ScalarGroupProperties Grp="32.0"/></OpInfo>
+              </ScaOp>
+            </AncOp>
+            <AncOp Id="AncOp_PrjEl" Column="FirstName"><OpInfo><ScalarGroupProperties Grp="35.0"/></OpInfo>
+              <ScaOp Id="ScaOp_Identifier" Column="FirstName"><OpInfo><ScalarGroupProperties Grp="34.0"/></OpInfo>
+              </ScaOp>
+            </AncOp>
+            <AncOp Id="AncOp" SkipCount="11"/>          </AncOp>
+        </LogOp>
+      </LogOp>
+      <LogOp Id="LogOp_Output" Table="C:\repo\crosscup\USQLDataRoot\output/stagingplacing.csv" XMode="All" Out="RaceDate,EventName,RaceName,RacePlacing,RaceStaging,RaceNumber,RaceNumberStaged,LastName,FirstName,LicenceNumber,..." Udf="IOutputter">
+        <OpInfo><TableGroupProperties Grp="Unknown" Remotable="False"/></OpInfo>
+        <LogOp Id="LogOp_RestrRemap" Remove="Gap,RaceDate,EventName,RaceName,RacePlacing,RaceStaging,RaceNumber,RaceNumberStaged,LastName,FirstName..." Remap="EventName#EventName,FinishTime#FinishTime,FirstName#FirstName,Gap#Gap,Lap1#Lap1,Lap2#Lap2,Lap3#Lap3,Lap4#Lap4,Lap5#Lap5,Lap6#Lap6,Lap7#Lap7,Lap8#Lap8,LastName#LastName,LicenceNumber#LicenceNumber,RaceDate#RaceDate,RaceName#RaceName,RaceNumber#RaceNumber,RaceNumberStaged#RaceNumberStaged,RacePlacing#RacePlacing,RaceStaging#RaceStaging">
+          <OpInfo><TableGroupProperties Grp="Unknown" Remotable="False"/></OpInfo>
+          <LogOp Id="LogOp_Spool" Name="__SCOPE_PARAMETER_PREFIX__mergestagingresults" CSRoot="Common" TotalConsumers="2">
+            <OpInfo><TableGroupProperties Grp="Unknown" Remotable="False"/></OpInfo>
+          </LogOp>
+        </LogOp>
+      </LogOp>
+    </LogOp>
+</InputTree>
+<OutputTree>
+    <PhyOp Id="PhyOp_Sequence">
+      <OpInfo><TableGroupProperties Grp="63.1" Remotable="False" Card="0" CardFromHint="True" AvgRowLength="1" PrtnSkewFactor="1" HT="15605176717975878136:237::8:13495499730118165302" HTS="6556377152702698033"/><Costs TotalCosts="11.1051" BubbleCost="11.1051" BubblePartitions="396"/></OpInfo>
+      <PhyOp Id="PhyOp_Write" USqlTableName="localcomputeaccount.RaceData.dbo.RaceDetails" Table="C:\repo\crosscup\USQLDataRoot\_catalog_\database\f21794a6-a1e4-46a4-b510-2853b3ccb087\schema\69d4eaba-3433-48c0-a6fd-fec7b0fdf651\table\57bd8fe2-5ef9-4cd7-9299-e7deab809c99\4dfed319-ccde-45f6-9ab0-d474e76c658b.ss" XMode="Parallel" PartitionType="Hash" Partitioning="RaceDate,RaceName:[STRICT]" Partitions="2" SortColumn="RaceDate ASC,RaceName ASC" Column="RaceDate,RaceTime,EventName,RaceName,RacePlacing,RaceStaging,RaceNumber,RaceNumberStaged,LastName,FirstName,...">
+        <OpInfo><TableGroupProperties Grp="60.1" Remotable="False" Card="478.516" AvgRowLength="168" PrtnSkewFactor="1" HT="9176608370057012364:218::4:782282584047624610" HTS="17218357891427630999"/><Costs TotalCosts="11.1051" BubbleCost="11.1051" BubblePartitions="398"/></OpInfo>
+        <PhyOp Id="PhyOp_Exchange" ExchangeType="InitialSplit" XMode="Parallel" PartitionType="Hash" Partitioning="RaceDate,RaceName" Partitions="2" MergeType="Nil" SortColumn="RaceName ASC">
+          <OpInfo><TableGroupProperties Grp="59.3" Remotable="False" Card="478.516" AvgRowLength="168" PrtnSkewFactor="1" HT="782282584047624610:212::3:14256156817946958082" HTS="12218034670223317545"/><Costs TotalCosts="10.794" BubbleCost="10.794" BubblePartitions="398"/></OpInfo>
+          <PhyOp Id="PhyOp_ComputeScalar">
+            <OpInfo><TableGroupProperties Grp="59.4" Remotable="False" Card="478.516" AvgRowLength="168" PrtnSkewFactor="1" HT="782282584047624610:212::3:14256156817946958082" HTS="12218034670223317545"/><Costs TotalCosts="5.08578" BubbleCost="5.08578" BubblePartitions="398"/></OpInfo>
+            <PhyOp Id="PhyOp_RestrRemap">
+              <OpInfo><TableGroupProperties Grp="15.1" Remotable="False" Card="478.516" AvgRowLength="166" PrtnSkewFactor="1" HT="15776710522890856762:120::6:13490329161443117134" HTS="4754554731610544895"/><Costs TotalCosts="5.08573" BubbleCost="5.08573" BubblePartitions="398"/></OpInfo>
+              <PhyOp Id="PhyOp_Spool" Name="__SCOPE_PARAMETER_PREFIX__mergestagingresults" CSRoot="Common" TotalConsumers="2">
+                <OpInfo><TableGroupProperties Grp="14.1" Remotable="False" Card="478.516" AvgRowLength="166" PrtnSkewFactor="1" HT="13490329161443117134:166::5:13979220146366625312" HTS="5128204005986314764"/><Costs TotalCosts="5.08573" BubbleCost="5.08573" BubblePartitions="398"/></OpInfo>
+                <PhyOp Id="PhyOp_RestrRemap">
+                  <OpInfo><TableGroupProperties Grp="13.1" Remotable="False" Card="478.516" AvgRowLength="166" PrtnSkewFactor="1" HT="13979220146366625312:120::4:6363611740894710470" HTS="13315676947019461898"/><Costs TotalCosts="5.08573" BubbleCost="5.08573" BubblePartitions="398"/></OpInfo>
+                  <PhyOp Id="PhyOp_ComputeScalar">
+                    <OpInfo><TableGroupProperties Grp="12.1" Remotable="False" Card="478.516" AvgRowLength="166" PrtnSkewFactor="1" HT="6363611740894710470:212::3:8440346567037457151" HTS="7705728863456172744"/><Costs TotalCosts="5.08573" BubbleCost="5.08573" BubblePartitions="398"/></OpInfo>
+                    <PhyOp Id="PhyOp_Sort" SortColumn="Category ASC">
+                      <OpInfo><TableGroupProperties Grp="6.1" Remotable="False" Card="478.516" AvgRowLength="144" PrtnSkewFactor="1" HT="18054681939347969334:30::2:8559522551554045960" HTS="11047390233771801440"/><Costs TotalCosts="5.08568" BubbleCost="5.08568" BubblePartitions="398"/></OpInfo>
+                      <PhyOp Id="PhyOp_HashJoin" Build="Left" JoinType="x_jtInner" ParallelJoinType="Serial" LeftKey="stagebib" RightKey="Bib">
+                        <OpInfo><TableGroupProperties Grp="6.3" Remotable="False" Card="478.516" AvgRowLength="144" PrtnSkewFactor="1" HT="18054681939347969334:30::2:8559522551554045960" HTS="11047390233771801440"/><Costs TotalCosts="5.0846" BubbleCost="5.0846" BubblePartitions="398"/></OpInfo>
+                        <PhyOp Id="PhyOp_RestrRemap">
+                          <OpInfo><TableGroupProperties Grp="1.3" Remotable="False" Card="598.145" AvgRowLength="24" PrtnSkewFactor="1" HT="2693826777661898030:120::1:4299396738996698267" HTS="1653883043106934008"/><Costs TotalCosts="5.07847" BubbleCost="5.07847" BubblePartitions="399"/></OpInfo>
+                          <PhyOp Id="PhyOp_Extract" Table="C:\repo\crosscup\USQLDataRoot\input/2017CaldwellWoodsScheduleStaging.csv" XMode="Serial" Udf="IExtractor">
+                            <OpInfo><TableGroupProperties Grp="0.3" Remotable="False" Card="598.145" AvgRowLength="24" PrtnSkewFactor="1" HT="4299396738996698267:115::0:0" HTS="6642069904223531500"/><Costs TotalCosts="5.07847" BubbleCost="5.07847" BubblePartitions="399"/></OpInfo>
+                          </PhyOp>
+                        </PhyOp>
+                        <PhyOp Id="PhyOp_Extract" Table="C:\repo\crosscup\USQLDataRoot\input/2017CCCLapTimesCaldwell.csv" XMode="Serial" Udf="IExtractor">
+                          <OpInfo><TableGroupProperties Grp="2.3" Remotable="False" Card="388.382" AvgRowLength="120" PrtnSkewFactor="1" HT="14564762969042255490:115::0:0" HTS="16308689707069498833"/><Costs TotalCosts="5.05369" BubbleCost="5.05369" BubblePartitions="399"/></OpInfo>
+                        </PhyOp>
+                        <ScaOp Id="ScaOp_Comp" CompOp="x_cmpEq"><OpInfo><ScalarGroupProperties Grp="5.0"/></OpInfo>
+                          <ScaOp Id="ScaOp_Identifier" Column="Bib"><OpInfo><ScalarGroupProperties Grp="3.0"/></OpInfo>
+                          </ScaOp>
+                          <ScaOp Id="ScaOp_Identifier" Column="stagebib"><OpInfo><ScalarGroupProperties Grp="4.0"/></OpInfo>
+                          </ScaOp>
+                        </ScaOp>
+                      </PhyOp>
+                    </PhyOp>
+                    <AncOp Id="AncOp_PrjList"><OpInfo><ScalarGroupProperties Grp="11.0"/></OpInfo>
+                      <AncOp Id="AncOp_PrjEl" Column="RaceDate"><OpInfo><ScalarGroupProperties Grp="8.0"/></OpInfo>
+                        <ScaOp Id="ScaOp_Const" TI="Date" Value="System.DateTime.FromBinary(636405984000000000L /* 2017-09-10T00:00:00.0000000 */)" Parameter="0"><OpInfo><ScalarGroupProperties Grp="7.0"/></OpInfo>
+                        </ScaOp>
+                      </AncOp>
+                      <AncOp Id="AncOp_PrjEl" Column="EventName"><OpInfo><ScalarGroupProperties Grp="10.0"/></OpInfo>
+                        <ScaOp Id="ScaOp_Const" TI="String,Nullable,Var" Value="@&quot;Caldwell Woods&quot;" Parameter="0"><OpInfo><ScalarGroupProperties Grp="9.0"/></OpInfo>
+                        </ScaOp>
+                      </AncOp>
+                    </AncOp>
+                  </PhyOp>
+                </PhyOp>
+              </PhyOp>
+            </PhyOp>
+            <AncOp Id="AncOp_PrjList"><OpInfo><ScalarGroupProperties Grp="58.0"/></OpInfo>
+              <AncOp Id="AncOp_PrjEl" Column="RaceDate"><OpInfo><ScalarGroupProperties Grp="17.0"/></OpInfo>
+                <ScaOp Id="ScaOp_Identifier" Column="RaceDate"><OpInfo><ScalarGroupProperties Grp="16.0"/></OpInfo>
+                </ScaOp>
+              </AncOp>
+              <AncOp Id="AncOp_PrjEl" Column="RaceTime"><OpInfo><ScalarGroupProperties Grp="19.0"/></OpInfo>
+                <ScaOp Id="ScaOp_Const" TI="Date,Nullable" Value="(DateTime?)null" Parameter="0"><OpInfo><ScalarGroupProperties Grp="18.0"/></OpInfo>
+                </ScaOp>
+              </AncOp>
+              <AncOp Id="AncOp_PrjEl" Column="EventName"><OpInfo><ScalarGroupProperties Grp="21.0"/></OpInfo>
+                <ScaOp Id="ScaOp_Identifier" Column="EventName"><OpInfo><ScalarGroupProperties Grp="20.0"/></OpInfo>
+                </ScaOp>
+              </AncOp>
+              <AncOp Id="AncOp_PrjEl" Column="RaceName"><OpInfo><ScalarGroupProperties Grp="23.0"/></OpInfo>
+                <ScaOp Id="ScaOp_Identifier" Column="RaceName"><OpInfo><ScalarGroupProperties Grp="22.0"/></OpInfo>
+                </ScaOp>
+              </AncOp>
+              <AncOp Id="AncOp_PrjEl" Column="RacePlacing"><OpInfo><ScalarGroupProperties Grp="25.0"/></OpInfo>
+                <ScaOp Id="ScaOp_Identifier" Column="RacePlacing"><OpInfo><ScalarGroupProperties Grp="24.0"/></OpInfo>
+                </ScaOp>
+              </AncOp>
+              <AncOp Id="AncOp_PrjEl" Column="RaceStaging"><OpInfo><ScalarGroupProperties Grp="27.0"/></OpInfo>
+                <ScaOp Id="ScaOp_Identifier" Column="RaceStaging"><OpInfo><ScalarGroupProperties Grp="26.0"/></OpInfo>
+                </ScaOp>
+              </AncOp>
+              <AncOp Id="AncOp_PrjEl" Column="RaceNumber"><OpInfo><ScalarGroupProperties Grp="29.0"/></OpInfo>
+                <ScaOp Id="ScaOp_Identifier" Column="RaceNumber"><OpInfo><ScalarGroupProperties Grp="28.0"/></OpInfo>
+                </ScaOp>
+              </AncOp>
+              <AncOp Id="AncOp_PrjEl" Column="RaceNumberStaged"><OpInfo><ScalarGroupProperties Grp="31.0"/></OpInfo>
+                <ScaOp Id="ScaOp_Identifier" Column="RaceNumberStaged"><OpInfo><ScalarGroupProperties Grp="30.0"/></OpInfo>
+                </ScaOp>
+              </AncOp>
+              <AncOp Id="AncOp_PrjEl" Column="LastName"><OpInfo><ScalarGroupProperties Grp="33.0"/></OpInfo>
+                <ScaOp Id="ScaOp_Identifier" Column="LastName"><OpInfo><ScalarGroupProperties Grp="32.0"/></OpInfo>
+                </ScaOp>
+              </AncOp>
+              <AncOp Id="AncOp_PrjEl" Column="FirstName"><OpInfo><ScalarGroupProperties Grp="35.0"/></OpInfo>
+                <ScaOp Id="ScaOp_Identifier" Column="FirstName"><OpInfo><ScalarGroupProperties Grp="34.0"/></OpInfo>
+                </ScaOp>
+              </AncOp>
+              <AncOp Id="AncOp" SkipCount="11"/>            </AncOp>
+          </PhyOp>
+        </PhyOp>
+      </PhyOp>
+      <PhyOp Id="PhyOp_Output" Table="C:\repo\crosscup\USQLDataRoot\output/stagingplacing.csv" XMode="Serial" Out="RaceDate,EventName,RaceName,RacePlacing,RaceStaging,RaceNumber,RaceNumberStaged,LastName,FirstName,LicenceNumber,..." Udf="IOutputter">
+        <OpInfo><TableGroupProperties Grp="62.1" Remotable="False" Card="478.516" AvgRowLength="166" PrtnSkewFactor="1" HT="4318891360061152938:228::7:15776710522890856762" HTS="8989288146766606896"/><Costs TotalCosts="5.71488" BubbleCost="5.71488" BubblePartitions="398"/></OpInfo>
+        <PhyOp Id="PhyOp_RestrRemap">
+          <OpInfo><TableGroupProperties Grp="61.1" Remotable="False" Card="478.516" AvgRowLength="166" PrtnSkewFactor="1" HT="15776710522890856762:120::6:13490329161443117134" HTS="4754554731610544895"/><Costs TotalCosts="5.08573" BubbleCost="5.08573" BubblePartitions="398"/></OpInfo>
+          <PhyOp Id="PhyOp_Spool" Name="__SCOPE_PARAMETER_PREFIX__mergestagingresults" CSRoot="Common" TotalConsumers="2">
+            <OpInfo><TableGroupProperties Grp="14.1" Remotable="False" Card="478.516" AvgRowLength="166" PrtnSkewFactor="1" HT="13490329161443117134:166::5:13979220146366625312" HTS="5128204005986314764"/><Costs TotalCosts="5.08573" BubbleCost="5.08573" BubblePartitions="398"/></OpInfo>
+          </PhyOp>
+        </PhyOp>
+      </PhyOp>
+    </PhyOp>
+</OutputTree>
+</OptimizerTrees>
+  </OptimizerPlanInfo>
+  <ScopeCounters>
+    <Counter Name="Overall" Value="17.2325271" Unit="second" Intervals="0" />
+    <Counter Name="ResourcesDownloading" Value="0" Unit="second" Intervals="0" />
+    <Counter Name="FrontEndRun" Value="3.4496503" Unit="second" Intervals="1" />
+    <Counter Name="AstBuilder" Value="2.1682348" Unit="second" Intervals="1" />
+    <Counter Name="SyntaxVerifier" Value="0.1651906" Unit="second" Intervals="1" />
+    <Counter Name="DdlResolver" Value="1.7461585" Unit="second" Intervals="1" />
+    <Counter Name="RoslynStartup" Value="0.1389987" Unit="second" Intervals="5" />
+    <Counter Name="SMS" Value="0.1017404" Unit="second" Intervals="2" />
+    <Counter Name="ConstantFolding" Value="1.0130711" Unit="second" Intervals="5" />
+    <Counter Name="ResourceReferencePass" Value="0.0043061" Unit="second" Intervals="1" />
+    <Counter Name="InputOutputPass" Value="0.2064305" Unit="second" Intervals="1" />
+    <Counter Name="FileSetExpansion" Value="0" Unit="second" Intervals="0" />
+    <Counter Name="SStreamMetadataWait" Value="8.58E-05" Unit="second" Intervals="4" />
+    <Counter Name="SStreamMetadataAsync" Value="0" Unit="second" Intervals="0" />
+    <Counter Name="BinderPass" Value="0.8316591" Unit="second" Intervals="1" />
+    <Counter Name="ExpressionBinding" Value="0.6718225" Unit="second" Intervals="8" />
+    <Counter Name="OneColumnBinding" Value="0.0043821" Unit="second" Intervals="2" />
+    <Counter Name="QualifiedColumnBinding" Value="0.0036418" Unit="second" Intervals="2" />
+    <Counter Name="SimpleAggregateBinding" Value="0" Unit="second" Intervals="0" />
+    <Counter Name="RoslynFirstCall" Value="0.2017721" Unit="second" Intervals="1" />
+    <Counter Name="RoslynBinding" Value="0.4549326" Unit="second" Intervals="5" />
+    <Counter Name="RoslynParsing" Value="0.0238443" Unit="second" Intervals="5" />
+    <Counter Name="RoslynPreSemantic" Value="0.0141149" Unit="second" Intervals="5" />
+    <Counter Name="RoslynSemantic" Value="0.1942778" Unit="second" Intervals="5" />
+    <Counter Name="RoslynPostSemantic" Value="0.2222938" Unit="second" Intervals="5" />
+    <Counter Name="SemanticAnalyzerPass" Value="0.067852" Unit="second" Intervals="1" />
+    <Counter Name="ErrorReporterPass" Value="0.0574094" Unit="second" Intervals="1" />
+    <Counter Name="GenerateOptTreePass" Value="0.1300562" Unit="second" Intervals="1" />
+    <Counter Name="OptimizerWait" Value="1.36E-05" Unit="second" Intervals="1" />
+    <Counter Name="Playback" Value="0.0430957" Unit="second" Intervals="2" />
+    <Counter Name="Optimizer" Value="1.0417251" Unit="second" Intervals="1" />
+    <Counter Name="CodeGeneration" Value="1.2199215" Unit="second" Intervals="1" />
+    <Counter Name="AlgebraAndManagedCodeGen" Value="0.3999841" Unit="second" Intervals="1" />
+    <Counter Name="ComputeSignature" Value="1.59E-05" Unit="second" Intervals="1" />
+    <Counter Name="PostProcessExecutionPlan" Value="0.0066548" Unit="second" Intervals="1" />
+    <Counter Name="CreateSplitersOrSpools" Value="0.119077" Unit="second" Intervals="1" />
+    <Counter Name="ReplaceFusionPipelinesWithAdapters" Value="6E-06" Unit="second" Intervals="1" />
+    <Counter Name="CreateWhereSelectEnumerators" Value="0.0166704" Unit="second" Intervals="1" />
+    <Counter Name="ComputePayloadMetadata" Value="0.0010339" Unit="second" Intervals="1" />
+    <Counter Name="SStreamStageProcessing" Value="0.004403" Unit="second" Intervals="1" />
+    <Counter Name="ValidateStages" Value="0.0033014" Unit="second" Intervals="1" />
+    <Counter Name="CompileToAlgebra" Value="0.0876183" Unit="second" Intervals="1" />
+    <Counter Name="AnnotateIntermediateResults" Value="0.0059731" Unit="second" Intervals="1" />
+    <Counter Name="CreateCppReadyStage" Value="0.0440472" Unit="second" Intervals="1" />
+    <Counter Name="AdornAllWithMemoryModel" Value="0.0658981" Unit="second" Intervals="1" />
+    <Counter Name="SplitScopeVertices" Value="0.0377347" Unit="second" Intervals="1" />
+    <Counter Name="EstimateMemorySize" Value="0.0022879" Unit="second" Intervals="1" />
+    <Counter Name="CalculateBubbles" Value="0.0003803" Unit="second" Intervals="1" />
+    <Counter Name="ManagedCodeEmission" Value="0.0073647" Unit="second" Intervals="1" />
+    <Counter Name="NativeCodeGeneration" Value="0.8081852" Unit="second" Intervals="1" />
+    <Counter Name="CodeCompiling" Value="10.0076344" Unit="second" Intervals="1" />
+    <Counter Name="EmitCompilationResult" Value="0.6271734" Unit="second" Intervals="1" />
+    <Counter Name="Table Files Read" Value="0" Unit="count" />
+    <Counter Name="CQO - Init" Value="0.0153742561104299" Unit="second" />
+    <Counter Name="CQO - CopyIn" Value="0.121218327812626" Unit="second" />
+    <Counter Name="CQO - Search - Init" Value="0.000192657946266293" Unit="second" />
+    <Counter Name="CQO - Search - NNF" Value="0.000172898156905647" Unit="second" />
+    <Counter Name="CQO - Search - PreOptimization" Value="0.000726172259003719" Unit="second" />
+    <Counter Name="CQO - Search - Simplification" Value="0.00259575232928017" Unit="second" />
+    <Counter Name="CQO - Search - Join Reordering" Value="0.000653973028647515" Unit="second" />
+    <Counter Name="CQO - Search - Expression Sharing" Value="0.000550614130453369" Unit="second" />
+    <Counter Name="CQO - Search - Optimization" Value="0.0285323758448735" Unit="second" />
+    <Counter Name="CQO - Search - Subtotal" Value="0.0583061984559245" Unit="second" />
+    <Counter Name="CQO - Showplan" Value="0.00963897724850253" Unit="second" />
+    <Counter Name="CQO - Stage Generation" Value="0.592444844537957" Unit="second" />
+    <Counter Name="CQO - PostOptimization" Value="0.00608715511092652" Unit="second" />
+    <Counter Name="Working Set" Value="109284" Unit="KB" />
+    <Counter Name="Peak Working Set" Value="129256" Unit="KB" />
+    <Counter Name="Private Memory" Value="83520" Unit="KB" />
+    <Counter Name="Virtual Memory" Value="800500" Unit="KB" />
+    <Counter Name="Total CPU" Value="6.8125" Unit="second" />
+    <Counter Name="CQO - Total" Value="0.828521127964776" Unit="second" />
+  </ScopeCounters>
+</CSSRelatedInfo>

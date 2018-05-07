@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2010
+VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{182E2583-ECAD-465B-BB50-91101D7C24CE}") = "crosscup", "crosscup\crosscup.usqlproj", "{2E40BE6B-EABD-4FB7-B1C6-EB47E74CE3B4}"
 EndProject

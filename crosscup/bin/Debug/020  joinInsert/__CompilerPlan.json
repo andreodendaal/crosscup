@@ -1,0 +1,81 @@
+﻿{
+"CompilerPlanStart":"4\/7\/2018 2:44:35 PM"
+},
+{
+"Settings":"-c++ -mp -pdb Partial -OUTPUT_PATH C:\\repo\\crosscup\\USQLDataRoot -cosmosCluster localhost -apEnvironment Default -apCluster localhost -Off EnableScopeVertexResourceMode -On ForceShadowCopy -On ADL -Off Sirius -On USQL -Off SQLIPSQLProxy -Off SQLIPSQLProxyNative -Off PolarisScaleUp -buckets 1 -SplitPartitionThreshold 52428800 -ClientVersion 10.2.2.0"
+},
+{
+"statementText":"\/\/ Auto-generated header code\/\/ Auto-generated header code ended\/\/ User scriptDECLARE @r"
+,
+{
+"NodeName":"DeclareVariableStatement"
+},
+{
+"Name":"@racename"
+}}
+,
+{
+"statementText":"DECLARE @racedate DateTime = new DateTime(2017,09,10)"
+,
+{
+"NodeName":"DeclareVariableStatement"
+},
+{
+"Name":"@racedate"
+}}
+,
+{
+"statementText":"    EXTRACT Category string,            Place string,            Bib string,            Last"
+,
+{
+"NodeName":"QueryStatement"
+}}
+,
+{
+"statementText":"    EXTRACT [STAGE #] string,            [BIB #] string,            [FIRST NAME] string,    "
+,
+{
+"NodeName":"QueryStatement"
+}}
+,
+{
+"statementText":"    SELECT [BIB #] AS stagebib,           [LICENSE] AS usaclicence,           [STAGE #] AS rac"
+,
+{
+"NodeName":"QueryStatement"
+}}
+,
+{
+"statementText":"    SELECT            @racedate AS RaceDate,           @racename AS EventName,           r.C"
+,
+{
+"NodeName":"QueryStatement"
+}}
+,
+{
+"statementText":"USE DATABASE RaceData"
+,
+{
+"NodeName":"UseDatabaseStatement"
+},
+{
+"Name":"RaceData"
+}}
+,
+{
+"statementText":"\/* write to u-sql *\/INSERT INTO RaceDetails(    RaceDate,    EventName,    RaceName,"
+,
+{
+"NodeName":"InsertStatement"
+}}
+,
+{
+"statementText":"\/* write to file *\/OUTPUT @mergestagingresultsTO \"\/output\/stagingplacing.csv\"USING Outputt"
+,
+{
+"NodeName":"OutputStatement"
+}}
+,
+{
+"CompilerPlanEnd":"4\/7\/2018 2:44:35 PM"
+}
